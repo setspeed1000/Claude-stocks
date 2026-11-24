@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Claude's $20 vs XEQT</title>
-<meta name="description" content="A $20 trading experiment: Claude's picks against the XEQT index ETF, read live from Google Sheets.">
+<title>Claude's fund vs XEQT</title>
+<meta name="description" content="A small trading experiment: Claude's picks against the same money in the XEQT index ETF, read live from Google Sheets.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&display=swap" rel="stylesheet">
@@ -418,7 +418,7 @@
 <body>
 <div class="wrap">
   <header class="masthead">
-    <h1>Claude's $20 vs XEQT</h1>
+    <h1>Claude's fund vs XEQT</h1>
     <p id="started">Loading the sheet</p>
   </header>
 
@@ -542,7 +542,7 @@ function renderAlerts(f) {
   if (f.stop_triggered === 1) {
     box.append(el("div", { class: "alert", role: "alert" },
       el("strong", {}, "The stop rule has been triggered."),
-      "The account is down 30% or more from $20. By the rules, the experiment ends here and the money moves into XEQT."));
+      "The account is down 30% or more from the money put in. By the rules, the experiment ends here and the money moves into XEQT."));
   }
   if (isNum(f.cash_diff) && Math.abs(f.cash_diff) >= 0.005) {
     box.append(el("div", { class: "alert" },
@@ -583,10 +583,10 @@ function lane(name, sub, value, change, kind, pending) {
 }
 
 function renderRace(f) {
-  const startCash = isNum(f.start_cash) ? f.start_cash : 20;
-  const claudeChange = isNum(f.account_value) ? f.account_value / startCash - 1 : null;
+  const base = isNum(f.total_in) && f.total_in > 0 ? f.total_in : (isNum(f.start_cash) ? f.start_cash : 20);
+  const claudeChange = isNum(f.account_value) ? f.account_value / base - 1 : null;
   const started = isNum(f.xeqt_start) && isNum(f.benchmark_value);
-  const benchChange = started ? f.benchmark_value / startCash - 1 : null;
+  const benchChange = started ? f.benchmark_value / base - 1 : null;
 
   lane.scale = Math.max(0.05, Math.abs(claudeChange || 0), Math.abs(benchChange || 0));
   // round the scale up to a whole percent so the axis labels are clean
@@ -594,7 +594,7 @@ function renderRace(f) {
 
   let verdictText, verdictClass = "";
   if (!started) {
-    verdictText = "The race starts when the $20 lands in the account.";
+    verdictText = "The race starts when the first $20 lands in the account.";
   } else {
     const gap = f.ahead;
     if (Math.abs(gap) < 0.005) verdictText = "Claude and XEQT are dead even.";
@@ -609,11 +609,11 @@ function renderRace(f) {
     !started ? el("p", { class: "section-note" }, "On the start date, fill in the start date and XEQT's closing price on the Summary tab. Until then the benchmark has nothing to measure from.") : null,
     el("div", { class: "lanes" },
       lane("Claude's picks", `${fmtMoney(f.cash)} cash, ${fmtMoney(f.holdings_value)} in stocks`, f.account_value, claudeChange, "claude", false),
-      lane("XEQT", "the same $20, bought and held", f.benchmark_value, benchChange, "bench", !started)
+      lane("XEQT", "the same money on the same days, held", f.benchmark_value, benchChange, "bench", !started)
     ),
     el("div", { class: "scale", "aria-hidden": "true" },
       el("span"),
-      el("div", { class: "scale-axis" }, el("span", {}, `−${s}%`), el("span", {}, `$${startCash} start`), el("span", {}, `+${s}%`)),
+      el("div", { class: "scale-axis" }, el("span", {}, `−${s}%`), el("span", {}, `${fmtMoney(base)} put in`), el("span", {}, `+${s}%`)),
       el("span"))
   );
 }
@@ -743,15 +743,18 @@ function renderLog(trades) {
   return sec;
 }
 
-function renderContributions(contribs, f) {
-  const rows = contribs.filter(c => isNum(c["Amount (CAD)"]));
-  if (!rows.length) return null;
-  return el("section", { "aria-labelledby": "contrib-title" },
-    el("h2", { id: "contrib-title" }, "Monthly $20 into XEQT"),
+function renderMoneyIn(contribs, f) {
+  const deposits = contribs.filter(c => isNum(c["Deposit into Claude's account (CAD)"]));
+  const last = deposits.filter(c => c.Date instanceof Date).sort((a, b) => b.Date - a.Date)[0];
+  return el("section", { "aria-labelledby": "money-title" },
+    el("h2", { id: "money-title" }, "Money put in"),
+    el("p", { class: "section-note" }, last
+      ? `${deposits.length} monthly deposit${deposits.length === 1 ? "" : "s"} so far, the latest on ${dateFmt.format(last.Date)}. Each one is matched by the same amount of XEQT on the benchmark side.`
+      : "Each month's $20 goes into Claude's account, and the benchmark buys the same amount of XEQT that day."),
     el("div", { class: "contrib" },
-      el("div", {}, el("span", {}, "Put in"), el("b", {}, fmtMoney(f.contributed))),
-      el("div", {}, el("span", {}, "Worth now"), el("b", {}, fmtMoney(f.contrib_value))),
-      el("div", {}, el("span", {}, "Gain"), el("b", { class: signClass(f.contrib_gain) }, fmtMoney(f.contrib_gain)))));
+      el("div", {}, el("span", {}, "Starting deposit"), el("b", {}, fmtMoney(f.start_cash))),
+      el("div", {}, el("span", {}, "Monthly deposits"), el("b", {}, fmtMoney(f.deposits))),
+      el("div", {}, el("span", {}, "Total put in"), el("b", {}, fmtMoney(f.total_in)))));
 }
 
 let firstRender = true;
@@ -767,7 +770,7 @@ function render(data) {
     el("div", { class: "split" }, renderOrders(data.trades), renderPositions(data.holdings, f)),
     renderWatchlist(data.watchlist, data.holdings),
     renderLog(data.trades),
-    renderContributions(data.contributions, f) || ""
+    renderMoneyIn(data.contributions, f)
   );
   const xt = serialToDate(f.xeqt_time);
   document.getElementById("source").textContent =
@@ -791,9 +794,9 @@ function renderError(err) {
 function demoData() {
   const d = (y, m, day) => new Date(y, m - 1, day);
   return {
-    feed: { start_date: 46351, start_cash: 20, xeqt_start: 43.17, stop_level: 0.7, cash: 3.5, holdings_value: 17.18,
-      account_value: 20.68, return: 0.034, broker_cash: 3.5, cash_diff: 0, xeqt_price: 43.9, xeqt_time: 46356.6667,
-      benchmark_value: 20.338, ahead: 0.342, stop_triggered: 0, contributed: 20, contrib_value: 20.31, contrib_gain: 0.31 },
+    feed: { start_date: 46351, start_cash: 20, xeqt_start: 43.17, stop_level: 0.7, cash: 23.5, holdings_value: 17.18,
+      account_value: 40.68, return: 0.017, broker_cash: 23.5, cash_diff: 0, xeqt_price: 43.9, xeqt_time: 46386.6667,
+      benchmark_value: 40.65, ahead: 0.03, stop_triggered: 0, deposits: 20, total_in: 40, bench_from_deposits: 20.31 },
     trades: [
       { Date: d(2026,11,25), Ticker: "AQN", Action: "Buy", Shares: 2, "Limit price": 8.25, "Stop-loss": 7.85, Target: 8.9, "Exit by": d(2026,12,8), Status: "Filled", "Fill price": 8.25, Fees: 0, "Cash flow": -16.5, Reason: "New 30-day closing high, above its 30-day and 90-day averages while defensive sectors hold up." },
       { Date: d(2026,11,26), Ticker: "BB", Action: "Buy", Shares: 1, "Limit price": 11.8, "Stop-loss": 11.2, Target: 12.9, "Exit by": d(2026,12,9), Status: "Not filled", Reason: "Pullback to the 90-day average; the limit wasn't reached." },
@@ -806,7 +809,7 @@ function demoData() {
       { Ticker: "BTO", Name: "B2Gold Corp", "Price (CAD)": 6.15, "Day change": -0.033, "30-day avg close": 6.91, "90-day avg close": 7.27, "30-day high": 8.05, "30-day low": 5.88 },
       { Ticker: "T", Name: "Telus Corporation", "Price (CAD)": 15.39, "Day change": 0.0199, "30-day avg close": 13.02, "90-day avg close": 12.52, "30-day high": 15.86, "30-day low": 11.99 },
     ],
-    contributions: [{ "Amount (CAD)": 20 }],
+    contributions: [{ Date: d(2026,12,24), "Deposit into Claude's account (CAD)": 20 }],
   };
 }
 
