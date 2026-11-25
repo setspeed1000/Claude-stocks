@@ -36,3 +36,18 @@ The site has six tabs. Link straight to one with `#trades`, `#performance` and s
 - **Tools**: a position size calculator, a what-if projection of the monthly deposits, and the stop rule in numbers.
 
 The header also shows whether the TSX is open (regular hours only; holidays aren't counted).
+
+## TSX screener
+
+`screener/screen.py` scans every TSX-listed stock and ETF and keeps the ones a $20-$100 account can actually trade:
+
+- **Price** $1 to $15, so whole shares fit.
+- **Liquidity**: 20-day median of at least 50,000 shares and $500,000 traded a day, with no zero-volume days in the last 60.
+- **Spread** at most 0.6%, from a live bid/ask quote for the top 60 names and a Corwin-Schultz high-low estimate otherwise.
+- **Excluded**: preferred shares, warrants, debentures, US-dollar lines, and leveraged or inverse ETFs.
+
+Survivors are ranked by risk-adjusted momentum (blended 3- and 6-month return over 60-day volatility), with penalties for spread cost and 6-month drawdown. Anything below its 50- or 100-day average, or pinned by a takeover bid, scores zero. Each row also has ATR(14), a 2 x ATR stop, and the whole shares a $20 and a $100 account could buy under the 10%-risk rule.
+
+It runs on GitHub Actions (**Actions > TSX screener > Run workflow**) using the TSX company directory and Yahoo Finance, so it uses no Alpha Vantage calls. Results are committed to `data/screener/`: `latest.md` (top 15), `latest.csv` and `latest.json` (everything that passed), and `history/` (one file per run). The screen is a starting list only; every buy still needs a chart-based limit, stop, target and exit date.
+
+Test offline with `python screener/test_screen.py`.
