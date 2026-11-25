@@ -17,7 +17,7 @@ To preview the layout with sample numbers, add `#demo` to the URL.
 | Tab | Used for |
 |---|---|
 | Dashboard feed | Headline numbers: account value, benchmark value, cash, stop rule |
-| To-do | The next trading day's steps: buys, sells, stop-losses and take-profits |
+| To-do | Steps to place in Wealthsimple. Only rows whose `Status` is Open show on the Overview; Done, Replaced and Expired rows move to the Journal. Without a Status column, the Done tick box decides. |
 | Trades | The trade log |
 | Holdings | Open positions |
 | Watchlist | Prices, 30-day ranges and 90-day averages |

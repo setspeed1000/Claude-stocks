@@ -227,6 +227,8 @@
   .step .why { margin: 0; max-width: var(--measure); font-size: 0.9375rem; }
   .step.is-done h3, .step.is-done .how, .step.is-done .why { text-decoration: line-through; opacity: 0.55; }
   .step.is-done .step-num { background: var(--ticket-ink); color: var(--ticket); }
+  .step .carried { margin: 0.375rem 0 0; font-size: 0.8125rem; font-weight: 600; }
+  .slip-foot { margin: 0; padding: 0.625rem 0 0.75rem; border-top: 1px solid rgba(59,46,5,.25); font-size: 0.875rem; }
 
   /* Positions */
   .positions { display: grid; gap: 0; border-top: 1px solid var(--rule); }
@@ -927,33 +929,54 @@ function stepTitle(t) {
   }
 }
 
+// To-do rows carry a Status: Open, Done, Replaced or Expired. Sheets without
+// the column fall back to the Done tick box, so old rows read as Open or Done.
+const TODO_STATUSES = ["Open", "Done", "Replaced", "Expired"];
+function todoStatus(t) {
+  const raw = String(t.Status ?? "").trim().toLowerCase();
+  const hit = TODO_STATUSES.find(x => x.toLowerCase() === raw);
+  if (hit) return hit;
+  return t.Done === true ? "Done" : "Open";
+}
+const stepNum = t => { const n = num(t.Step); return isNum(n) ? n : 99; };
+
 function renderTodo(todo) {
-  const rows = todo.filter(t => t.Date instanceof Date && t.Action);
+  const rows = todo.filter(t => asDate(t.Date) && t.Action);
+  const open = rows.filter(t => todoStatus(t) === "Open")
+    .sort((a, b) => asDate(a.Date) - asDate(b.Date) || stepNum(a) - stepNum(b));
   const sec = el("section", { "aria-labelledby": "todo-title" },
     el("h2", { id: "todo-title" }, "To do"));
-  if (!rows.length) {
-    sec.append(el("p", { class: "empty" }, "Nothing to do yet. Claude adds the next day's steps to the To-do tab each night."));
+  const closed = rows.length - open.length;
+  if (!open.length) {
+    sec.append(el("p", { class: "empty" }, rows.length
+      ? "Nothing open right now. Claude adds the next day's steps to the To-do tab each night."
+      : "Nothing to do yet. Claude adds the next day's steps to the To-do tab each night."));
+    if (closed) sec.append(el("p", { class: "empty", style: "margin-top:0.5rem" }, "Finished and replaced steps are in the ", el("a", { href: viewHref("journal") }, "Journal"), "."));
     return sec;
   }
-  const latest = Math.max(...rows.map(t => t.Date.getTime()));
-  const today = rows.filter(t => t.Date.getTime() === latest)
-    .sort((a, b) => (isNum(a.Step) ? a.Step : 99) - (isNum(b.Step) ? b.Step : 99));
-  const done = today.filter(t => t.Done === true).length;
+  const newest = Math.max(...open.map(t => asDate(t.Date).getTime()));
   const list = el("ol", { class: "steps" });
-  today.forEach((t, i) => {
-    const isDone = t.Done === true;
-    list.append(el("li", { class: `step${isDone ? " is-done" : ""}` },
-      el("span", { class: "step-num", "aria-hidden": "true" }, isDone ? "\u2713" : String(isNum(t.Step) ? t.Step : i + 1)),
+  open.forEach((t, i) => {
+    const d = asDate(t.Date);
+    const older = d.getTime() < newest;
+    list.append(el("li", { class: "step" },
+      el("span", { class: "step-num", "aria-hidden": "true" }, String(i + 1)),
       el("div", {},
-        el("h3", {}, stepTitle(t), isDone ? el("span", { class: "sr-only" }, " (done)") : null),
+        el("h3", {}, stepTitle(t)),
         t.Action === "No trades" ? null : el("p", { class: "how" }, describeStep(t)),
-        t.Why ? el("p", { class: "why" }, t.Why) : null)));
+        t.Why ? el("p", { class: "why" }, t.Why) : null,
+        older ? el("p", { class: "carried" }, `Still open from ${dateFmt.format(d)}`) : null)));
   });
+  const doneToday = rows.filter(t => todoStatus(t) === "Done" && asDate(t.Date).getTime() === newest).length;
   sec.append(el("div", { class: "slip" },
     el("div", { class: "slip-head" },
-      el("b", {}, `For ${dateFmt.format(new Date(latest))}`),
-      el("span", {}, done === today.length ? "All done" : `${done} of ${today.length} done`)),
-    list));
+      el("b", {}, `${open.length} open step${open.length === 1 ? "" : "s"}`),
+      el("span", {}, [
+        `Latest plan ${shortDate.format(new Date(newest))}`,
+        doneToday ? `${doneToday} done` : null,
+      ].filter(Boolean).join(", "))),
+    list,
+    closed ? el("p", { class: "slip-foot" }, `${closed} finished or replaced step${closed === 1 ? " is" : "s are"} in the `, el("a", { href: viewHref("journal") }, "Journal"), ".") : null));
   return sec;
 }
 
@@ -2089,10 +2112,11 @@ function renderJournal(data) {
     const d = asDate(c.Date), amt = num(c["Deposit into Claude's account (CAD)"]);
     if (d && isNum(amt)) entries.push({ date: d, kind: "deposit", title: `Deposit of ${fmtMoney(amt)}`, tag: null, body: "Matched by the same amount of XEQT on the benchmark side." });
   }
-  for (const t of data.todo.filter(t => asDate(t.Date) && t.Action)) {
-    entries.push({ date: asDate(t.Date), kind: "todo", title: `To do: ${stepTitle(t)}`, tag: t.Done === true ? "Done" : "Open", body: t.Why });
+  // Open steps live on the Overview; the Journal keeps the ones that are finished.
+  for (const t of data.todo.filter(t => asDate(t.Date) && t.Action && todoStatus(t) !== "Open")) {
+    entries.push({ date: asDate(t.Date), kind: "todo", title: `To do: ${stepTitle(t)}`, tag: todoStatus(t), body: t.Why });
   }
-  const sec = section("jr-title", "Journal", "Everything that happened, newest first: trades with Claude's reasoning, to-do steps, deposits and daily notes.");
+  const sec = section("jr-title", "Journal", "Everything that happened, newest first: trades with Claude's reasoning, finished or replaced to-do steps, deposits and daily notes.");
   if (!entries.length) { sec.append(el("p", { class: "empty" }, "Nothing logged yet.")); return sec; }
   entries.sort((a, b) => b.date - a.date || a.kind.localeCompare(b.kind));
   const days = new Map();
@@ -2102,7 +2126,7 @@ function renderJournal(data) {
     tl.append(el("li", { class: "tl-day" },
       el("h3", {}, new Intl.DateTimeFormat("en-CA", { weekday: "long", month: "long", day: "numeric", year: "numeric" }).format(list[0].date)),
       el("ul", {}, list.map(e => el("li", { class: `tl-item tl-${e.kind}` },
-        el("div", { class: "tl-head" }, el("b", {}, e.title), e.tag ? el("span", { class: `status ${e.tag === "Filled" ? "is-filled" : e.tag === "Planned" ? "is-planned" : ""}` }, e.tag) : null),
+        el("div", { class: "tl-head" }, el("b", {}, e.title), e.tag ? el("span", { class: `status ${e.tag === "Filled" || e.tag === "Done" ? "is-filled" : e.tag === "Planned" ? "is-planned" : ""}` }, e.tag) : null),
         e.body ? el("p", {}, e.body) : null)))));
   }
   sec.append(tl);
@@ -2366,8 +2390,10 @@ function demoData() {
       { Date: d(2026,12,30), Ticker: "AQN", Action: "Sell", Shares: 2, "Limit price": 8.9, "Stop-loss": null, Target: null, "Exit by": d(2026,12,8), Status: "Planned", Reason: "Take profit at the target if it trades there tomorrow." },
     ],
     todo: [
-      { Date: d(2026,11,30), Step: 1, Action: "Move stop-loss", Ticker: "AQN", Shares: 2, "Order type": "Stop-limit sell", Price: 8.2, "Limit (stop-limit only)": 8.15, "Time in force": "Good till cancelled", Why: "Locks in a small gain now that AQN is up 4%. Cancel the old $7.85 stop first.", Done: true },
-      { Date: d(2026,11,30), Step: 2, Action: "Set take-profit", Ticker: "AQN", Shares: 2, "Order type": "Limit sell", Price: 8.9, "Time in force": "Good till cancelled", Why: "About +8% from the buy price.", Done: false },
+      { Date: d(2026,11,30), Step: 1, Action: "Move stop-loss", Ticker: "AQN", Shares: 2, "Order type": "Stop-limit sell", Price: 8.2, "Limit (stop-limit only)": 8.15, "Time in force": "Good till cancelled", Why: "Locks in a small gain now that AQN is up 4%. Cancel the old $7.85 stop first.", Done: true, Status: "Done" },
+      { Date: d(2026,11,30), Step: 2, Action: "Set take-profit", Ticker: "AQN", Shares: 2, "Order type": "Limit sell", Price: 8.9, "Time in force": "Good till cancelled", Why: "About +8% from the buy price.", Done: false, Status: "Open" },
+      { Date: d(2026,11,29), Step: 1, Action: "Buy", Ticker: "BB", Shares: 1, "Order type": "Limit", Price: 11.6, "Time in force": "Day", Why: "First try at the 90-day average.", Done: false, Status: "Replaced" },
+      { Date: d(2026,11,29), Step: 2, Action: "Cancel order", Ticker: "BTO", Why: "If the old BTO limit buy is still showing in Wealthsimple, cancel it.", Done: false, Status: "Open" },
       { Date: d(2026,11,30), Step: 3, Action: "Buy", Ticker: "BB", Shares: 1, "Order type": "Limit", Price: 11.8, "Time in force": "Day", Why: "Pullback to the 90-day average with cash left over from the deposit.", Done: false },
     ],
     holdings: [{ Ticker: "AQN", "Shares held": 2, "Avg buy price": 8.25, "Last close (CAD)": 8.59, "Market value (CAD)": 17.18, "Change vs avg buy": 0.0412 }],
