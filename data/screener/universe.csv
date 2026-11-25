@@ -1,0 +1,3113 @@
+ticker,name
+IGBT.UN,2028 InvGrd Bnd F Un
+BTCQ,3iQ Bitcoin ETF Un
+BTCQ.U,3iQ Bitcoin USF
+ETHQ,3iQ Ether Staking Un
+ETHQ.U,3iQ Ether Staking US
+SOLQ,3iQ Solana Stakg ETF
+SOLQ.U,3iQ Sola Stak ETF US
+XRPQ,3iQ XRP ETF
+XRPQ.U,3iQ XRP ETF USF
+MMMM,3M CDR Hgd
+VNP,5N Plus Inc.
+AW,A&W Food Serv Canada
+ABXX,Abaxx Technologies I
+ABT,AbbottLab CDR Hgd
+ABBV,AbbVie CDR CAN Hgd
+AAB,Aberdeen Int'l. J
+ABRA,AbraSilver Resrce Co
+FAP,abrdn Asia-PacifcVCC
+ADN,Acadian Timber Corp.
+HDGE,Accel Absol Ret Fnd
+HDGE.U,Accel AbsolRet FndUS
+ARB,Accelerate ArbitrgUn
+ATSX,AccelerateCA LSEQ FN
+INCM,Accelera DivrsCre IC
+INCM.B,Accele Div CreInc HD
+INCM.U,Acceler DivrsCreIcUS
+ONEC,Accelerate1ChoiceFnd
+ACD,Accord Financial
+ACD.DB,Accord Fin Crp Db 7
+ARA,Aclara Res Inc. J
+ACX,ACT Energy Tech Ltd.
+ADCO,Adcore Inc. J
+ADEN,ADENTRA Inc.
+DRX,ADF Group Inc. SV
+ADBE,Adobe CDR CAN Hgd
+ACT,Aduro Clean Tech
+AMD,AMD CDR CAD Hedged
+AAV,Advantage Energy Ltd
+AAV.DB,Adv Engy5.0 USub Db
+ARE,Aecon Group Inc.
+AEG,Aegis Brands Inc.
+AETR,Aetherion Tech Inc
+AFN,Ag Growth Int'l Inc.
+AFN.DB.H,AG GrowthIntlDec26Db
+AFN.DB.I,Ag Growth Intl 5% DB
+AFN.DB.J,Ag Growth Intl 5.2Db
+AFN.DB.K,Ag Growth Intl 7.5DB
+AMGR,AGF Amrcn Grwth Fd E
+AENP,AGF Enh US Inc Plus
+AGSL,AGF Glb Select Fund
+AGF.B,AGF Management B NV
+QBTL,AGF US Anti-BetaCAHg
+AEM,Agnico Eagle Mines
+AEM.CV,Agnic Egl Mines CVR
+AGTF,AGT Food&Ingr Inc
+AIM,Aimia Inc.
+AIM.PR.A,Aimia Inc. Ser 1 Pr
+AIM.PR.C,Aimia Inc. Ser 3 Pr
+AIM.PR.D,Aimia Inc. Ser 4 Pr
+AC,Air Canada Vote & VV
+ABNB,Airbnb CDR CAN Hgd
+BOS,Airboss of America J
+AKT,Akita Drilling
+AGI,Alamos Gold Inc. J
+AD.DB.A,Alaris EqPart 6.25Db
+AD.DB.B,Alaris Eq PIT 6.5 Db
+AD.DB.C,Alaris Eq Prt In T 6
+AD.UN,Alaris Eq Part Tr Un
+ALC,Algoma Central Corp
+ALC.DB.B,Algoma Cnt Crp 6.2DB
+ASTL,Algoma Steel Grp Inc
+AQN,Algonquin Pwr & Util
+AQN.PR.A,Algonquin Pwr A Pr
+AQN.PR.D,Algonquin Pwr D Pr
+ATD,Alimentation Couche
+ALYA,Alithya Group J A SV
+ALK,Alkane Resources Ltd
+COIL,All CDN Oil& Gas ETF
+ALZ,Allianz CDR CAD Hed
+AAUC,Allied Gold Corp
+AAUC.DB.U,Allied Gld Crp Db US
+AP.UN,Allied Prop. REIT Un
+GOOG,Alphabet CDR CAD HD
+ALA,AltaGas Ltd.
+ALA.PR.G,AltaGas Ltd Sr G Pr
+ALS,Altius Minerals Corp
+AIF,Altus Group Limited
+AMAP,Amapa Mineral Hldgs
+AMZN,Amazon.comCDR CAD HD
+AXP,American Ex CDR Hgd
+HOT.DB.V,American Htl 6%Db US
+HOT.U,American Hotl Un USF
+HOT.UN,American Hotl LP Un
+USA,Americas Gold Slvr J
+ARG,Amerigo Resources J
+AMGN,Amgen CDR CAN Hgd
+APH,Amphnl CDR CAD Hdg
+ANRG,Anaergia Inc.
+APM,Andean Prec Meta Cor
+ANTH,Anthropic CDR CD HGD
+APTX,Apotex Health Corp
+AAPL,Apple CDR CAD HD
+AMAT,ApplMatl CDR Hgd
+APPS,AppLovin CDR CAD Hgd
+ARIS,Aris Mng Corp.
+ANET,Arista CDR CAN Hgd
+ATZ,Aritzia Inc. SV
+AMC,Arizona Mtls Corp. J
+ADIV,Arrow EC EqAdvntgAlt
+RATE,Arrow EC IncmAdvanUn
+ACAA,Arrow Lng/Sh Alt ETF
+ARN,Asarian Energy Ltd
+ASML,ASML CDR CAD Hedged
+ACO.X,ATCO Ltd. Cl I NV
+ATX,Atex Resources Inc
+ATH,Athabasca Oil Corp
+ATRL,AtkinsRealis GrpInc
+AI,Atrium Mtg Invest
+AI.DB.F,Atrium Mtg Inv 5% Db
+AI.DB.G,Atrium Mtg 5.1% Deb
+ATS,ATS Corporation
+ACB,Aurora Cannabis J
+ACQ,AutoCanada Inc.
+APR.UN,Automotive Ppty Un
+AZO,AutoZone CDR Hgd
+XLY,Auxly Cannabis Grp J
+AVL,Avalon Advncd Mtrl J
+AVNT,Avant Brands Inc. J
+CAGE,Avant CIBC All Eq AA
+CAKE,Avant CIBC Blnc AA
+CACE,Avantis CIBC CAND EQ
+CAEM,Avantis CIBC EM Eq E
+CASV,Avants CIBC Glb Sm C
+CAGR,Avant CIBC Grwth AA
+CADE,Avants CIBC Int Eq E
+CAUS,Avantis CIBC ACap Eq
+CALV,Avantis US LrgCap Vl
+CAUV,Avantis US SmlCap Vl
+CAGX,Avant CIBC Wrld Eq E
+AVCN,Avicanna Inc. J
+ASM,Avino Silver & Gld J
+AYA,Aya Gold & Silvr J
+BTO,B2Gold Corp.
+BDGI,Badger Infras Solutn
+BLDP,Ballard Power Sys
+BOFA,BofA CDR CAN Hgd
+BMO,Bank of Montreal
+BMO.PR.E,Bk of Mon Pr Ser 44
+BNS,Bank of Nova Scotia
+ABX,Barrick Mining Corpo
+BLCO,Bausch + Lomb Corp.
+BHC,Bausch Health Co
+BYL,Baylin Tech Inc. J
+BTE,Baytex Energy Corp.
+BCE,BCE Inc.
+BCE.PR.A,BCE Inc. Pr Ser AA
+BCE.PR.B,BCE Inc. Pr Ser AB
+BCE.PR.C,BCE Inc. Pr Ser AC
+BCE.PR.D,BCE Inc. Pr Ser AD
+BCE.PR.E,BCE Inc. Pr Ser AE
+BCE.PR.F,BCE Inc. Pr Ser AF
+BCE.PR.G,BCE Inc. Pr Ser AG
+BCE.PR.H,BCE Inc. Pr Ser AH
+BCE.PR.I,BCE Inc. Pr Ser AI
+BCE.PR.K,BCE Inc. Pr Ser AK
+BCE.PR.L,BCE Inc. Pr Ser AL
+BCE.PR.M,BCE Inc. Pr Ser AM
+BCE.PR.Q,BCE Inc. Pr Ser AQ
+BCE.PR.R,BCE Inc. Pr Ser R
+BCE.PR.S,BCE Inc. Pr Ser S
+BCE.PR.T,BCE Inc. Pr Ser T
+BCE.PR.Y,BCE Inc. Pr Series Y
+BCE.PR.Z,BCE Inc. Pr Series Z
+BEK.B,Becker Milk Cl B NV
+BSX,Belo Sun Mining J
+BNG,Bengal Energy Ltd. J
+BRK,Berk Hath CDR CAD HD
+SQQQ,Bp-3xNq100 dlba ETF
+SRSL,BtaPro 3x R Lvrg A E
+SSPX,Bp-3xSP500 dlba ETF
+SCND,BetaPro-3xSPTSX60 Be
+TQQQ,Bp3x Nq100 dlba ETF
+TRSL,Bp3x R2000 Dlvba ETF
+TSPX,Bp3x SP500 dlba ETF
+TCND,BetaPro 3xSPTSX60 Bu
+GDXD,BetaProCdnGldMn-2xBr
+GDXU,BetaProCdnGldMnr2xBl
+HOD,BetaPro CrdOilInvrBr
+HOU,BetaPro CrdOilLevBul
+GLDD,BetaPro GldBul-2x Br
+GLDU,BetaPro GldBul 2x Bl
+BITI,BetaPro InversBitcn
+BITI.U,BetaPro InvrsBitcnUS
+QQD,BetaProNSDQ100 -2xBr
+QQD.U,BtaProNSDQ100-2xBrUS
+QQU,BetaProNASDQ100 2xBl
+QQI,BtaPro Nsdq100 D I E
+HND,BetaProNatGas Lev Br
+HNU,BetaPro NatGasLevBul
+SPXD,BetaPro S&P500 -2xBr
+SPXU,BetaPro S&P500 2x Bl
+SPXI,BetaProSP500DlyInvrs
+VOLX,BetaProSP500ST Futre
+CNDD,BetaProS&PTSX60-2xBr
+CNDU,BetaProS&PTSX60 2xBl
+CNDI,BetaPro60 DailyInvrs
+NRGD,BetaProS&PTSXEngy-2x
+NRGU,BetaProS&PTSX Engy2x
+CFOD,BetaProSPTSX Fin -2x
+CFOU,BetaProSPTSXFin 2xBl
+SLVD,BetaPro Slvr -2DlyBr
+SLVU,BetaPro Slvr 2xDlyBl
+BOIL,Beyond Oil Ltd
+BNK,Big BancSplt Corp A
+BNK.PR.A,Big BancSplt Corp Pr
+PRM,Big Pharma Split A
+PRM.PR.A,Big Pharma Split Pr
+BR,Big Rock Brewery Inc
+BIR,Birchcliff Energy
+BCHT,Birchtech Corp
+BDT,Bird Construction
+QBTC,Bitcoin Fund A CAD
+QBTC.U,Bitcoin Fund Cl A US
+BDI,Black Diamond Group
+BKI,Black Iron Inc. J
+BB,BlackBerry Limited
+BLK,BlackRock CDR Hgd
+BRC,Blackrock Silver Crp
+BX,BlackStone CDR Hgd
+HBLK,Blockchain Tech A Un
+BE,BloomEnrg CDR CAD HD
+BGAU,Blossom Gold Inc
+BAMI,Blue Ant Media Corp
+RBN.UN,Blue Ribbon Incm Un
+ZAG,BMO AggregateBnd ETF
+ZEQT,BMO All-Eqty ETF
+ZEQT.T,BMO All-Equity ETF
+ZABS,BMO Asset Bck S Cd U
+ZABS.F,BMO Asset Bck S Hg U
+ZABS.U,BMO Asset Bck USD U
+ZESG,BMO BalanceESG ETF
+ZBAL,BMO Balanced ETF
+ZBAL.T,BMO Balanced ETF
+ZBI,BMO Cdn Bnk Incm Inx
+ZDV,BMO Cdn Dividend ETF
+ZWC,BMO Cdn HiDivCovCall
+ZWC.T,BMO Cdn Hi Div Cov C
+ZMBS,BMO CdnMBS Idx ETF
+ZCLN,BMO Clean Engy ETF
+ZCON,BMO Conservative ETF
+ZCRB,BMO Core Bond Fund E
+ZCB,BMO Corp Bond IdxETF
+ZCDB,BMO CrpDiscountBdETF
+ZWB,BMO Coverd CallCdnBk
+ZWB.T,BMO Cov Cl CDN Bnk E
+ZWB.U,BMO CoverCallCdnBkUS
+ZWA,BMO DJ IndustAvg ETF
+ZWA.T,BMO Cvd C DJ I A H C
+ZWEN,BMO CovrdCallEngyETF
+ZWEN.T,BMO Cov Call Enrgy E
+ZWHC,BMO CovrdCallHthETF
+ZWHC.T,BMO Cov Cl Hlth Cr E
+ZWGD,BMO Cov Call SpGoBul
+ZWGD.T,BMO Cov c Sprd GD B
+ZWT,BMO CoverCallTechETF
+ZWT.T,BMO Cov Call Tech E
+ZWK,BMO CoverCalUSBkETF
+ZWK.T,BMO Cov Call US Bnks
+ZWU,BMO CoverdUtilityETF
+ZWU.T,BMO Cov Call Util E
+ZCDX,BMO Credit Str Opp E
+ZCDX.U,BMO Credit St Op E U
+ZDB,BMO Discount BndETF
+ZDJ,BMO DJ IndAv Heg ETF
+ZEMB,BMO Emerging Mkt B F
+ZEF,BMO Em Mkt Bond HED
+ZEB,BMO Eql Wgt Bank ETF
+ZMT,BMO EqWgtGlbMtlHegCA
+ZGD,BMO EqWght Glb Gold
+ZIN,BMO EqWgtIndustlETF
+ZEO,BMO Eq WghtOil & Gas
+ZRE,BMO Eql Wgt REITsETF
+ZUB,BMO Eq Wgt US Banks
+ZBK,BMO EqlWght US BkETF
+ZUH,BMO EqWgt US Health
+ZHU,BMO EqWgtUS HlthCare
+ZUT,BMO Eql Wgt Util ETF
+ESGB,BMO ESG CorpBnd ETF
+ESGF,BMO ESG US Corp Bond
+ZWP,BMO EU HiDiv CovCall
+ZWP.T,BMO Euro H D Cov C E
+ZWE,BMO EU DivCovCal C-H
+ZWE.T,BMO EU Hi Div CC H C
+ZESC,BMO Euro Sec Cr CAD
+ZESC.F,BMO Euro Sec Cr Hgd
+ZFIX,BMO Fixed Income ETF
+ZFH,BMO Fltg RtHi Yld Un
+COMM,BMO Global Commun Un
+DISC,BMO Glbl ConsmrDiscr
+STPL,BMO Glbl Consmr Stpl
+ZWQT,BMO Glbl Enhanc Incm
+ZWG,BMO Glbl HiDivCovCal
+ZWG.T,BMO Glbl Hi Div CC E
+ZGI,BMO Gbl Infrastr ETF
+ZGSC,BMO Glb Sec Cr Hg Cd
+ZGDB,BMO Glb ShrtT D B Hg
+ZGLD,BMO Gld Bull ETF
+ZGLD.U,BMO Gld Bull ETF USD
+ZGLH,BMO Gld Bull Fnd ETF
+ZGB,BMO Gov't Bond Un
+ZGRO,BMO Growth ETF Un
+ZGRO.T,BMO Growth ETF Un
+ZQB,BMO HiQual CrpBndETF
+ZHY,BMO HY US CrpHdg ETF
+ZJK,BMO HiYldUS CorpBnd
+ZJK.U,BMO HiYld CorpBdETF
+ZINC,BMO Income ETF
+ZDI,BMO Int'l Div ETF Un
+ZDH,BMO Intl DivHg-CA Un
+ZJPN,BMO Japan Indx ETFUn
+ZJPN.F,BMO Japan Index ETF
+ZJG,BMO Junior Gold ETF
+ZPR,BMO Ladd Pr Indx ETF
+ZPR.U,BMO Ladd Pr Idx ETF
+ZLC,BMO Long Crp Bnd ETF
+ZFL,BMO Lng Federal Bond
+ZPL,BMO LngProvBndId ETF
+ZLSC,BMO Lng Short Cdn Eq
+ZLSU,BMO Long Short US Eq
+ZLB,BMO Volatlty ETF Un
+ZLE,BMO LwVoltyEq ETF
+ZLI,BMO LowVolIntl Eq Un
+ZLD,BMO LwVol IntlEq H-C
+ZLU,BMO LwVltyUSEq ETF
+ZLU.U,BMO LwVltyUSEq ETF
+ZLH,BMO LowVol US Eq H-C
+ZCM,BMO Mid Crp Bond ETF
+ZFM,BMO Mid Fed Bnd Indx
+ZMP,BMO MidProvBnd ETF
+ZMU,BMO MidUS IG HegBnd
+ZIC,BMO MidUSCrpBnd ETF
+ZIC.U,BMO MidUS CrBnd ETF
+ZMMK,BMO MoneyMkt Fnd Un
+ZMI,BMO Monthly Incm Un
+ZMI.U,BMO Monthly Inc ETFU
+ZGQ,BMO MSCI AllCntryWrl
+ZALL,BMO MSCI All Cnt WrI
+ZDIV,BMO MSCI CAN IMI HDY
+ESGA,BMO MSCI CA SelEqETF
+ZVC,BMO MSCI CdaVal ETF
+ZCH,BMO MSCI China SelEq
+ZDM,BMO MSCI EAFE HegCAD
+ZIQ,Bmo Msc Eafe Hqi ETF
+ZEA,BMO MSCI EAFE Idx Un
+ESGE,BMO MSCI EAFE SelEq
+ZESM,BMO MS EA Sm M Cp I
+ZEM,BMO MSCI EmrgMkts Un
+ZEQ,BMO MSCI EU HiQltyUn
+ESGG,BMO MSCI Glb SEq ETF
+ZID,BMO MSCI India SelEq
+ZLAT,BMO MSCI L A GDP W I
+ZEQL,BMO MSCU US Eq W I E
+ZEQL.F,BMO MSCU US EW InE F
+ZEQL.U,BMO MSCU US EW IE US
+ZUQ,BMO MSCI US HiQltyUn
+ZUQ.F,BMO MSCIUSHiQltyETF
+ZUQ.U,BMO MSCI USHiQtyETF
+ESGY,BMO MSCI US SeEq ETF
+ESGY.F,BMO MSCIUS SelEqETF
+ZVU,BMO MSCI USAValue Un
+ZQQ,BMO Nasdaq EqHed ETF
+ZNQ,BMO Nasdaq100 Eq UN
+ZNQ.U,BMO Nasdaq100 EqETF
+ZPAY,BMO PremiumYield ETF
+ZPAY.F,BMO PremiumYid ETF
+ZPAY.U,BMO PremiumYld ETF
+ZRR,BMO Rl Return Bond
+ZUE,BMO S&P 500 Hedg-CAD
+ZSP,BMO S&P500 IdxETF Un
+ZSP.U,BMO S&P500 Idx ETF
+ZMID,BMO S&P US MdCap ETF
+ZMID.F,BMO S&P US MidCapHeg
+ZMID.U,BMO S&P US MidCpETFU
+ZSML,BMO S&P US SmlCapETF
+ZSML.F,BMO S&P US SmlCpHeg
+ZSML.U,BMO S&P US SmlCpETFU
+ZIU,BMO S&P/TSX 60 Indx
+ZCN,BMO S&P/TSX CompIndx
+ZCS,BMO Shrt Crp Bnd ETF
+ZCS.L,BMO Sh Corp BndETFAc
+ZFS,BMO Shrt Fed Bnd ETF
+ZFS.L,BMO ShFedrlBndETF Ac
+ZPS,BMO Shrt Prv Bnd ETF
+ZPS.L,BMO ShProv BndETF Ac
+ZSB,BMO ShortTrm Bond Un
+ZSDB,BMO ST DiscBnd ETF
+ZSU,BMO Sh-Trm US CrpBnd
+ZTIP,BMO ST US TIPS ETF
+ZTIP.F,BMO ST US TIPS Hedg
+ZTIP.U,BMO ST US TIPS US Un
+ZFC,BMO SIA Cdn Eqty Fnd
+ZFN,BMO SIA NA Eq ETF Un
+ZXLC,BMO SPDR Com SSS ETF
+ZXLC.F,BMO SPDRCom SSSETFHg
+ZXLY,BMO SPDR CDsSSI ETF
+ZXLY.F,BMO SPDR CDsSSIETFHg
+ZXLP,BMO SPDR ConSSSI ETF
+ZXLP.F,BMO SPDR CnSSIETF Hg
+ZXLE,BMO SPDR EnSeSeI ETF
+ZXLE.F,BMO SPDR EnSSeETF Hg
+ZXLF,BMO SPDR FiSeSeI ETF
+ZXLF.F,BMO SPDR FiSSeETF Hg
+ZXLV,BMO SPDR HlCSSI ETF
+ZXLV.F,BMO SPDR HlCSI ETFHg
+ZXLI,BMO SPDR InSeSeI ETF
+ZXLI.F,BMO SPDR InSSe ETFHg
+ZXLB,BMO SPDR MaSelSe ETF
+ZXLB.F,BMO SPDR MaSSe ETFHg
+ZXLR,BMO SPDR ReSSI ETF
+ZXLR.F,BMO SPDR ReSSI ETFHg
+ZXLK,BMO SPDR TechSSI ETF
+ZXLK.F,BMOSPDR TechSI ETFHg
+ZXLU,BMO SPDPR UtSSI ETF
+ZXLU.F,BMO SPDPR UtSI ETFHg
+ZACU,BMO Str A Inc USLC C
+ZACU.F,BMO Str A Inc USLC H
+ZACU.U,BMO Str A Inc USLC U
+ZZZD,BMO Tactical Div Un
+ZXCO,BMO Tgt 2027 CCB ETF
+ZXCP,BMO Tgt 2028 CCB ETF
+ZXCQ,BMO Tgt 2029 CCB ETF
+ZACE,BMO U.S. All Cap Eq
+ZST,BMO Ultra ShrtBnd Un
+ZST.L,BMO UltraSh BndETFAc
+ZUS.U,BMO UltraST BndETFU
+ZUS.V,BMO UlST BndUSETF UA
+ZUAG,BMO US Aggre BondETF
+ZUAG.F,BMO US AgreBndETF Hg
+ZUAG.U,BMO US Aggre BndETFU
+ZDY,BMO USDiv ETF Un
+ZDY.U,BMO USDiv ETF Un
+ZUD,BMO USDiv Hdg-Cad Un
+ZWH,BMO US HighDivCov Un
+ZWH.T,BMO US Hi Div CovC E
+ZWH.U,BMO US HighDivCov UN
+ZWS,BMO US HiDivCovHg-CA
+ZWS.T,BMO US Hi Div CC H C
+ZHP,BMO US PrefShr Hg-CA
+ZUP,BMO US PrefShr ETFUn
+ZUP.U,BMO US PrefShr ETF
+ZPW,BMO US Put Write ETF
+ZPW.U,BMO US Put WriteETF
+ZPH,BMO US PutWrte Hg-CA
+ZUCM,BMO USD Cash Mgmt Un
+ZUCM.U,BMO USD Cash MmtETF
+GBT,BMTC Group Inc.
+BMW,BMW CDR CAD Hedged
+BEI.UN,Boardwalk REIT Un
+BA,Boeing CDR CAN Hgd
+BBD.A,Bombardier Cl A MV
+BBD.B,Bombardier Cl B SV
+BBD.PR.B,Bombardier Ser 2 Pr
+BBD.PR.C,Bombardier 6.25% Pr
+BBD.PR.D,Bombardier Ser 3 Pr
+BNE,Bonterra Energy Corp
+BKNG,Booking CDR Hgd
+BPF.UN,Boston Pizza Fnd Un
+BYD,Boyd Group Services
+BRAG,Bragg Gaming Grp Inc
+BRY,Bri-Chem Corp.
+BCT,BriaCell TherapeutcJ
+BRE,Bridgemarq Rl Est RV
+BGC,BristolGate CdnEtyUn
+BGU,Bristol GateUS Eq Un
+BGU.U,Bristol GateUSEq USD
+BMY,Bristol Myers Sq CDR
+AVGO,Broadcom CDR Hgd
+KNGC,Bromp CdCflw Kng ETF
+ESP,Brompton Engy Splt A
+ESP.PR.A,Brompton EngySplt Pr
+BMAX,Bromptn EnhMultAsset
+EDGF,Brompton EU DivGroCA
+PAYB,Brompton Fincl HiPay
+BEPR,BromptnFlhrtyCrmPrUn
+BEPR.U,BromptnFlhrtyCrmPrUS
+BPRF,Brompton CrumInvPrCA
+BPRF.U,Brompton CrumInvPrUS
+KNGG,Brmptn Gbl CFl Kng E
+BDIV,BromptonGlblDivGroCA
+PAYG,BrmptnGbl Eq HiPay E
+HIG,Brompton GlbHlthcrCA
+HIG.U,Brompton GlbHlthcrUS
+BGIE,Brompton GloInfr ETF
+KNGX,BrmpInt CshFl kngETF
+LCS,Brompton Life Splt A
+LCS.PR.A,Brompton LifeSplt Pr
+BFIN,BromptonNA FinDivCAD
+BFIN.U,BromptonNA FinDiv US
+BLOV,BromptonNA LwVolDvCA
+SBC,Brompton Splt Banc A
+SBC.PR.A,Brompton Splt Bnc Pr
+CLSA,Brmp SpltCrp E E ETF
+SPLT,Brompton SpltPref Un
+SPLT.U,Bromptn SpltCpPR USF
+TLF,Brompton TechLdr CAD
+TLF.U,Brompton TechLdr USD
+PAYT,Brompton Tech HiPay
+KNGU,Bromp USCflw Kng ETF
+PAYU,Brompton US Eq HP E
+PAYI,Brompton Ut Inf HP E
+BAAA,Brompton WeS AAA CLO
+BAAA.U,Bromp WeS AAA CLO US
+BBBB,Br Wl Sq Inv Grd C E
+BBBB.U,Br Wl Sq In Gd C E U
+BAM,Brookfld AstMgt LV A
+BBUC,Brookfld Bus Corp A
+BN,Brookfield Corp A LV
+BN.PF.A,Brookfld Corp. Pr 32
+BN.PF.B,Brookfld Corp. Pr 34
+BN.PF.C,Brookfld Corp. Pr 36
+BN.PF.D,Brookfld Corp. Pr 37
+BN.PF.E,Brookfld Corp. Pr 38
+BN.PF.F,Brookfld Corp Pr 40
+BN.PF.G,Brookfld Corp. Pr 42
+BN.PF.I,Brookfld Corp. Pr 46
+BN.PF.J,Brookfld Corp. Pr 48
+BN.PF.M,Brookfield CoA PR54
+BN.PF.N,Brookfield Crp Sr 56
+BN.PR.B,Brookfld Corp Pr 2
+BN.PR.C,Brookfld Corp Pr 4
+BN.PR.K,Brookfld Corp Pr 13
+BN.PR.M,Brookfld Corp Pr 17
+BN.PR.N,Brookfld Corp Pr 18
+BN.PR.R,Brookfld Corp. Pr 24
+BN.PR.T,Brookfld Corp. Pr 26
+BN.PR.X,Brookfld Corp. Pr 28
+BN.PR.Z,Brookfld Corp. Pr 30
+BGI.UN,Brkfld GlbInfras Sec
+BILP.PR.A,Brookfld infra LP
+BIP,Brookfield Infa Par
+BIP.PR.E,Brookfield InfrasPr9
+BIP.PR.F,Brookfield InfraPr11
+BIPF.PR.E,Brookfield InfrasPr9
+BIPF.PR.F,Brookfield InfraPr11
+BPO.PR.A,Brookfld Office PrAA
+BPO.PR.E,Brookfld Office PrEE
+BPO.PR.G,Brookfld Office PrGG
+BPO.PR.I,Brookfld Office PrII
+BPO.PR.N,Brookfld Office Pr N
+BPO.PR.P,Brookfld Office Pr P
+BPO.PR.R,Brookfld Office Pr R
+BPO.PR.T,Brookfld Office Pr T
+BPO.PR.W,Brookfld Office Pr W
+BPO.PR.X,Brookfld Office Pr V
+BPO.PR.Y,Brookfld Office Pr Y
+BPYP.PR.A,Brookfld PptyPref Un
+BPS.PR.A,Brookfld Ppty Pr 2
+BPS.PR.B,Brookfld Ppty Pr 3
+BPS.PR.C,Brookfld Ppty Pr 4
+BPS.PR.U,Brookfld Pty Pr 1 US
+BEPC,Brookfld RenewA ExSV
+BEP.PR.M,Brookfield RenewPr13
+BEP.PR.R,Brookfield RenewPr18
+BEP.PR.S,Brookfld Renew P 19
+BEP.UN,Brookfld Renew LP Un
+BRF.PR.A,Brookfld Renew Pr 1
+BRF.PR.B,Brookfld Renew Pr 2
+BRF.PR.C,Brookfld Renew Pr 3
+BRF.PR.E,Brookfld Renew Pr 5
+BRF.PR.F,Brookfld Renew Pr 6
+BNT,Brookfld Wlth SolLtd
+DOO,BRP Inc. SV
+BSRT.UN,BSR REIT Invest Un
+BTB.DB.I,BTB ReEst I 7.25 Deb
+BTB.UN,BTB REIT Un
+BNKR,Bunker Hill SilvCorp
+BU,Burcon NutraSci J
+CADY,Cadillac Mines Corp
+CAE,CAE Inc.
+CWL,Caldwell Partners
+CFW,Calfrac Well Serv
+CGY,Calian Group Ltd.
+CCO,Cameco Corporation
+CF,Canaccord Genuity
+CF.PR.C,Canaccord Gen C Pr
+GOOS,Cda Goose Hldgs SV
+CPKR,Canada Packers Inc
+CAR.UN,Cdn Apartment Tr Un
+BK,Cdn Banc Corp Cl 'A'
+BK.PR.A,Cdn Banc Corp. Pr
+CGI,Canadian General Inv
+CM,Cdn Imperial Bank
+CM.PR.S,Cdn Imp Bk Ser 47 Pr
+NPS,Cdn LCap L SplCr ClA
+NPS.PR.A,Cdn LCap L SplCr Prf
+LFE,Cdn Life Co Split A
+LFE.PR.B,Cdn Life CoSplt Pr12
+CNR,Cdn Nat'l Railway
+CNQ,Canadian Natural Res
+CP,Cdn Pacific Kansas
+CTC,Canadian Tire Corp
+CTC.A,Canadian Tire A NV
+CU,Cdn Utilities A NV
+CU.PR.C,Cdn Util 2nd Pr Y
+CU.PR.D,Cdn Util 2nd Pr AA
+CU.PR.E,Cdn Util 2nd Pr BB
+CU.PR.F,Cdn Util 2nd Pr CC
+CU.PR.G,Cdn Util 2nd Pr DD
+CU.PR.H,Cdn Util 2nd Pr EE
+CU.PR.J,Cdn Util 2nd Pr HH
+CU.PR.K,Cdn Utilities A PrJJ
+CCM,Canagold Res Ltd. J
+CFP,Canfor Corporation
+ICE,Canlan Ice Sports
+LOVE,Cannara Biotech Inc
+EIT.PR.A,Canoe EIT Ser 1 Pr
+EIT.PR.B,Canoe EIT Ser 2 Pr
+EIT.UN,Canoe EIT Income Un
+WEED,Canopy Grwth Corp J
+CAPQ,CapGrp Gbl De Eq Sel
+CAPG,CapGr GlEqty Sel ETF
+CAPN,Cap Grp Intl Dev Eq
+CAPI,Cap Gr Int EqSel ETF
+CAPM,CapGr MS Inc Sel ETF
+CAPU,Captal Grp US Eq Sel
+CAPW,CapGr Wld Bd Sel ETF
+CPX,Capital Power Corp.
+CPX.PR.A,Capital Pwr Ser 1 Pr
+CPX.PR.C,Capital Pwr Ser 3 Pr
+CPX.PR.E,Capital Pwr Ser 5 Pr
+BIVC,Capstone BibEq Fund
+BIVU,CapstoneBibUS EqFund
+CS,Capstone Copper J
+CSE.PR.A,Capstone Infr Pr A
+CJ,Cardinal Energy
+CJ.DB,Cardinal 7.75 Deb
+CJ.DB.A,Cardinal 8.25 Db
+CJ.WT,Cardinal Energy Wts
+CRDL,Cardiol Therapeutc A
+CRRX,CareRx Corp. J
+CJT,Cargojet Inc. Com&VV
+CUP.U,Caribbean Ut Cl A US
+CAS,Cascades Inc.
+CATR,Caterpillar CDR Hgd
+CVVY,Cavvy Energy Ltd
+CCL.A,CCL Industries Cl A
+CCL.B,CCL Industries Cl B
+CLS,Celestica Inc
+CEMX,Cematrix Corporation
+CVE,Cenovus Energy Inc.
+CG,Centerra Gold Inc.
+CAML,Central Asia Metals
+CNT,Century Glbl Cmdty J
+CBRS,Cerebras Systems CDR
+CEU,CES Energy Solutn
+GIB.A,CGI Inc. Cl A SV
+CIA,Champion Iron Ord J
+SCHW,Chrle Schwab CDR Hgd
+CWEB,Charlotte's Web Hldg
+CSH.UN,Chartwell Retire Un
+CHE.DB.I,Chemtrade LgstIc 7Db
+CHE.UN,Chemtrade Logistc Un
+CVX,Chevron CDR Hgd
+CGG,China Gld Intl Res J
+CMGS,Chipotle CDR Hgd
+CHP.UN,Choice Ppty REIT Un
+CHR,Chorus Aviation V&VV
+CHR.DB.C,Chorus Aviatn5.75DbC
+BXF,CI 1-5YrLddrGvtBndUn
+PSB,CI 1-5 Ld IvCorpBndU
+CMDO,CI AltDiversOpportC$
+CMDO.U,CI AltDiversOpportUS
+CRED,CI AltInvest CredtC$
+CRED.U,CI AltInvest CredtUS
+CNAO,CI Alt NA OpporC$ Un
+CNAO.U,CI Alt NA Oppor HgUS
+CCOM,CI Auspice Cmdty Heg
+CBAL,CI Bal Asset ETF Un
+CBGR,CI Bal GrowAsst Aloc
+CBIN,CI Bal IncmAst Alloc
+CBAP,CI BalAssetAlloc ETF
+DGRC,CICA QualDvGr ETFNH
+CAGG,CI CA Ag Bnd Idx Etf
+CIC,CI CdnBks CovCalIncm
+CXF,CI Cdn Conv Bond Un
+PDC,CI Cdn Div Idx Un
+PFL,CI Cdn Gov FlRate Id
+RIT,CI Canadian REIT Un
+CAGS,CI CA STerm Bnd NonH
+CCNV,CI Conserv AsstAlloc
+CBUG,CI Digital Sec Un
+CDLB,CI DbleLnTotUS$BndC$
+CDLB.B,CI DbleLnUS$BondC$Uh
+CDLB.U,CI DbleLnTotUS$BndUS
+CIEM,CI EmergMktAlphCA UH
+CIEM.U,CI EmergMktAlphUS HG
+EMV.B,CI EmgMktDiv ETF NHg
+NXF,CI EnergyGiantCovHeg
+NXF.B,CI EngyGiant UnhegUn
+NXF.U,CI EngyGiantCovHG US
+FGO,CI EnhancGovtBnd Heg
+FGO.U,CI EnhancGvtBndHG US
+FSB,CI Enhnc ShrtDur Bnd
+FSB.U,CI EnhancShrtBnd US
+CEQT,CI Eqty Asset Alloc
+CEQP,CI EqyAssetAlloc ETF
+QQCE,CI ESG NAS100IDXCA
+QQCE.F,CI ESG NAS100IdCAHG
+EHE,CIEur HGEq IDXETF Hg
+EHE.B,CIEur HEq IDXETF NHg
+CFRT,CI Fltg Rate Incm C$
+CCAF,CI Forge Fr ConAlt C
+CCAF.U,CI Forge Fr ConAlt U
+CLSF,CI Frg Fr LgShrAlt C
+CLSF.U,CI Frg Fr LgShrAlt U
+BTCX,CI Galaxy BTC ETF
+BTCX.B,CI GalBitcnCA ETF UH
+BTCX.U,CI GalBitcnETF UH US
+CBCX,CI Galaxy Blkchn Un
+CCCX,CI Gl C MltC ETF Ch
+CCCX.B,CI Gl C MltC ETF CUh
+CCCX.U,CI Gl C MltC ETF US$
+ETHX,CI Galaxy Eth ETF
+ETHX.B,CI GalxyEthermCA UHG
+ETHX.U,CI GalxyEthermUS UH
+CMCX,CI Galxy MltCryNa HD
+CMCX.B,CI Galxy MltCryNa CA
+CMCX.U,CI GalxyMltCryNav US
+SOLX,CI Galaxy Sol ETF Hd
+SOLX.B,CI Galaxy Sol ETF CA
+SOLX.U,CI Galaxy Sol ETF US
+CINV,CI Glb AlphaInnov CA
+CINV.U,CI Glb AlphaInnov US
+CIAI,CI ArtInt ETF C$SRUN
+CGAA,CI GlbAsstAlloc C$Sr
+ONEQ,CI Glbl CorPluEq ETF
+CGDI,CI Glbl Div PP ETF
+FSF,CI Glbl Fin Sectr Un
+CGRB,CI Glbl GreenBond C$
+CGRB.U,CI GlbGreenBnd HgUS$
+CINF,CI GlbInfrasPrivPl$C
+CGIN,CI Glbl InvestGrd CA
+CGIN.U,CI GlbInvestGrdHg US
+LONG,CI GlbLongevtyEconC$
+CGDV,CI GlbMinDwnVoltyHEG
+CGDV.B,CI GlbMinDwnVolty UH
+CGQD.B,CIGl QlDiv GrIdx ETF
+CGRA,CI GlbRlAsetPrivPlC$
+CGRE,CI Glb REIT PrivPlC$
+CGRN,CI Glb SustInfras C$
+CGRN.U,CI SustInfras HgUS$
+CUBD,CI Gl Uncon Bond Fnd
+VALT,CI Gold Bullion ETF
+VALT.B,CI GoldBull ETF Unhg
+VALT.U,CI GoldBull ETF US U
+CGXF,CI Gld+GiantCovr Heg
+CGXF.U,CI Gold+GiantCovr US
+CGRO,CI Grwth AssetAlloc
+FHI,CI HealthCareCovr HG
+FHI.B,CI HlthCr GiaCovUnHg
+FHI.U,CI HlthCareCovrHegUS
+CSAV,CI HiInterestSvgs Un
+CGHY,CI HiYldBondPriv C$
+CGHY.U,CI HiYldBondPrvHegUS
+CHNA.B,CI ICBCUBS SPCh500NH
+IQD,CI IntlQ DivGr ETFHG
+IQD.B,CI IntQ DivGr ETFNHG
+IIMF,CI InvescoIntlDevMF
+IIMF.F,CI InvescoIntlDevHg
+QQC,CI Invc NASDAQ100 C$
+QQC.F,CI Invc NASDQ100 Heg
+QQJR,CI Invc NASDQNext100
+QQJR.F,CI InvcoNASDQNxt100H
+PZW,CI Invc RAFI Gl SM E
+PZW.F,CI Invc RAFI SM CAHD
+PZW.U,CI Invc RAFI SmM USF
+PXU.F,CI InvcoRAFI US CaHg
+PXS,CI InvcoRAFI USI2 CA
+PXS.U,CI InvcoRAFI ETF2 US
+IUMF,CI InvescoRus1000MF
+IUMF.F,CI InvcoRus1000MFHg
+EQL,CI Invsc SP500 EqWgt
+EQL.F,CI Invsc SP500EqCAH
+EQL.U,CI Invsc SP500Eq USF
+ULV.C,CI Invco500LowVol CA
+ULV.F,CI Invco500LowVolCAH
+ULV.U,CI Invco500LowVol US
+FIG,CI Invest GrdBnd Heg
+FIG.U,CI InvestGrdBndHG US
+JAPN,CI JpnEq IDX ETF Heg
+JAPN.B,CI JpnEqIdx ETF NnHg
+CMAR,CI Marret RetBondC$
+CMAR.U,CI MarretAltRetBndUS
+CMEY,CI MarretAltEnhYldC$
+CMEY.U,CI MarretEnhanYld U$
+CMNY,CI Money Mkt ETF Un
+WXM,CI MornstrCA MomntUn
+FXM,CI Mornstr CA Val Un
+IGET,CI MS Glb EngyTr Idx
+IGET.F,CI MS Enrgy Tr Ix Hg
+INAI,CI Mrn Glb NxtGenAI
+INAI.F,CI Mrn Glb NxGenAIHg
+ZXM,CI MornstrIntlMomnHG
+ZXM.B,CI MornstIntlMomUnhg
+VXM,CI Mornstr IntlValHG
+VXM.B,CI Morn IntlVal Unhg
+VXM.U,CI Mornstr IntValUHG
+QXM,CI Mornstar NatBk QC
+CMAG,CI MunroAltGlbGrowC$
+CMAG.U,CI MunroAlGlbGroUSHg
+CLML,CI Mnro Glb En Tr C$
+CLML.U,CI GlbClimateLdrHgUS
+CMGG,CI Munro GrowthEq C$
+CMGG.U,CI MunroGrwthEqUS Hg
+CMIG,CI Munro Int Gr Eq C
+CMIG.U,CI Munro Int Gr Eq U
+QQEQ,CI NASDQ100=WgtIdx
+QQEQ.F,CI NASDQ100= WgHeg
+ONEB,CI NA Core+ Bond ETF
+FPR,CI Preferred Shr Un
+PXC,CI RAFI Cdn Idx E
+ESG,CI S&P500ESG Un
+ESG.F,CI S&P500ESG Heg
+IIAE,CI S&P IntlDevDv Ar
+IIAE.F,CI S&PIntDvDv Ar Hg
+IICE,CI S&P IntlDvESG IxC
+IICE.F,CI S&P IntDvESGCHg
+IUAE,CI S&P USvArist ESG
+IUAE.F,CI S&P USvArisESG H
+EQLT,CI S&P TSX60 EW Idx
+ICAE,CI S&P TSXCdnDvESG
+ESGC,CI S&PTSXComESG
+TLV,CI SP Comp LwVltltyU
+CTMA,CI Trg 2028 Inv Grd
+CTMB,CI Trg 2029 Inv Grd
+CTMC,CI Trg 2030 Inv Grd
+TXF,CI TechGntCovrCallHG
+TXF.B,CI TechGiaCovCalUnHg
+TXF.U,CI TechGiantCvClHgUS
+FLI,CI US&CA LifecoCv HG
+CCBD,CIUS AggBnd CvC ETF
+CMOM,CI US EnhncMomntm Hg
+CMOM.B,CI US EnhncMomntm UH
+CVLU,CI US Enhanc Val Heg
+CVLU.B,CI US EnhancVal UnHg
+UMI,CI US MdDv Idx ETFHg
+UMI.B,CIUS MdDv Idx ETFNHg
+CUDV,CI US MinDwnsVoltyHG
+CUDV.B,CI US MinDwnsVoltyUH
+UMNY.U,CI US Money Mkt US
+CUIG,CI US Mipp C$ SrETF
+CUIG.U,CIUS Mipp US$ HSrETF
+DGR,CI USDiv GrIdx ETFH
+DGR.B,CI USDivGrIdx ETFNHG
+DGR.U,CI USQlyDiv GrIdxETF
+CSMD,CI US SmM CapEqPriPo
+IUFR.U,CI USTreasNt US
+CUTL,CI Util GianCall Heg
+CUTL.B,CI Util GianCal Unhg
+CACB,CIBC ActvInvCorpBond
+CFRN,CIBC ActvInvFltgBond
+CEQY,CIBC All Equity ETF
+CBLN,CIBC BalETF Poli ETF
+CGRW,CIBC Blncd Grw E Prt
+CCCB,CIBC Cdn Bnk CoC ETF
+CCBI,CIBC Cdn Bond ETF Un
+CALB,CIBC Cdn Gvt LT Bond
+CCDC,CIBC Cdn HighDvd ETF
+CSBI,CIBC Cdn ST Bond Idx
+CCON,CIBC Cons etf port U
+CCNS,CIBC ConservFixdIncm
+CCRE,CIBC CoreFixdIncm Un
+CPLS,CIBC Core+Fixed Incm
+CFLX,CIBC FlexYldCA-Hg Un
+CGBI,CIBC Glb Bnd exCA-HG
+CGLO,CIBC Glbl Growth Un
+CINT,CIBC Int'l Equity Un
+CCEI,CIBC MS Cdn Eqty Un
+CIEI,CIBC MS EA Eq Idx Un
+CIEH,CIBC MSEA Eq CA-Hgd
+CEMI,CIBC MSEmrg Mkt Eq U
+CUEI,CIBC M US Eqty Idx U
+CUEH,CIBCMs US EqIdx C Hg
+CCAD,CIBC Pre Cash Mg ETF
+CUDC,CIBC US High Dvd ETF
+CUDC.F,CIBC US HghDvdHd ETF
+CUSD.U,CIBC US Pre Cash Mgt
+CGX,Cineplex Inc.
+CGX.DB.B,Cineplex Inc7.75% Db
+CPH,Cipher Pharma
+CSCO,Cisco CDR CAD Hedged
+CTF.UN,Citadel Incm Fund Un
+CITI,Citigroup CDR Hgd
+CVG,Clairvest Group Inc
+CKI,Clarke Inc.
+CLCH,Clinch Resources Ltd
+CCS.PR.C,Co-operators Sr C Pr
+COLA,Coca-Cola CDR CAD HD
+CDE,Coeur Mining Inc
+CCA,Cogeco Commun Inc SV
+CGO,Cogeco Inc. SV
+COHR,Coherent CDR CAD HD
+COIN,Coinbase CDR CAD Hdg
+CNL,Collective Mining J
+CIGI,Colliers Intl Grp SV
+YCM,Commerce Split Cap
+YCM.PR.A,Commerce Split I Pr
+YCM.PR.B,Commerce Split II Pr
+CMG,Computer Modelling
+CDR,Condor Energies J
+CDR.DB,Condor Energies Inc
+CFF,Conifex Timber Inc.
+STZ,ConstellB CDR Hgd
+CEGS,Constl Enrgy CDR HG
+CSU,Constellation Softwr
+CSU.DB,Constellation Sr1 Db
+CTGO,Contango Silv & Gold
+COPR,Coppernico MetalsInc
+CSW.A,Corby Spirit&Wine A
+CSW.B,Corby Spirit&Wn B NV
+CRWV,CoreWeave CDR CAD Hd
+RAAA,Corton EnhInc FndETF
+ROSY,Corton Rosenberg GMF
+ROSY.U,CortonRosenbrg GMF U
+TPUT,Corton Theta Alpha F
+CORS,Corus Entrtnm Hl Inc
+CSCI,COSCIENS Biophrm Inc
+COST,Costco CDR CAD HD
+CCGP,CP Gl CIBC Gl Perman
+CCIP,CP Gl CIBC Intl Perm
+CCUL,CP Global US Lg Cap
+CCUS,CP Glbl CIBC USSmCap
+CVO,Coveo Solution J SV
+CRR.UN,Crombie Real Est Un
+CRON,Cronos Group Inc. J
+CRWD,CrowdStrike CDR Hgd
+CRT.UN,CT Rl Est Invest Un
+CIU.PR.A,CU Inc. Pr Ser 1
+CIU.PR.C,CU Inc. Pr Ser 4
+CURA,Curaleaf Holdings J
+CXI,Currency Exch Int'l
+CHLT,Custom Health Holdgs
+CVS,CVS Health CDR Hgd
+CYB,Cymbria Corp Cl A NV
+DBO,D-Box Tech Inc. A J
+DHI,DR Hortn CDR CAD Hdg
+DTOL,D2L Inc. J SV
+DCM,Data Commun Mgt
+DDOG,Datadog CDR CAD HD
+DEER,Deere CDR CAN Hgd
+DFY,Definity Fin Corp.
+DELL,Dell Tech CDR CAD HD
+DML,Denison Mines Corp
+DSG,Descartes Systems
+DCC,Desjardins 1-5yrCorp
+DCG,Desjardins 1-5yrGovt
+DAMG,Desjard AbReGl Eq Hg
+DAMG.U,Desjard AbReGl Hg US
+DACU,Desj Act Can Bd Univ
+DMEU,Des Amer Eq Idx Etf
+DMID,Desjardins Ame MiCaE
+DCBC,DesCad CrpBnd IdxEtf
+DMEC,Des Cad Eq Idx Etf
+DACL,Desj Cdn Equity Ldr
+DCP,Desjardins Cdn Pref
+DCS,Desjardins CdnST Bnd
+DCU,DesjardinCA UnivBnd
+DMEE,Desjrdn EmMaEqIn ETF
+DGGB,Desj Glb Gov Bnd Ind
+DGLM,Desjardins GlbMa ETF
+DAGL,Desj Glbl Opps ETF
+DMEI,Des Int Eq Index Etf
+DANC,Desjardins MktNe UHN
+DANC.U,Desjardn MktNe Hd US
+DMQC,Desjardins Quebec Eq
+DRCU,Desjardins RI CA Bnd
+DRMU,DesjardnsRI AM Eq E
+DRMC,DesjardinsRI Cd Eq E
+DRME,DesjardnRI EmgMkt Eq
+DRFG,Desjardins RI GblETF
+DRMD,DesjardnsRI Itnl Eq
+DRFU,DesjardnRI Mf AmEq E
+DRFC,DesjardnsRI MfCA Eq
+DRFE,DesjrdnRI Mf EmgMkEq
+DRFD,DesjardinsRI Mf Itnl
+DUIG,Dej US InvGr C B I E
+DXT,Dexterra Group Inc
+DRT,DIRTT Env Solution J
+DRT.DB.A,DIRTT EnvSolJ 6.25Db
+DSV,Discovery Mining Ltd
+DIV,Divers Rylty Corp.
+DIV.DB.A,Divers Rylty 6% Deb
+DIV.DB.B,Divers Rylty 5.75 De
+DIV.DB.C,Divrsfed Ryl Cor DB
+DFN,Dividend 15 Splt A
+DFN.PR.A,Dividend 15 Splt Pr
+DF,Dividend 15Split 2 A
+DF.PR.A,Dividend 15Splt 2 Pr
+DGS,Div Growth Splt Cl A
+DGS.PR.A,Div Growth Split Pr
+DS,Dividend Select 15Eq
+DCBO,Docebo Inc. J
+DOL,Dollarama Inc.
+DBM,Doman Bldg Materials
+DLCG,Dominion Lending J A
+DII.A,Dorel Ind Inc A MV
+DII.B,Dorel Ind Inc B SV
+DPM,DPM Metals Inc.
+MPCT.DB,Dream Impact 6.5 Deb
+MPCT.DB.A,Dream Impact 5.75 Db
+MPCT.UN,Dream Impact Tr Un
+DIR.UN,Dream Industrl REIT
+D.UN,Dream Office REIT Un
+DRM,DREAM Unltd Cl A SV
+DHT.U,DRI Healthcare Tr US
+DHT.UN,DRI Healthcare Tr CA
+DC.A,Dundee Corp. Cl A SV
+DND,Dye & Durham Ltd. J
+DYA,dynaCERT Inc. J
+DNG,Dynacor Group J
+DXBB,Dynamic Act Bond ETF
+DXBC,Dynamic ActvCdnBond
+DXC,Dynamic ActvCA DivUn
+DXCB,Dynamic Act CB ETF
+DXO,Dynamic ActvCrossBnd
+DXDB,Dynamic Discount Bnd
+DXEM,DynamicActvEmrgMktUn
+DXQ,DynamicActvYldCovrOp
+DXG,Dynamic Actv GlblDiv
+DXG.U,Dyna Actv GlblDiv US
+DXGE,Dynamic ActGlbEqIncm
+DXF,Dynamic ActGlbFinSrv
+DXAU,Dyn Actv Gl Gold ETF
+DXN,DynamicActvGlbInfras
+DXID,Dynamic Act I&D CAD
+DXID.U,Dynamic Act I&D USD
+DXW,Dynamic ActvIntl Div
+DXIF,DynamicActvInt'l Un
+DXMO,Dyn Acv Mine Opp ETF
+DXP,Dynamic Actv Pref Un
+DXRE,Dyn Actv RealEst ETF
+DXB,Dynamic ActvTact Bnd
+DXDU.U,Dynamic Active US DB
+DXU,Dynamic ActvUS DivUn
+DXU.U,Dy ActvUS DivETF USD
+DXUS,Dynamic Actv US Eqty
+DXUS.U,Dyn Actv USEqty USD
+DXBU,DynamicUS InvCorpBnd
+DXZ,Dynamic ActUS MidCap
+DXV,Dynamc ActUSh TB ETF
+DXCO,Dyn Cred Opps Fd ETF
+DXBG,Dyn GlFix IncFnd ETF
+DPAY,Dynamic Pr Yld PlusF
+DPAY.U,DynamicPrYd PF Unh U
+DPAY.V,Dynamic PrYd PF Hg U
+DXR,Dynamic Retir Inc Fd
+DXCP,Dyn STCr Pl Fnd ETF
+DSCA,Dynamic Syst CAD EqE
+DSIT,Dynamic Syst Int Eq
+DSAM,Dynamic Syst US Eq E
+ENS,E Split Corp. Cl A
+ENS.PR.A,E Split Corp. Pr
+ELF,E-L Financial Corp.
+ELF.PR.F,E-L Financial 1st Pr
+ELF.PR.G,E-L Financl 4.75 Pr2
+ELF.PR.H,E-L Financl 5.5 Pr 3
+EAGR,East Side Games J
+ELR,Eastern Platinum J
+ECN.DB.A,ECN Capital 6% Deb
+ECN.DB.B,ECN Capital 6.25 Deb
+ECN.DB.C,ECN Capital 6.5% Deb
+EVT,Economic Investment
+ECOR,Ecora Royalties PLC
+ECO,EcoSynthetix Inc. J
+EDCU,Edge Copper Corp
+ELD,Eldorado Gold Corp.
+ELVA,Electrovaya Inc.
+EFN,Element Fleet Mgt
+ELE,Elemental Rylty Corp
+LLY,Eli Lilly CDR Hgd
+ELO,Eloro Resources J
+EMA,Emera Incorporated
+EMA.PR.A,Emera Inc. Ser A Pr
+EMA.PR.C,Emera Inc. Ser C Pr
+EMA.PR.E,Emera Inc. Ser E Pr
+EMA.PR.F,Emera Inc. Ser F Pr
+EMA.PR.H,Emera Inc. Ser H Pr
+EMA.PR.J,Emera Inc. Ser J Pr
+EMA.PR.L,Emera Inc. Ser L Pr
+EMP.A,Empire Co Cl A NV
+ENB,Enbridge Inc.
+ENB.PF.A,Enbridge Ser 9 Pr
+ENB.PF.C,Enbridge Ser 11 Pr
+ENB.PF.E,Enbridge Ser 13 Pr
+ENB.PF.G,Enbridge Ser 15 Pr
+ENB.PF.K,Enbridge Ser 19 Pr
+ENB.PF.U,Enbridge Ser L US Pr
+ENB.PF.V,Enbridge Ser 5 US Pr
+ENB.PR.A,Enbridge 5.50% Pr
+ENB.PR.B,Enbridge Inc Sr B Pr
+ENB.PR.D,Enbridge Inc Sr D Pr
+ENB.PR.F,Enbridge Inc Sr F Pr
+ENB.PR.G,Enbridge Inc Sr G Pr
+ENB.PR.H,Enbridge Inc Sr H Pr
+ENB.PR.I,Enbridge Inc Sr I Pr
+ENB.PR.J,Enbridge Ser 7 Pr
+ENB.PR.N,Enbridge Inc Sr N Pr
+ENB.PR.P,Enbridge Inc Sr P Pr
+ENB.PR.T,Enbridge Inc Sr R Pr
+ENB.PR.V,Enbridge Ser 1 US Pr
+ENB.PR.Y,Enbridge Ser 3 Pr
+ENB.PR.Z,Enbridge Inc Sr 4 Pr
+EDV,Endeavour Mining Ord
+EDR,Endeavour Silver J
+EFX,Enerflex Ltd.
+EFR,Energy Fuels Inc. J
+ENI.UN,Energy Income Fnd Un
+ENGH,Enghouse Systems Ltd
+ESI,Ensign Engy Services
+ETG,Entree Resources J
+EQB,EQB Inc.
+EQX,Equinox Gold Corp. J
+ERD,Erdene Res Dev J
+ERO,Ero Copper Corp. J
+EPRX,Eupraxia Pharma J
+ESM,Euro Sun Mining J
+ET,Evertz Technologies
+E,Evolution PowerX Crp
+DIVS,Evolve CA Pref UnHeg
+EARN,EvolveActvGlbFxdIncm
+EEQT,Evolve All Eq Div E
+EASY,Evolve AllIn1 UltY E
+ARTI,Evl Art Int Fnd UN
+CARS,Evolve AutoInnov Heg
+CARS.B,Evolve AutoInnovUnHg
+CARS.U,Evolve AutomobUnhgUS
+EBAL,Evolve Balncd Div E
+SIXY,Evolve Bg 6 Cdn B UY
+EBIT,EvBcoin ETF CA Unheg
+EBIT.U,EvBcoin ETF US Unheg
+AGG,EvCd AgBd EnY FndETF
+BANK,EvolveCdnBk&LfeCA UH
+OILY,Evolve Cdn EnEnY ETF
+CANY,Ev Cd Eqty U Yld ETF
+CFIN,Evolve Cdn Fin Yld E
+UTES,EVCd UEnh YldIdx ETF
+CUTE,Evolve Cdn Util Yld
+DATA,Evolve Compute HegCA
+DATA.B,Evolve ComputeUnhgCA
+ETC,EvolveCryptocurUH CA
+ETC.U,EvolveCryptocurUH US
+CYBR,Evolve Cyber Sec Heg
+CYBR.B,Evolve CyberSecUnHg
+CYBR.U,EvolveCybrSec UnhgUS
+HERO,Evolve E-Gaming HgUn
+BOND,Evolve EnhnYldBnd Hg
+BOND.B,Ev Enh Yld Bnd C Uhg
+BOND.U,Ev Enh Yld Bnd U Uhg
+MIDB,Evolve EnYiMi Hd ETF
+MIDB.B,Evolv EnYiMi UHd ETF
+MIDB.U,Evol EnYiMi USUH ETF
+ETHR,Ev Ether ETF CAD UNH
+ETHR.U,Ev Ether ETF US UNH
+EBNK,Evolve EU BkYld HgCA
+EBNK.B,EvolveEU BkYldUnhgCA
+EBNK.U,EvolveEU BkYldUnhgUS
+TECH,Evolve FANGMA CA Heg
+TECH.B,EvolveFANGMA CA UnHg
+TECH.U,EvolveFANGMA UnHg US
+LEAD,Evolve FutrLeadr Heg
+LEAD.B,Evolve FutLead Unheg
+LEAD.U,EvolveFutrLdr UnhgUS
+CAMO,Evolve Glb Def Ar Hd
+CAMO.B,Evolve Glb Def Ar UH
+LIFE,Evolve GlbHlthYldHeg
+LIFE.B,EvolveGlbHealth Unhg
+LIFE.U,Evolve GlbHlthUnhgUS
+BASE,Evolve GlbMatMin Heg
+BASE.B,EvolveGlbMatMinUnheg
+EDGE,Evolve Innovation Un
+EDGE.U,Evolve InnovUS Unheg
+INTY,Evolve Int Eq UltY E
+LBIT,Ev Lev Bitc ETF CAD
+LBIT.U,Ev Lev Bitc ETF USD
+LETH,Ev Lev Eth ETF CAD
+LETH.U,Ev Lev Eth ETF USD
+QQQY,Evolve NASDAQ TecHeg
+QQQY.U,Evolve ND Tech Enh Y
+QQQT,Evolve NAS Tech Heg
+QQQT.B,Evolve NAS Tech Unhg
+QQQT.U,EvolveNAS TechUnhgUS
+TECY,Evolve ND Tech Ult Y
+ESPX,Evolve 500EnhcYld HG
+ESPX.B,Evolve 500EnhcYld UH
+ESPX.U,Evolve 500EnYldUH US
+ETSX,Evolve 60EnhcYld UH
+SOLA,Evolve Solana ETF CA
+SOLA.U,Evolve Solana ETF US
+CALL,Evolve USBkEnhanc Hg
+CALL.B,Evolve USBkEnhYldUhg
+CALL.U,Evolve USBkEnhnUhgUS
+BIGY,Evolve US Eq UY C Hg
+XRP,Evolve XRP ETF CAD U
+XRP.U,Evolve XRP ETF USF
+EVO,Evovest Gbl Eqty ETF
+EIF,Exchange Income Corp
+XTC,Exco Technologies
+EGIF,Exemplar GrwthIncmUn
+EXE,Extendicare Inc.
+XOM,Exxon Mobil CDR Hgd
+FFH,Fairfax Financial SV
+FFH.PR.K,Fairfax Fin Ser K Pr
+FFH.U,Fairfax Fin SV USF
+FIH.U,Fairfax India SV USF
+FDY,Faraday Copper CorpJ
+FRX,Fennec Pharmaceut J
+FCAB,Fidelity Abs InF ETF
+FCAB.U,Fidelity Abs Inc USF
+FAUS,Fidelty Adv US EqETF
+FAUS.U,Fidelity AdvUS Eq US
+FBTC,Fidelity AdvBtcnL Un
+FBTC.U,Fidelity Adv Btcn US
+FETH,Fidelity Advantg C$
+FETH.U,Fidelity Advantg US$
+FFAB,Fidelity Alt Bond F
+FCAE,Fidelity Amrcn Eq Fd
+FCCD,Fidelity Cdn Div L
+FCCQ,FidelityCdnHiQual L
+FCCV,Fidelity CdnVal L Un
+FCUB,Fidelty CoUS Bd ETF
+FCUB.U,Fidty CoUS Bd ETF US
+FEMO,Fidelity EM Opp Fd
+FMPB,Fidelity GBl BalcPor
+FGCV,Fidelity Gbl Con Val
+FGEB,Fid Gl Eq+Bl Fnd ETF
+FGEP,Fid Gl Eq+ Fund ETF
+FGEP.U,Fid Gl Eq+ ETF USD
+FMPG,Fidelity Glb GrowPol
+FMPI,Fidelity Glb InC Pol
+FLSE,Fidelity Glb Op LgSh
+FGQE,FIDELITY Glbl Qnt Et
+FGSM,Fidelity Gbl Sll Md
+FCID,Fidelity Int'l Div L
+FCIQ,Fidelity IntlHiQual
+FCIQ.U,Fidelity IntlHiQuaUS
+FCIV,Fidelity Intl Val L
+FMAB,Fidelity Mlti-Alt BF
+FMAE,Fidelity MulAlt EqFd
+FTHI,FidTac HghIncFndETF
+FCRR,Fidelity US DivRise
+FCRR.U,Fidelity US DivRt US
+FCUH,Fidelity US DivCur L
+FCUD,Fidelity US HiDiv Un
+FCUD.U,Fidelity US HiDiv US
+FCQH,FidelityUS HiCurNatr
+FCUQ,FidelityUS HiQual L
+FCUQ.U,FidelityUS HiQual US
+FCVH,Fidelity USValCurNeu
+FCUV,Fidelity US Val L Un
+FCUV.U,Fidelity US Val L US
+FSZ,Fiera Capital A SV
+FSZ.DB.C,Fiera Capitl 7.75 Db
+FTN,Financial 15 Splt A
+FTN.PR.A,Financial 15 Splt Pr
+FTT,Finning Int'l Inc.
+FTG,Firan Tech Grp Corp.
+FFM,FireFly Metals Ltd
+FWZ,Fireweed Metals Corp
+FC,Firm Cap Mtg Invest
+FC.DB.K,Firm Cap Mtg 5% Deb
+FC.DB.L,Firm Cap Mtg 5% L Db
+FC.DB.M,Firm Cap Mtg 5.5% DB
+FCD.UN,Firm Cap Ppty Tr Un
+FCR.UN,First Cap REIT Un
+AG,First Majestic J
+FF,First Mining Gold J
+FM,First Quantum Mnrl J
+FHH,1stTr AlpDEX US Hlth
+FHH.F,1stTr AlpDXUSHlth Hg
+FHG,1stTr AlphDEX US Ind
+FHG.F,1stTr AlphDEX US Heg
+FHQ,1stTr AlpDEX US Tech
+FHQ.F,1stTr AlpDEXUSTechHg
+RCTR,First Trst Bl Nc P E
+FST,1st Tr CdnCapStrngUn
+SKYY,1st TrCloudComputing
+FDN,1st Tr DJ Internt Un
+FDN.F,1st Tr DJ InterntHeg
+ETP,1st Tr Glb RskMngeUn
+BLCK,1st TrIdx InnovTrans
+NXTG,First Tr Indxx NextG
+FINT,1st TrIntlCapStrngth
+FTLS,First Trust Lg Sh Eq
+FDL,1st TrMornDvLdrCA-Hg
+QCLN,1st TrNsdqCleanGreen
+CIBR,1st Tr NasdqCybrsec
+SGRD,Frst Trst NDQ Cl Edg
+FBT,1st Tr NYSE Arca Bio
+FSL,1st Tr SnrLoan Cad-H
+FUD,1st Tr ValLnDivCA-Hg
+AUGB.F,1stTr VestUSEqAug Hg
+FEBB.F,1st Tr VestUSEqFb Hg
+MAYB.F,1stTr VestUSEqMay Hg
+NOVB.F,1st Tr VestUSEqNv Hg
+FSV,FirstService Corp.
+FISV,Fiserv CDR CAN Hgd
+MHC.U,FlagshpCommunREIT US
+MHC.UN,FlagshpCommunREIT C$
+FLNT,FLINT Corp.
+FAR,Foraco Int'l SA
+FORU,ForAll Cr&Mr US Eq I
+F,Ford CDR CAN Hgd
+FGBL,Forstrong Gl Bl ETF
+FGRW,Forstrong GlbGrowth
+FINC,Forstrong Glbl Incm
+FTNT,Fortinet CDR CAD HD
+FTS,Fortis Inc.
+FTS.PR.F,Fortis Inc. 1st Pr F
+FTS.PR.G,Fortis Inc. 1st Pr G
+FTS.PR.H,Fortis Inc. 1st Pr H
+FTS.PR.I,Fortis Inc.1st Pr I
+FTS.PR.J,Fortis Inc. 1st Pr J
+FTS.PR.K,Fortis Inc. 1st Pr K
+FTS.PR.M,Fortis Inc. 1st Pr M
+FVI,Fortuna Mining Corp.
+FT,Fortune Minerals J
+FNV,Franco-Nevada Corp.
+EQY,Frankl AL-Eqt ETFPor
+FBGO,Frankln BrandyIncmOp
+FCRC,Franklin Cdn CoEq Fd
+FLCP,Franklin Cdn Cor+Bnd
+FLCI,Franklin Cdn CorpBnd
+FGOV,Franklin Cdn Gov Bnd
+FLSD,Frankln Cdn SH Bnd
+FHIS,FranklinCdn UltShBnd
+FCII,Frankln ClrBrdgInfr
+CNV,FrankConvIC ETF Port
+CBL,FranklinCoreETF Port
+FLGA,Franklin GlbCorBndUn
+GRO,FranklinGrw ETF Port
+FINO,Franklin Innov Fund
+FCRI,Franklin Inter CorEq
+FCRU,Franklin US Core Eqt
+FLUS,Franklin US LargeCap
+FVL,Freegold Limited
+FRU,Freehold Royalties
+FCXS,Freeport MMoRan CDR
+FEC,Frontera Energy Corp
+FURY,Fury Gld Mines Ltd J
+FMR,Future Mnrl Res Inc
+GMIN,G Mining Ventures J
+GAU,Galiano Gold Inc. J
+GE,GE Aerospace CDR Hgd
+GEV,GE Vernova CDR Hgd
+GENM,Generation Mining J
+GDC,Genesis Land Dev
+GEO,Geodrill Limited Ord
+WN,Weston George
+WN.PR.A,Weston George 1 Pr
+WN.PR.C,Weston George III Pr
+WN.PR.D,Weston George IV Pr
+WN.PR.E,Weston George V Pr
+GFL,GFL Environment SV
+GEI,Gibson Energy Inc
+GIL,Gildan Activewear
+GILD,GileadSci CDR Hgd
+GVC,Glacier Media Inc. J
+GLO,Global Atomic Corp J
+GDV,Glbl Div GrowSplit A
+GDV.PR.A,Glbl DivGrowSplit Pr
+GEC,Glbl Education Com J
+GLRA.PR.A,Glbl Real Asset Trst
+CBIL,GblX 0-3 Mon T-bl E
+CBIL.L,Global X 0-3 Mo Tbil
+CBIL.U,GblX 0-3Mo TB ETF US
+UBIL.U,GblX 0-3Mon US Tbl E
+UBIL.V,Global X 0-3 M US TB
+GCIG,Glbl X 1-10 Yr C CrB
+TSTX,Glbl X 20 Yr T Bd UH
+TSTX.F,Glb X 1-3 Yr T Bd Hg
+TSTX.U,Glbl X 20 Yr T Bd US
+TLTX,Glbl X 20 Yr T Bd UH
+TLTX.F,Glbl X 20 Yr T Bd Hg
+TLTX.U,Glbl X 20 Yr T Bd US
+TMTX,Glbl X 3-10 Yr US UH
+TMTX.F,Glbl X 3-10 Yr US Hg
+TMTX.U,Glbl X 3-10Yr US USD
+HAD,GblX ActvCdnBnd E Un
+HAL,GblX Act Cn Div ETF
+HMP,Glbl X ActCn MunBd E
+HAB,GblX Act CorBnd E Un
+HAZ,GblX Act Gb Div E Un
+HAF,GblX ActiveGlbl E
+HYBR,GblX Act Hy Bnd&Pr E
+HPR,GblX Act Pref S ETF
+DIVY,Glbl X Act US Dv E C
+DIVY.U,Glbl X Act US Dv E U
+HFR,Glbl X Act UltST Bnd
+EQCC,GblX Eqty AsAllo Cv
+HEQT,GblX Eq Ast Alloc E
+CMCC,Glbl X Ain1 C P Eq C
+COMX,Glb x AlIn1 Com Pr E
+GOOP,Glbl X Alphabet PwSt
+AMZP,Glbl X Amazon PwrSt
+AAPP,Glbl X Apple PwrSto
+AIQ,GlobalX AI&TechInd A
+MTRX,Global X AI Infr ETF
+DRAM,Glbl X AI Mem Ind E
+CHPS,GblX AI SemiCond ETF
+CHPS.U,GblX AI SEMIC ETF US
+ACHP,Glbl X Asia Semi Ind
+HBAL,GlblX Bal Ast Aloc E
+HBGD,GblX BigDataHrdwr A
+HBGD.U,GblX BigDataHrdwrUS
+HXH,GblX CdnHiDivInxShr
+ENCC,GblX CA O&G Eq Cal E
+HBB,GblX Cdn SlctUniv BD
+AGGX,Glbl X Cdn Uni BD In
+HSAV,GblX CshMaxShare Cls
+CHQQ,GlbX ChnHangSnTechIn
+HCON,GblX Cosv Ast Aloc E
+CPCC,Glbl X Cop Pro E CC
+COPP,GblX Copper Ppd InxA
+HUC,Glbl X CrudOil ETF
+SHLD,Global X Def Tech Id
+HXEM,GblX EmergMkt EqIdx
+EQCL,GblX EhEqAstAlocCvCl
+HEQL,GblX EhEq AsstAlloc
+CMCL,GX Ehn AIO Cmdty CC
+ENCL,GblX EhCdn O&GEqCvCl
+BNKL,GblX EnEqWgtBnk Idx
+BKCL,GblX EnEqWgtCdnBk Cv
+RNCL,Glob X EnEqWe CDN Te
+GLCL,Globl X Enh Gold Pro
+QQCL,GblX EhNASDQ100CvrCl
+QQQL,GblX EnNas100Idx ETF
+USCL,GblX EnhnSP500 CvCal
+USSL,GblX EnhSP500 IdxETF
+CNCL,GblX EnhnSP/TSX60 Cv
+CANL,GblX EnhnSP/TSX60Inx
+SVCL,GlblX Eh SilvMnrs CC
+BKCC,GblX EqlWt Cn BnkCv
+HEWB,GblX EqlWgtCaBnk Inx
+HBNK,GblX EqWgtBanksIdx E
+MART,Global X EWC GSI ETF
+SAFE,Global X EWC InI ETF
+NRGY,Global X EWC OGI ETF
+PPLN,GblX EqlW CadPI ETF
+HCRE,GblX EqlWgtCA REIT
+REIT,Globl X EqWe CDN REI
+RNCC,Globl X EqWe CDN Tel
+RING,Global X EWCT Id ETF
+UTIL,GblX EqW CdUtIdx ETF
+MEDX,Globl X EqWe Gl Heal
+UBNK,Global X EqWe US Bnk
+UMRT,Global X EqWe US Gro
+HXX,GblX EURO 50IndxShr
+ETHI,GblX GlbSustLdr Inx
+HUG,Glbl X Gold ETF
+GLCC,GblX Gld Eq CvCll E
+GLDX,Global X Gold PI ETF
+HGY,Glbl X Gld Yld ETF
+GRCC,GblX GroAstAlocCvCl
+HGRW,GblX GroAsstAlloc
+CASH,GblX HiIntSvgs ETF A
+CASH.L,Global X Hi Intrst S
+TTTX,GblX InoBluechipT100
+INOC,GblX InovestCdnEq
+HXDM,GblX IntlDivMkts Eq
+HXDM.U,GblX IntlDivMktEqUS
+KORX,Glbl X Kor KOSPI 200
+KORX.U,Glbl X KorKOSPI200 U
+HLPR,GblX LadrdCA PrShInx
+HLIT,GblX LithiumProd Inx
+PAYL,Global X LT GBPY ETF
+LPAY,GblX LTrmUS Trea Prm
+LPAY.U,GblX LTrmUS TreaprUS
+HMMJ,GblX Marij Lfe Sci A
+HMMJ.U,GblX Marij LfeSci US
+PAYM,Global X MT GBPY ETF
+MPAY,GblX MTrmUS Trea Prm
+MPAY.U,GblX MTrmUS TreaprUS
+QQCC,GblX NASDAQ 100Cal E
+QQCC.U,GblX NASDAQ100Cov US
+HXQ,GblX NASDAQ100x Ci
+HXQ.U,GblX NASDAQ100x CIUS
+QQQX,GblX NASDAQ100 Ind A
+QQQX.U,GblX NASDAQ100 IndUS
+HUN,Glbl X NatrlGasETF
+NVDP,Glbl X NVDA PwrStk
+NYSX,Global X NYSE100 I E
+NYSX.U,Global X NYSE100 I E
+RBOT,GblX Robotics&AI Ind
+RBOT.U,GblX Robot&AI Inx US
+HSH,GblX SP500CAHegd Inx
+USCC,GblX SP500 Cov Cal E
+USCC.U,GblX SP500 CvCal E U
+HXS,GblX SP500InxCls Shr
+HXS.U,GblX SP500Inx US Shr
+USSX,GblX SP/TSX500 Inx A
+USSX.U,GblX SP/TSX500 InxUS
+CNCC,GblX SP X60 Cv Cal E
+HXT,GblX SP/TSX60 Inx CI
+HXT.U,GblX SP/TSX60 Inx US
+CNDX,GblX SP/TSX60 Inx A
+HXCN,GblX SPTSXCap IdxCr
+CNDC,Glbl X SP/TSX CC Ind
+HXE,GblX SPTSXCapEngyIdx
+HXF,GblX SPTSXCapFin Idx
+HAC,GblX Sznal Rota E Un
+PAYS,GblX StGvBnd PrY ETF
+SPAY,GblX ST USTreas Pr
+SPAY.U,GblX ST USTreas PrUS
+AGCC,GlbX SlvCov Call ETF
+HUZ,Glbl X Silver ETF
+SVCC,Glbl X Silv Min CC E
+SLVX,Glbl X Silv Min In E
+ORBX,Global X Spc Tch Ind
+SPCP,Glbl X SpaceX PowStk
+TSLP,Glbl X Tesla PwrStok
+TOKN,GlblX TkzEco Idx ETF
+PAVE,Glbl X US Infr Dev C
+PAVE.U,Glbl X US Infr Dev U
+URCC,Glbl X Uranium CC E
+HURA,GblX Uranium Inx E A
+HTB,GblX US7-10TreasBd
+HTB.U,GblX US7-10TreaBdUS
+DLR,GblX US$ Cur A Un E
+DLR.U,GblX US$Cur A USF E
+HULC,GblX US LrgCapIdx CI
+HULC.U,GblX LrgCapIdx CI US
+HSUV.U,GblX USD CshMax CIUS
+UCSH.U,GblX USD HiIntSvUS
+UCSH.V,Global X US Hi Int S
+GMX,Globex Mining Ent J
+GO.U,GO Resid REIT USD
+GSY,goeasy Ltd.
+GGD,GoGold Resources J
+GGD.WT,GoGold Resou Inc Wts
+GRC,Gold Springs Res J
+AUMN,Golden Minerals J
+GS,Goldman CDR Hgd
+GOLD,GoldMining Inc. J
+XAU,GoldMoney Inc.
+GDL,Goodfellow Inc.
+GTE,Gran Tierra Energy
+GRT.UN,Granite Rl Est Tr Un
+GWO,Great-West Lifeco
+GWO.PF.A,GrtWstL Co5.7 NCPr24
+GWO.PR.G,Gt-West Lifeco Pr G
+GWO.PR.H,Gt-West Lifeco Pr H
+GWO.PR.I,Gt-West Lifeco Pr I
+GWO.PR.L,Gt-West Lifeco Pr L
+GWO.PR.M,Gt-West Lifeco Pr M
+GWO.PR.N,Gt-West Lifeco Pr N
+GWO.PR.P,Gt-West Lifeco Pr P
+GWO.PR.Q,Gt-West Lifeco Pr Q
+GWO.PR.R,Gt-West Lifeco Pr R
+GWO.PR.S,Gt-West Lifeco Pr S
+GWO.PR.T,Gt-West Lifeco Pr T
+GWO.PR.Y,Gt-West Lifeco Pr Y
+GWO.PR.Z,GrtWst L Co P S Sr Z
+GFR,Greenfire Res Ltd.
+GFP,Green1st ForestProdJ
+MOLY,Greenland Resrce Inc
+GRN,Greenlane Renew J
+GRGD,Gr Dynamite SubV Sh
+GCBD,Guardian Cdn Bond Un
+GCSC,Guardian CDN DivCoEq
+GCEI,Guardian Cdn Eq Incm
+GCFE,Guardian CdnFocus Eq
+GGEP,Guardian DirEq Pth P
+GGEP.F,Guardian DirEqPth Hg
+GGPY,Guardian Dir PremYld
+GGPY.F,Guardian PremYld Heg
+GFGE,Grdn Fndmtl Gbl Eq
+GIAI,Guardian i3 AI TI Iv
+GICD,Guardian i3 Cd DivGr
+GIGF,Guard i3 GlbCor E UH
+GIGF.F,Guard i3 GlbCor Eq H
+GIGD,Guardian i3 Gl DivGF
+GIDY,Guard I3 GlDv Py Fnd
+GIUS,Gu i3 US Core Eq Fnd
+GIUS.F,Gu i3 US Core Eq F H
+GIES,Guardian Intl EqSlct
+GIGC,Guard Inv Gr CorpBnd
+GSDB,Grdn Short Dur Bnd
+GCTB,Guard Ult-Sh CdnT-bl
+GUTB.U,Guard Ult-Sh US T-bl
+GCU,Gunnison Copper Corp
+GURU,GURU Organic Energy
+HR.UN,H&R Real Estate Un
+HAI,Haivision Systems
+HBA,Hamilton AusBk=Wgt E
+HCA,Hamilton CadBkRev Un
+CMAX,Ham CDN Eq Yld Max E
+HMAX,Ham CdnFinMax TM ETF
+CGOV,Hamilton Canadian Tb
+HEB,Hamilton Chm Cd B EQ
+CMVP,HAMILTON CHAM CAD Di
+HFN,Hamilton Chm Cd Fi E
+CWIN,Ham ChmpEnh CdDv ETF
+SWIN,Ham ChmpEnh USDv ETF
+SMVP,HAMILTON CHAM US Div
+SMVP.U,HAMILTN CHA UsDvd US
+QMVP,Ham ChampsUSTech ETF
+UMVP,Ham ChampsUtilInd ET
+EMAX,Ham EngyYldMaxTM ETF
+HCAL,Hamilton EnhanCA Bk
+HDIV,HamiltonEnhnCadSecCl
+HFIN,Hamilton EnhanCA Fin
+MIX,Hamilton Enh Mix A A
+HYLD,Hamilton USCvClHG C$
+HYLD.U,Hamilton USCvClUH US
+HUTS,Hamilton EnhncUtil E
+HFG,Hamilton Glbl Fin E
+AMAX,Ham GldPrY MaxTM ETF
+LMAX,Ham HlthYldMaxTM ETF
+IMAX,Ham Int Eq Yld Max E
+RMAX,Ham REIT Yld Max ETF
+QMAX,Ham TechYldMaxTM ETF
+QMAX.U,Ham TechYldMax USD
+HBND,Ham USBndYldMxTM ETF
+HBND.U,Ham USBndYldMxTM ETF
+SMAX,Ham USEqYldMaxTM ETF
+SMAX.U,Ham US EqYldMax USD
+FMAX,Ham USFYld MaxTM ETF
+HUM,Hamilton USMidFinEtf
+UGOV.U,Hamilton US TBill E
+HBIL,HamUS TBYld MaxETF C
+HBIL.U,HamUS TBYld MaxETF U
+UMAX,Ham UtilYldMx TM ETF
+HMM.A,Hammond Mfg Cl A SV
+HPS.A,Hammond Power A SV
+AEME,Harvest Agnico Eagle
+HONE,HVST AIn1 Hi Inc Shr
+GOGY,Harv Alph EHIShr ETF
+AMHE,HvAmzn EnhHIShr ETFA
+AMHE.U,HvAmzn EnhHIShr ETFU
+AMZH,HvAmzn HghInShr ETFA
+AMZH.U,HvAmzn HghInShr ETFU
+AMDY,Harv AMD EHIShrs ETF
+ANTE,Harv Anth Enh H In S
+APLE,Harvest Apl EnhHigIn
+ASME,HVST ASML Ehn HiIc S
+HBIE,Harv Bl Inc GrEh Etf
+HBIG,Harv Bl Inc & Gr Etf
+BCEE,Harvest BCE Enh HiIn
+BRKE,HVST Brkshr Htwy EHI
+BLKY,Harv Blk Enh Hi In E
+AVGY,Harv BrdCm EHIS ETF
+CCOE,Harvest Cameco EnHiI
+HLIF,HVST Can Div Ldr Inc
+HHIC,Harvest Cdn High Inc
+TBIL,Harvest Cdn T-Bill
+CRCY,Harv Crc Enh H I S E
+HCLN,Harvest CleanEngy Un
+CNQE,Harvest CNQ Enh HiIn
+CNYE,Harv CoinBs EHIS ETF
+CONY,Harvest Coin HIS ETF
+COSY,Harv Costco EHIS ETF
+CRWY,Harv CrwdStrk En H E
+HRIF,Harvest Divers Eq Un
+HHIS,Harvest Dive HIS ETF
+HHIS.U,Harv Div Hi Inc ETF
+HDIF,Harvest DiverMoIncmA
+LLHE,HELily EnHIn ShrETFA
+LLHE.U,HELily EnHIn ShrETFU
+LLYH,HELily HInc ShrETFA
+LLYH.U,HELily HInc ShrETFU
+ENBE,Harvest Enbridge Enh
+HPF,HVST Energy Ldr Inc
+HPF.U,HVST Energy Ldr USD
+RYHE,Harv Enh HiInc RY L
+TDHE,Hrv Enh Hi Inc TD L
+HGGG,Harvest Glb GldGiant
+HHLE,Harvest HlthcrIncm A
+HHL,Harvest HlthcrLdr Un
+HHL.B,HarvestHealthcrB U-H
+HHL.U,HarvestHealthcare US
+HHIH,Harv HiIn Eq Shr ETF
+HIND,Harv Ind Ldr Inc Etf
+INTE,HVST Intel EnhHi Ic
+HHII,Harvest Intl HI Shrs
+JNJY,Harv JnJ En Hi Inc E
+JPHE,Harv JPHE En H Inc E
+HVOL,Harvest LowVol Ca Eq
+HVOI,Harvst LoVo CaEq Inc
+METE,Harvest MeE HIS ETF
+MUHE,HVST Micrn EnhIc Sh
+MSHE,HvMsft EHgIn ShrETFA
+MSHE.U,HvMsft EHgIn ShrETFU
+MSFH,HvMsft HghIn ShrETFA
+MSFH.U,HvMsft HghIn ShrETFU
+NFLY,Harv Ntflix EHIS ETF
+NOVY,Harv Novo Enh H In E
+NVHE,HvNVIDIA EHInSh ETFA
+NVHE.U,HvNVIDIA EHInSh ETFU
+NVDH,HvNVIDIA HInShr ETFA
+NVDH.U,HvNVIDIA HInShr ETFU
+ORCY,Harv Oracle E H In E
+PLTE,Harvest PaEn HIS ETF
+HPYM,Harvst PremYld7-10Yr
+HPYM.U,Harvst PremYld7-10US
+HPYB,Harv PreYelCanBk ETF
+HPYE,Harv PreYel Enhn ETF
+HPYG,Harvest PremYielGld
+HPYT,Harvest PremYldTreas
+HPYT.B,Harv Prem Yld Tr ETF
+HPYT.U,Harvst PremYldTreaUS
+RDDY,Harv Rdt EnH H Inc S
+HGR,HarvestGlblREITLdr A
+HODY,Harv Rbnh EnH H In E
+SHPE,Hrv Shp Enh HiSh ETF
+SOFY,Harv SoFi En H I S E
+SPXE,Harv SpaceX Enh Hi I
+MSTE,Harv St In Enh H I S
+MSTY,Harvest Srat HIS ETF
+SUHE,Hrv Sun Enh HiSh ETF
+HTAE,HVST Tech Ldr Enh
+HTA,HVST Tech Ldr Inc ET
+HTA.B,HVST TechLdr Inc UNH
+HTA.U,HVST TechLdr Inc USD
+TEHE,Hrv Tel Enh HiSh ETF
+TSLY,Harvest TeEn HIS ETF
+TRVI,Harvest Trav & Leisr
+TRVL,Harvest Travl&LeisUn
+TRVL.U,Harvest Travl&LeisUS
+HUBL,Harvest US BkLeadrUn
+HUBL.U,Harvest USBkLeadr US
+HBF,HVST US Eq Ldr Inc
+HBF.B,HVST US EqL Inc UNH
+HBF.U,HVST US EqL Inc USD
+HUTE,HVST Util LdrEnh Inc
+HUTL,HVST Util Ldr Inc
+AIDX,HealWELL AI J SV A
+HFPC.U,Helios Fairfax SV US
+HSTR,Heliostar Metals Ltd
+HBP,Helix BioPharma
+HMMC,Hemlo Mining Corp
+HRMS,Hermes CDR CAD Hedg
+HWO,High Arctic Engy Inc
+HLF,High Liner Foods Inc
+HSLV,Highlander Silver Co
+HIVE,HIVE Digital Tech L
+HLS,HLS Therapeutics J
+HD,Home Depot CDR Hgd
+HONA,Honeywell Aerospce C
+HON,Honeywell Te CDR Hgd
+HBM,Hudbay Minerals Inc.
+HBOP,Humilis Fndmtl Opp E
+HBDV,Hmls NA Div Growth E
+HBTA,Hmls NAm Tacti Eq Fd
+HUT,Hut 8 Corp J
+H,Hydro One Limited
+IAU,i-80 Gold Corp. J
+IAU.WT,i-80 Gold Corp WT
+IAU.WT.U,i-80 Gold Corp WT US
+ICPB,IA ClaringtnCore Fnd
+GTRI,IA Clarngtn Agl Glb
+IMFE,IA ClarGbl Multi EqF
+IIME,IA Clar Intl Ml EqFn
+IFRF,IA ClaringtonFltg Un
+IGAF,IA Claringtn LoomGlb
+IGEO,IA Claringtn GlbEqOp
+ILGB,IA ClaringtLooMltBnd
+ISCB,IA Claringtn CorpBnd
+ISIF,IA ClaringtnStrtegic
+ITIN,IA Claring Thm Innov
+IAG,iA Financial Corp.
+IWEB,IA Wealth Bond Pool
+IMG,Iamgold Corporation
+IBM,IBM CDR (CAD Hedged)
+IFA,iFabric Corp. J
+IGM,IGM Financial Inc.
+ILLM,illumin Holdings J
+III,Imperial Metals Corp
+IMO,Imperial Oil Ltd.
+INC.UN,Income Fin Tr Un
+IS,Infr're DivSplit A U
+IS.PR.A,Infr're DivSplit PrS
+INGS,ING CDR CAD Hedged
+INO.UN,Inovalis REIT Un
+IPO,InPlay Oil Corp.
+IFC,Intact Fin Corp.
+IFC.PR.A,Intact Fin A Ser 1
+IFC.PR.E,Intact Fin A Ser 5
+IFC.PR.F,Intact Fin A Sr 6 Pr
+IFC.PR.G,Intact Fin A Sr 7 Pr
+IFC.PR.I,Intact Fin A Ser 9
+IFC.PR.K,Intact Fin A Ser 11
+IFC.PR.M,Intct Fn Cls A sr 13
+INTC,Intel CDR Hgd
+IFP,Interfor Corporation
+IMP,Intermap Technology
+IPCO,Int'l Pete Corp.
+ITH,Int'l Tower Hill J
+INTU,Intuit CDR CAD Hgd
+ISRG,Intuitive CDR Hgd
+ICCB,InvCad CrePl BndETF
+BESG,InvescoESG CA CorBnd
+ICGB,Inv Global Bond ETF
+QQCI,INV NDQ100 IncAdvETF
+QQCI.F,INV NASD100 IcA CAN
+QQCI.U,INV NDQ100IncAdv USD
+EQLI,IvSP500 EqWInc AdETF
+EQLI.F,INV S&P500 Ew Ic CA
+EQLI.U,INV S&P500 Ew Ic USD
+IVQ,Invesque Inc.
+IVQ.U,Invesque Inc. USF
+XSTP,iShr 0-5YrTipsBndCAD
+XSTP.U,iShr 0-5YrTipsBndUSD
+XSTH,iShr0-5YrTipsBndCA-H
+CBH,iShre 1-10CorpBnd Un
+CLG,iShre 1-10GovtBnd Un
+CBO,iShre 1-5 CorpBnd Un
+CLF,iShre 1-5 GovtBnd Un
+XSHU,iShr1-5YrUSIGCorpBnd
+XSHU.U,iShr1-5YrIGCorpBndUS
+XIGS,iShr1-5YrUS IGCorpCH
+XTLT,iShr 20+Yr US Bnd Un
+XTLT.U,iShr 20+Yr US Bnd US
+XTLH,iShr 20+YrUS BndHgUn
+XBAI,iShares AI Inno Tech
+FIE,iShares CdnFinMo Un
+XCG,iShares Cdn Growth
+XHB,iShare Cdn HYBrd Bnd
+XRB,iShare Cdn RlRet Bnd
+XDV,iShares Cdn Slct Div
+XCV,iShares Cdn Value Un
+XCH,iShares China Index
+XSC,iShr Consv ShStgyFxd
+XSE,iShr Consv Stgy Incm
+CVD,iShares ConvBond Un
+XBAL,iShares CoreBal Un
+XSMB,iShares Cr CDN 1-10
+XFLB,iShr Cdn 15+YrFedBnd
+XCB,iShr CoreCA CorpBond
+XGB,iShr CoreCA Govt Bnd
+XLB,iShr CoreCdnLT BndUn
+XSB,iShre Cdn Sh Trm Bnd
+XSH,iShrCoreCdnSTCorpBnd
+XBB,iShr Cdn Univers Bnd
+XCNS,iShr CoreConservBal
+XEQT,iShrs CoreEqPortf Un
+XGRO,iShares Core Grow Un
+XINC,iSharesCorIncmBal Un
+XAW,iShr CoreMSCI AC Wex
+XAW.U,iShr CoreMSCI ACWXUS
+XINT,iShares Cr MSCI AI E
+XDIV,iShare CorMSCICdnDiv
+XEF,iShr CorMSCIEAFE IMI
+XEF.U,iShr CoreMSCI IMI US
+XFH,iShrCrMSCI EAFEIMIHG
+XEC,iShr Core EmrgMktIMI
+XEC.U,iShrCorMSCI EmrMktUS
+XDG,iShr CorMSCI GlblDiv
+XDG.U,iShrCorMSCI GlbDivUS
+XDGH,iShr CorGlbDivCA-Heg
+XDU,iShr CoreMSCI USQuDv
+XDU.U,iShrCorMSCI USQuDvUS
+XDUH,iShrCorUS DivCADHg
+XUS,iShares CoreSP500Idx
+XUS.U,iShr CoreS&P500IdxUS
+XSP,iShares Core S&P 500
+XTOT,iShares Cor SP Total
+XTOT.U,iShares Cor SP To US
+XTOH,iShares Core SP Tota
+XUU,iShr CorS&P US MktUn
+XUU.U,iShr CorS&P USMkt US
+XUH,iShre CoreS&P US Mkt
+XIC,iShr CoreSP/TSX Comp
+XHAK,iShr CybersecTech CA
+XTR,iShare Divrs Mo Incm
+CEW,iShares EqWeight Un
+IBQT,iShares Eq BTC E Prt
+XSHG,iShrESG Advnce1-5Bnd
+XCBG,iShrESG AdvCACorpBnd
+XCSR,iShareESG AdvMSCI CA
+XDSR,iShrESG AdvMSCI EAFE
+XUSR,iShr ESG AdvMSCI USA
+XSAB,iShrESG AwreCA AgBnd
+XSTB,iShrESG AwreCA STBnd
+XESG,iShr ESG AwrMSCI CA
+XSEA,iShrESG AwrMSCI EAFE
+XSEM,iShrESG AwrMSCI Mkts
+XSUS,iShrESG Awr MSCI USA
+GBAL,iShrESG Bal ETF Port
+GCNS,iShr ESG Conserv Bal
+GEQT,iShr ESG Eqty Portfl
+GGRO,iShrESG GrowthPortfl
+XEXP,iShares ExpontlTecCA
+XFLI,iShr FlexM IncETFCAD
+XFLI.U,iShr FlexM IncETFUSD
+XFLX,iShr FlMnthly CA-HGD
+XFR,iShares Fltg Rate Un
+XDNA,iShr GenomicImmun CA
+COW,iShares GlblAgri Un
+XCLN,iShrs GlbCleanEngyCA
+XDRV,iShr GlbElecAutoVhcl
+XHC,iShare Glbl Hlthcare
+CIF,iShares GlbInfras Un
+CYH,iShares GlblMoDiv Un
+CGR,iShares GlblRlEst Un
+CWW,iShares GlblWater Un
+CGL,iShare GldBulHdgd Un
+CGL.C,iShare GldBul Nn-Hdg
+XQB,iShare HighCdnBnd Un
+XID,iShares India Idx Un
+XEB,iShr JP USD Emrg Mkt
+XEN,iShare Jantzi Social
+XIN,iShare MSCI EAFE Idx
+XEMC,iShrMSCI EmrgMktChin
+XEM,iShare MSCI EmergMkt
+XEU,iShr MSCI EU IMI Idx
+XEH,iShr MSCI EU IMI CAD
+XMV,iShr MSCI MinVolCda
+XMI,iShare MSCIMinVlEAFE
+XML,iShr MinVolEAFE CA-H
+XMM,iShr MinVol EmrgMkt
+XMW,iShr MSCI MinVolGlbl
+XMY,iShr MSCIMinVlGlbC-H
+XMU,iShr MSCI MinVol USA
+XMU.U,iShr MSCI MinVol USF
+XMS,iShr MSCIMinVlUS C-H
+XMTM,iShrMSCIUSA MomntFtr
+XQLT,iShrMSCI USA QualFtr
+XVLU,iShrMSCI USA ValuFtr
+XWD,iShare MSCI World Un
+XQQU,iShrs NASDAQ 100 Idx
+XQQU.U,iShr NASDAQ 100 USF
+XQQ,iShare NASDAQ 100 Un
+CMR,iShares MoneyMkt Un
+XUSC,iShrs S&P5003%CapCan
+XUSC.U,iShrs S&P5003%CapUSD
+XSPC,iShrsS&P5003%CapHegd
+XCD,iShare S&P CnsmrDscr
+XGI,iShr SP Glbl Indstrl
+XUSF,iShr S&P US Fin Indx
+XMC,iShr S&P US MidCapUn
+XMC.U,iShrS&P US Mid-CapUS
+XMH,iShr S&P USMdCpCADHG
+XSMC,iShr S&P US SmlCapUn
+XSMH,iShrS&P US SmlCpC-Hg
+XIU,iShares S&P/TSX60 Un
+CDZ,iShr CdnDivAristo Un
+CPD,iShares CdnPref Un
+XST,iShares Consumr Stpl
+XEG,iShares S&P/TSX Engy
+XFN,iShares S&P/TSX Fins
+XIT,iShares S&P/TSX Tech
+XMA,iShare S&P/TSX Matrl
+XRE,iShares S&P/TSX REIT
+XUT,iShares S&P/TSX Util
+XMD,iShr S&P/TSX Cmpletn
+XEI,iShr S&P/TSX HiDivUn
+XETM,iShr SP/TSX EngyMtrl
+XBM,iShr SP/TSXGblBseMtl
+XGD,iShares S&P/TSX Gold
+XPF,iShr S&PTSX NA PrStk
+XCS,IShare SP/TSX SmlCap
+XCHP,iShr Semiconductr Un
+XSI,iShr ST StratgFxd Un
+SVR,iShr Sil Bul Hdgd Un
+SVR.C,iShr Sil Bul Nn-Hdgd
+XAD,iShrs US AeroDefence
+XAGG,iShr US AggreBnd CAD
+XAGG.U,iShr US AggreBond US
+XAGH,iShrUS AggreBndCA-Hg
+XHU,iShr US HiDiv EqtyUn
+XHD,iShare US HighDiv Eq
+XHY,iShares US HiYld Bnd
+XCBU,iShrUS IG CorpBondCA
+XCBU.U,iShrUS IG CorpBondUS
+XIG,iShare US IG CorpBnd
+XSU,iShares US Small Cap
+CUD,iShare US DivGrow Un
+ISO,IsoEnergy Ltd.
+IE,Ivanhoe Electric J
+IVN,Ivanhoe Mines Cl A J
+JAG,Jaguar Mining Inc. J
+JWEL,Jamieson Wellness
+JFS.UN,JFT Strategies A Un
+JNJ,J&J CDR CAN Hgd
+JOY,Journey Energy Inc.
+JPM,JPMorgan CDR Hgd
+JGLO,JPMorgan Glb SeEqAct
+JPIE,JPMorgan Inc Actv E
+JIDE,JPMorgan ID EqyAcETF
+JEPQ,JPM NdEq PInc ActETF
+JPQH,JPMorgan NSDQ Eq C H
+JBND,JPMorgan US Bd Act E
+JCOR,JPMorgan US Core Act
+JEPI,JPM USEq PInc ActETF
+JEPH,JPMorgan US Eq P C H
+JGRO,JPM US Gr Active ETF
+JPST,JPMrgn US UlShrt I A
+JAVA,JPM USVal Active ETF
+KBL,K-Bro Linen Inc.
+KNT,K92 Mining Inc. J
+KRN,Karnalyte Res J
+KEEL,Keel Infrstutre Corp
+KLS,Kelso Technologies
+KEL,Kelt Expl Ltd.
+KEY,Keyera Corp.
+KMP.UN,Killam Apt REIT Un J
+KXS,Kinaxis Inc. J
+K,Kinross Gold Corp.
+KITS,Kits Eyecare Ltd.
+KKR,KKR CDR Hgd
+KLAC,KLA CDR CAD Hdg
+GUD,Knight Therapeutics
+KEI,Kolibri Glb Energy
+KPT,KP Tissue Inc.
+LIF,Labrador Iron Ore
+LRCX,Lam Res CDR CAD Hdg
+LAM,Laramide Resources J
+LGO,Largo Inc. J
+LAS.A,Lassonde Ind Cl A SV
+LB.PR.H,Laurentian Bk Pr 13
+LNF,Leon's Furniture Ltd
+LGD,Liberty Gold Corp. J
+LBS,Life & Banc Split A
+LBS.PR.A,Life & Banc Split Pr
+LSPD,Lightspeed Commrc SV
+LNR,Linamar Corporation
+LAC,Lithium Americas J
+LAR,Lithium Argentina AG
+L,Loblaw Companies Ltd
+LMT,Lockheed Martin CDR
+LUC,Lucara Diamond J
+LULU,lululemon CDR Hgd
+LUME,Lumentum CDR CAD HD
+LMCU,Lumina Metals Corp
+LUG,Lundin Gold Inc. J
+LUN,Lundin Mining Corp
+LUNR,LunR Royalties Corp
+LVMH,LVMH CDR CAD Hedged
+LYCT,LysanderCan CrpTreas
+PBY,Lysander-Can Cr I AE
+LYFR,LysanderCan FltgActv
+LYUV.U,Lysander USCorBF ETF
+PR,Lysander-SlatrPrActv
+LTCE,Lysander-Tria C Eq F
+LORL,LOreal CDR CAD Hed
+XMF.A,M Split Corp. 14 Cap
+XMF.PR.B,M Split Corp Cl 1 Pr
+XMF.PR.C,M Split Corp 14-2 Pr
+MAAA,Macknzie AAA CLO ETF
+MEQT,Mackenzie AllEqAlloc
+MBAL,Mackenzie Bal Alloc
+MNXT,Mck BlWtr NGen GrETF
+QBB,Mackenzie CdnAggrBnd
+QCN,Mackenzie Cdn EqtyUn
+QLB,MackenzieCA GvtLgBnd
+QCE,Mackenzie CdnLrgCpEq
+MCSB,MackenzieCA FixdIncm
+QSB,Mackenzie CdnSTBndE
+MKB,Mackenzie Cdn StFxIn
+QASH,Mackenzie CA SH Bond
+MCON,Mackenzie ConsrvAllo
+MGB,Mackenzie GlbFxIncmE
+MORE,Mack Core Res ETF
+QDXB,MackenzieDvExNABndCH
+QRET,MackenzieDevMktRlEst
+QEBH,Mackenzie EmrgMktBnd
+QEE,Mackenzie EmergMktEq
+QEBL,Mackenzie EmrgCurBnd
+MFT,Mackenzie FltgRate E
+MGDV,Mack Global Div ETF
+MGEG,Mackenzie Glb EqGldO
+MGAB,Mackenzie GlbFixIncm
+QINF,MackenzieGlbl Infras
+MAGV,Mackenzie Glb Val E
+MCLV,Mack GQE Cad L V ETF
+MBQG,Mackenzie GQE Glb B
+MGQE,Mack GQE Gl Eqty ETF
+MIQE,Mack GQE Int Eqt ETF
+MALX,Mackenzie GQE US Alp
+MULV,Mack GQE US L Vl ETF
+MWLV,Mack GQE W L Vol ETF
+MGRW,Mackenzie GrwthAlloc
+QDX,Mackenzie IntlEq Idx
+QDXH,Mackenzie IntlEq C-H
+MIVG,Mackenzie IvyGlbEq E
+MKZ.UN,MacKenzie Master Un
+MMDC,Mackenzi M C HDivY E
+MMCY,Mackenzie MCyc Tlt E
+MMDF,Mackenzie MDef Tlt E
+MMEM,Mack Modus Emrg Mk E
+MMGL,Mackenzie Mod Gl Eq
+MMSD,Mackenzie Md Gl SM C
+MMEA,Mackenzie Mod Int Eq
+MMDU,Mackenzie MUS HD Y E
+QQQQ,Mackenzie NASDAQ 100
+MTBA,Macknzie Tg2027 NAIG
+MTBB,Macknzie Tg2029 NAIG
+QUB,MackenzieUSAggrBndCH
+MUB,Mackenzie Uncnstrn E
+MAUG,Macknzi US All Cap G
+QTLT,Mackenzie USGvtLgBnd
+QHY,Mackenzie USBndCAD-H
+QUIG,Mackenzie USCrpBnd E
+QUU,Mackenzie USLrgCapEq
+QAH,MackenzieUS LrgCapCH
+MAUV,Mackenzie US Value E
+MPC,Madison Pacific Cl B
+MPC.C,Madison Pacific NV C
+MLRG,Madison US Lrg Cap E
+MMID,Madison US Mid Cap E
+MAL,Magellan Aerospace
+MG,Magna Int'l Inc.
+NICU,Magna Mining Inc
+MEQ,Mainstreet Equity J
+MDI,Major Drilling Group
+MAK.U,MAK AcquisCorClA Shr
+MAK.WT.U,MAK AcquisCor Warrat
+MEQP,Manulife A Eq ETF P
+MBND,Manulife AF Inc ETF
+MBAP,Manulife Balnce Port
+MCAN,Manulife Cdn Eqt Cls
+MCAP,Manulife Cons Portfo
+MCOR,Manulife Cor Pl Bd F
+CORB,Manulife Corp Bond F
+MMAC,Mnulfe CQS Mlt A C F
+MDIF,Manulife Divd Inc Fd
+MFC,Manulife Financial
+MFC.PR.B,Manulife Fin Sr 2 Pr
+MFC.PR.C,Manulife Fin A Pr 3
+MFC.PR.F,Manulife Fin Sr 3 Pr
+MFC.PR.I,Manulife Fin Sr 9 Pr
+MFC.PR.J,Manulife Fin Sr11 Pr
+MFC.PR.K,Manulife Fin Sr13 Pr
+MFC.PR.L,Manulife Fin Sr15 Pr
+MFC.PR.M,Manulife Fin Sr17 Pr
+MFC.PR.N,Manulife Fin Sr19 Pr
+MFC.PR.Q,Manulife Fin Sr25 Pr
+MFUN,Manulife Fdml Eqt Fd
+MGLO,Manulife Glb Gr Fd E
+MGAP,Manulife Growth Port
+MCLC,Manulfe MltCdnLrgUnh
+MCSM,ManulfMultfCdSMID Un
+MINT,Manulfe MltDevInt Un
+MINT.B,Manulfe MltDevIntUnh
+MEME.B,Manulife Emrg MktsUn
+MULC,Manulfe MltUSLrgCpHg
+MULC.B,Manulf MltUSLrgCpUnh
+MUMC,Manulfe MultUS MidHg
+MUMC.B,Manulfe MultUSMdUnhg
+MUSC,Manulf US SmallCapUn
+MUSC.B,ManulfUSSmallCap U-H
+BSKT,Manulife SmrtCoreBnd
+CBND,Manulife SmrtCorp Un
+CDEF,Manulife SmtDefEq Un
+CDIV,Manulife SmartDiv Un
+IDEF.B,Manulife IntlDefEqUH
+IDIV.B,Manulife Intl Div UH
+IDUV.U,Manulife Sm Int D U
+TERM,Manulife SmrtST Bond
+UDEF,Manulife USDefEqHeg
+UDEF.B,Manulife USDefEqUnHg
+UDEF.U,Manulife US DefEq US
+UDIV,Manulife SmrtUSDivHG
+UDIV.B,Manulife SmrtUSDivUH
+UDIV.U,Manulife SmrtUSDivUS
+MFI,Maple Leaf Foods Inc
+MARI,Marimaca Copper J
+MAXQ,Maritime Lnch Srv In
+MRE,Martinrea Int'l Inc.
+MRV,Marvll Tech CDR Hdg
+MA,Mastercard CDR Hgd
+MATR,Mattr Corp.
+MXG,Maxim Power Corp.
+MKP,MCAN Mortgage Corp.
+MCB,McCoy Global Inc.
+MCD,McDonalds CDR Hgd
+MUX,McEwen Inc. J
+MDA,MDA Space Ltd
+MDP,Medexus Pharma J
+DR,Medical Facilities
+MDNA,Medicenna Therapeu J
+LABS,MediPharm LabsCorp J
+MGA,Mega Uranium Ltd. J
+BNKU,MegaLong 3X Cdn Bank
+CGMU,MegaLong 3X Cdn Gold
+QQQU,MegaLong 3X NASDAQ
+SPYU,MegaLong (3X) S&P 50
+SOXU,MegaLong(3X) US Semi
+CGMD,MegaShort-3X Cdn Gol
+QQQD,MegaShort -3X NASDAQ
+SPYD,MegaShort -3X S&P500
+SOXD,MEGASHORT-3X US Semi
+MRD,Melcor Developments
+BENZ,MercedesBenzCDR CaHD
+MRK,Merck CDR Hgd
+MER,Meren Energy Inc
+MNO,Meridian Mining PLC
+NMBL,Meri Tactcl Bal Port
+NMEQ,Meri Tactcl Eqt Port
+NMGR,Meri Tactcl Grwth Po
+NMMO,Meri Tac Mod Port ET
+META,Meta CDR CAD Hedged
+MTEK,Metatek-Group Ltd
+MX,Methanex Corporation
+MRU,Metro Inc.
+MBX,Microbix Biosystms J
+MU,Micron CDR Hgd
+MSFT,Microsoft CDR CAD HD
+MAEC,Mid Act En Div Cls E
+MAGF,Midfld Alt Glb FI F
+MDIV,Midfld Glb Div Grwer
+MINF,Midfldf GlbInfrasDiv
+MGFI,Midfld Gbl MS Fi F
+MHCD,Middlefld Hlthcr Div
+MIPC,Mid Income Pls Cls E
+MREL,Middlefld Rl Est Div
+MSBP,Midfld Sh Du Bd Pl E
+MUSA,Middlefld US EqtyDiv
+MSV,Minco Silver Corp J
+MSA,Mineros S.A.
+MAI,Mining Americas Inc
+MID.UN,MINT Incme Fnd Tr Un
+MOAT,Moat Act Pre Yld ETF
+TPX.A,MolsonCoors Cda A LV
+TPX.B,MolsonCoors Cda B NV
+MAU,Montage Gold Corp
+MS,MorganStan CDR Hgd
+MRC,Morguard Corporation
+MRG.DB.B,Morgaurd NA Rl 6% Db
+MRG.UN,Morguard NA REIT UN
+MRT.DB.A,Morguard REIT 5.25Db
+MRT.UN,Morguard Real Est Un
+MTY,MTY Food Group Inc.
+MTL,Mullen Group Ltd.
+CBNK,Mulvihill CdnBnk Yld
+MBNK,Mulvihill Cdn Bnk ET
+CORP,Mulvihill Corp Bd Fd
+SPFD,Mulvihill EnSpPr ETF
+MPY,Mulvihill PremiumYld
+ASHR,Mulvihill Sp Cap S E
+PFRD,Mulvihill Sp Pr Sh E
+NANO,Nano One Materials J
+GRA,NanoXplore Inc. J
+NA,Nat'l Bank of Canada
+NA.PR.C,Nat'l Bank Ser 38 Pr
+NA.PR.E,Nat'l Bank Ser 40 Pr
+NA.PR.G,Nat'l Bank Ser 42 Pr
+NA.PR.I,Natinal BOC Sr47 Pre
+NA.PR.K,Natinal BOC Sr49 Pre
+NA.PR.S,Nat'l Bank Ser 30 Pr
+NPRF,NBI ActvCdnPrShr Un
+NINT,NBI ActiveIntl Eq Un
+NUSA,NBI Active US Eq Un
+NUSA.F,NBI Active US Eq Hdg
+NBLD,NBI Bal ETF Port
+NBBX,NBI Cdn Bond Indx Fd
+NCPB,NBI Cdn CoPls Bd ETF
+NDIV,NBI Cdn Div Incom Un
+NBCG,NBI Can Eq Growth Fd
+NBCX,NBI Can Equity IdxFd
+NCNS,NBI Cons Portfolio
+NBEM,NBI Div EmerMkr Eq
+NEQT,NBI Eq Portfolio
+NBGE,NBI Glb Eqty Fnd ETF
+NBGE.F,NBI Gl Eqty Fnd ETFH
+NGPE,NBI GlblPrivateEq Un
+NREA,NBI GlblRl AssetIncm
+NBSC,NBI Glb Sml CpFd ETF
+NBSC.F,NBI Glb Sl CpFd ETFH
+NGRW,NBI Grwth ETF Port
+NHYB,NBI HighYld Bond Un
+NINV,NBI Innovator Fd ETF
+NINV.F,NBI Innvtors Fd ETFH
+NBIE,NBI Intl Eqty Fd ETF
+NBIE.F,NBI Intl EqtyFd ETFH
+NBIX,NBI Intl Eq Idx Fd
+NBIV,NBI Intl Value Fd Et
+NALT,NBI Liquid Alternatv
+NBQC,NBI Quebec Grwth Fd
+NSDC,NBI SmrtDta Cdn Eq F
+NSUY,NBI SmtD EnhYdUS EqF
+NSDG,NBI SmartDt Gbl EqFd
+NICC,NBI SmtDt Intl EqCcF
+NSDI,NBI SmtDta IntEq ETF
+NSDI.F,NBI SmDta IntEq ETFH
+NUCC,NBI SmtData US EqCC
+NSDU,NBI SmaData USEq ETF
+NSDU.F,NBI SmData USEq ETFH
+NSCB,NBI SustainCdnBnd Un
+NSCC,NBI SustainCA CrpBnd
+NSCE,NBI SustainCdnEq Un
+NSSB,NBI SustainCdnST Bnd
+NSGE,NBI SustainGlblEq Un
+NTGA,NBI Ta2026 InGrBd Fd
+NTGB,NBI Ta2027 InGrBd Fd
+NTGC,NBI Ta2028 InGrBd Fd
+NTGD,NBI T2029 Igb Fd ETF
+NTGE,NBI Trgt 2030 Inv Fd
+NTGF,NBI Trgt 2031 Inv GB
+NTGG,NBI Tgt 2032 Inv GBF
+NTHM,NBI Theme Rot Ptf
+NBUE,NBI US Equity Fd ETF
+NBUE.F,NBI US Eqty Fd ETFH
+NBUX,NBI US Eq Idx Fd
+NUST,NBI Ult ShtTm FixIcF
+NUBF,NBI Unconstr FxdIncm
+NBIS,Nebius Group CDR C H
+NEBP,NEI Balanced ETF Prt
+NECP,NEI Cons Inc ETF Prt
+NESB,NEI Glb Shrt Trm BdF
+NEGP,NEI Growth ETF Prtfo
+NEO,Neo Perform Material
+NSTL,Nestle CDR CAD Hedg
+NFLX,Netflix CDR Hgd
+AIAI,NetraMark Hlding Inc
+NFGC,New Found Gold Corp
+NUAG,New Pacific Metals J
+NXE,NexGen Energy Ltd. J
+PCD.UN,NextEdge CIA Di Gr P
+NEE,NextEra CDR Hgd
+NEXT,NextSource Materl J
+NXR.UN,Nexus Industrl REIT
+NFI,NFI Group Inc.
+NFI.DB,NFI Group Inc 5% Deb
+GASX,NG Energy Int Corp S
+GASX.DB,NG Energy Int Corp D
+GASX.WT.A,NG Energy Int Corp W
+NGEX,NGEx Minerals Ltd.
+NKE,NIKE CDR Hgd
+GOHI,Ninep Alphabet HiShr
+NACO,Ninept Alt Cr Opp Fd
+NAGF,Ninepoint Amer Gr Fd
+ANHI,Ninepoint Anthr HS E
+NBAL,Ninepoint Blncd+ F
+ABHI,Ninepoint Barric ETF
+BCHI,Ninepoint BCE Hi ETF
+CCHI,Ninepoint Cameco ETF
+CQHI,Ninepoint Cdn NaReHi
+NSAV,Ninept Cash Mngmt FD
+CLHI,Ninept Celest HghShr
+CRHI,Ninepoint CNR Hi ETF
+CSUC,Ninept Constl CrShr
+CSHI,NineptCon Sof HiShr
+TKN,Np Crypto AI Ldr ETF
+TKN.U,Np Cryp AILdr ETF US
+NBND,Ninept Divers Bnd ET
+ENHI,Np Enh Enb HghSh ETF
+NNRG,Ninepoint En Fund
+NNRG.U,Ninepoint En Fd USF
+NRGI,Ninept Energy Inc Fd
+EDHI,Ninepoint Enh Aer DH
+ECHI,Np Enh Cd HighSh ETF
+USHI,Ninepoint Enh USEqHS
+EGHI,Ninepoint Gl AIO HiS
+INFR,Ninepoint Glbl Infra
+GBSL,NP Glb Slct Fd ETF
+GLDE,Ninepoint Gold&Pre M
+GBUL,Ninepoint Gld Bulion
+INHI,Ninept Intel HiShr E
+KGHI,Ninept KinrGol HiShr
+NMNG,Ninepnt Mining EvFnd
+NVHI,Ninept NVIDIA HiShr
+PLHI,Ninep Palantir HiShr
+RYHI,Np RY Link Hi Sh ETF
+SHHI,Np Shopfy HighSh ETF
+SBUL,Ninepoint Slvr Bulli
+SXHI,Ninepoint SpacX HS E
+SUHI,Np Suncor HighSh ETF
+TIF,Ninept Target Inc Fd
+TDHI,Np TD Link HiShr ETF
+TSHI,Ninept Tesla HiShr E
+NOA,N.A. Construction
+FFN,NA Fin 15 Split A
+FFN.PR.A,NA Fin 15 Split 2 Pr
+NWC,NW Company VarV&ComV
+NCF,Northcliff Res Ltd J
+NDM,Nthrn Dynasty Min J
+NPI,Northland Power Inc.
+NPI.PR.A,Northland Pwr Pr 1
+NPI.PR.B,Northland Pwr Pr 2
+NOC,Northrp Grmn CDR Hdg
+NSTR,Northstar Erth Spc E
+NRR.UN,Northview Res REIT A
+NOU,Nouveau Mond Gra Inc
+NG,NovaGold Resources J
+NVS,Novartis CDR CAD Hed
+NOVO,Novo NordiskCDR CAHg
+NVO,Novo Resources J
+NTR,Nutrien Ltd.
+NVDA,Nvidia CDR CAD HD
+SFD,NXT Energy Solutn J
+OBE,Obsidian Energy Ltd
+OXY,Oxy Petro CDR Hgd
+OGC,OceanaGold Corp.
+OLY,Olympia Fin Group
+ONEX,Onex Corporation SV
+OTEX,Open Text Corp
+OR,OR Royalties Inc
+ORAC,Oracle CDR Hgd
+OGD,Orbit Garant Drill
+ORE,Orezone Gold Corp J
+OGI,Organigram Global In
+ORIO,Orion Digital Corp
+ORV,Orvana Minerals J
+OM,Osisko Metals Incorp
+OCG,OutcropSil&Gold Corp
+OVV,Ovintiv Inc.
+PDN,Paladin Energy Ltd
+PLTR,Palantir CDR Hgd
+PANW,Palo Alto CDR Hgd
+PAAS,Pan American Silver
+POU,Paramount Res Cl A
+PXT,Parex Resources
+PVS.PR.H,Partners ValAA Pr 10
+PVS.PR.J,Partners ValAA Pr 12
+PVS.PR.K,Partners ValAA Pr 13
+PVS.PR.L,Partners Val AA Pr14
+PVS.PR.M,Partners Val AA Pr15
+PVS.PR.N,Partners VSC Srs 18
+PVS.PR.U,Partners ValAA Pr 16
+PVS.PR.V,Prtnr Vlu Splt Sr 17
+PSI,Pason Systems Inc.
+PYPL,PayPal CDR Hgd
+PDI,PDI Gold Limited
+PPL,Pembina Pipeline
+PPL.PF.A,Pembina Pipe Pr 21
+PPL.PF.E,Pembina Pipe Pr 25
+PPL.PR.A,Pembina Pipe Sr 1 Pr
+PPL.PR.C,Pembina Pipe Sr 3 Pr
+PPL.PR.E,Pembina Pipe Sr 5 Pr
+PPL.PR.G,Pembina Pipe Sr 7 Pr
+PPL.PR.O,Pembina Pipe Pr 15
+PPL.PR.Q,Pembina Pipe Pr 17
+PEP,Pepsi CDR Hgd
+PPTA,Perpetua Res Corp. J
+PRU,Perseus Mining Ord J
+PET,Pet Valu Hldgs J
+TAL,PetroTal Corp. J
+PRQ,Petrus Resources
+PEY,Peyto Expl & Dev
+PFE,Pfizer CDR Hgd
+ZYNS,Phil Mor Hgd CDR C
+PCA,Phoenix MetalsCrp
+PHX,PHX Energy Services
+PFIA,Picton LnSh Inc Alte
+PFCB,Picton Core Bnd Fd E
+PFCO,Picton Crdt Oppt Alt
+PFIN,PICTON Income Fd ETF
+PFIG,Picton Invmn Grd Alt
+PFAE,Picton LnShEq 130/30
+PFLS,Picton LnSh Eqt Alt
+PFMN,Picton Mkt Neu Eq Al
+PFAA,Picton MultStgy Alph
+PFMS,Picton Mult-Stgy Alt
+CORE,Pimco CdCr BndFndETF
+PGI.UN,PIMCO Gbl IncmOpp Un
+PMNT,PIMCO Glbl ShrtCda
+IGCF,PIMCO InvGrdCreditCA
+PLDI,PIMCO LwDuratnMoIncm
+PBAL,PIMCO mngd Blncd Prt
+PCON,PIMCO MngdConsvBndPl
+PCOR,PIMCO Mngd CoreBndPl
+PMEI.UN,PIMCO Mo Enhanced In
+PMIF,PIMCO MthlyIncmETFUn
+PMIF.U,PIMCO Mthly Incm US
+PNE,Pine Cliff Energy
+PNP,Pinetree Capital J
+PZA,Pizza Pizza Royalty
+PTM,Platinum Grp Metal J
+PLZ.UN,Plaza Retail REIT Un
+PMET,PMET Resources Inc
+PIF,Polaris Renew Engy J
+PBL,Pollard Banknote Ltd
+PNC.A,Postmedia Ntwrk C J
+PNC.B,Postmedia Ntwrk VV J
+PWI,Pwr&Infras Split Co
+PWI.PR.A,Pwr&Infras Split Co
+POW,Power Corp of Cda SV
+POW.PR.A,Power Corp 5.6% Pr A
+POW.PR.B,Power Corp 5.35% Pr
+POW.PR.C,Power Corp 5.80% Pr
+POW.PR.D,Power Corp 5.00% Pr
+POW.PR.E,Power Corp Part. Pr
+POW.PR.G,Power Corp 5.6% Pr G
+POW.PR.H,Power Corp 5.75% Pr
+POW.PR.I,PowerCorp Cda PR I
+PWF.PF.A,Power Fin 4.5% Pr 23
+PWF.PR.A,Power Financial Pr A
+PWF.PR.E,Power Financial Pr D
+PWF.PR.F,Power Fin 5.25% Pr E
+PWF.PR.G,Power Fin 5.90% Pr F
+PWF.PR.H,Power Fin 5.75% Pr H
+PWF.PR.K,Power Fin 4.95% Pr K
+PWF.PR.L,Power Fin 5.10% Pr L
+PWF.PR.O,Power Fin 5.80% Pr O
+PWF.PR.P,Power Fin 4.40% Pr P
+PWF.PR.R,Power Fin 5.50% Pr R
+PWF.PR.S,Power Fin 4.80% Pr S
+PWF.PR.T,Power Fin 4.20% Pr T
+PWF.PR.Z,Power Fin 5.15% Pr V
+PSK,PrairieSky Royalty
+MMP.UN,Precious Mtl&Mine Un
+PD,Precision Drill Corp
+PBH,Premium Brands Hldgs
+PBH.DB.H,Premium Brand 4.2 Db
+PBH.DB.I,Premium Brand 5.4 Db
+PBH.DB.J,Premium Brand 5.5 Db
+PBH.DB.K,Prem Brnd Hld Corp 5
+MCAD,Premium CashMgt Unhg
+PGIC,Prem GlInc SpF Cl A
+PGIC.PR.A,Prem GlInc SpF Pr Sh
+PIC.A,Premium Income Cl A
+PIC.PR.A,Premium Income Pr
+PMZ.UN,Primaris REIT A Un
+PDV,Prime Dividend Cl A
+PDV.PR.A,Prime Dividend Pr
+PRV.DB,PRO Real Est Tr Deb
+PRV.UN,PRO Real Est Tr Un
+PG,P&G CDR Hgd
+PRN,Profound Medical
+PRL,Propel Holdings J
+PSD,Pulse Seismic Inc.
+PABF,Purpose Actv Bal Fnd
+PACF,Purpose ActvConserv
+PAEF,Purpose Active Eq Fd
+PAGF,Purpose Actv Growth
+PBI,Purpose Best Ideas
+PBI.B,Purpose Best NnCurHg
+BTCC,Purpose BitcnCA CrHg
+BTCC.B,Purpose BitcnCA NCHg
+BTCC.J,PurposeBitcnCA CrbHg
+BTCC.U,Purpose BitcnUS NCHg
+BTCY,Purpose Btcn Yld Un
+BTCY.B,Purpose BtcnYldNC HG
+BTCY.U,PurposeBtcnYldNCH US
+BNC,Purpose Cdn Fin Incm
+MNY,Purpose Cash Mgt Un
+PRP,Purpose Conserv Incm
+BTCO.B,Purpose CorBit CA HD
+BTCO.U,Purpose CorBit US HD
+PDF,Purpose Core Div Fnd
+ETHO.B,Purpose CoEth CAD HD
+ETHO.U,Purpose CoEth USD HD
+CROC,Purp Crd Opp Cls ETF
+CROP,Purpose CreditOpp Un
+CROP.U,PurposeCredOppNCH US
+PRA,Purpose DiversRl Ast
+PDIV,Purpose EnhncDiv ETF
+PAYF,Purpose EnhncPremYld
+ETHH,Purpose EthrCA CurHg
+ETHH.B,Purpose EthrCA NC Hg
+ETHH.U,Purpose EthrUS$NC Hg
+ETHY,Purpose Ether Yld Un
+ETHY.B,Purpose EthrYld ncHg
+ETHY.U,PurposeEthrYldncHgUS
+IGB,Purpose Glbl Bond Cl
+BND,Purpose Gbl Bnd Fund
+BND.U,Purpose Glbl Bd USD
+FLX,Purpose GlbFlxCredUn
+FLX.B,PurposeGlbFlxCrCA Un
+FLX.U,PurposeGlbflxNCHG US
+PINV,Purpose GlblInnovatr
+PGRX,Purpose Gbl Resource
+KILO,Purpose Gold Bul Un
+KILO.B,Purpose Gld Nn-curHg
+KILO.U,PurposeGldUS$nnCurHg
+PSA,Purpose High IntSvgs
+PID,Purpose Intl Div Un
+PHW,Prps Intl Enh Eq I F
+PIN,Purpose Monthly Incm
+PINC,Purpose Mult-AstIncm
+PMM,Purpose Mult-StgyNeu
+PYF,Purpose Prem Yld ETF
+PYF.B,Purpose PremNnCurHeg
+PYF.U,PurposePremNnCurHgUS
+PHR,Purpose Rl Est Incme
+SBT,PurposeSlvrBulCurHeg
+SBT.B,PurposeSlvBlC$NCurHG
+SBT.U,PurposeSlvrBlUSNnCur
+SOLL,Purpose Solana Ca Hd
+SOLL.B,Purpose Sol Ca NonHd
+SOLL.U,Purpose Sol US NonHd
+SYLD,Purpose StgyYield Un
+PSY,Purpose Struc Eq Y F
+PHE,Purpose Tact Hegd Eq
+PHE.B,Purpose TacHg NN-Cur
+PBD,Purpose Tot Ret Bond
+PSU.U,Purpose US Cash USF
+MNU.U,PurposeCshMgtNC HgUS
+XRPP,Purpose XRP CAD CuHd
+XRPP.B,Purpose XRP CAD NoCu
+XRPP.U,Purpose XRP ETF USF
+PYR,PyroGenesis Inc.
+PREF,Quad Pref SplitShETF
+QCOM,Qualcomm CDR Hgd
+PWRS,Quanta Svc CDR Hdg
+QTRH,Quarterhill Inc.
+QBR.A,Quebecor Inc Cl A MV
+QBR.B,Quebecor Inc Cl B SV
+QRC,Queen's Rd Cap Inv J
+QEC,Questerre Corp.
+RAV.UN,Ravensource Fund Un
+RBA,"RB Global, Inc."
+RLB,RBC 1-5Yr LadCdn Bnd
+RBO,RBC1-5YrCDN LdCrpBnd
+RBNK,RBC CdnBnk Yld Indx
+RCDC,RBC Cdn DivCovCal CA
+RCAN,RBC Canadian Eqt ETF
+RPF,RBC Cdn Pref CA Un
+RUST,RBC Cdn Ultra ST Bd
+RCD,RBC QuantCdnDiv Lead
+RIDH,RBC Qnt EAFE DivLead
+RID,RBC QuantEAFE Div Un
+RID.U,RBC QuantEAFE Div US
+RPDH,RBC Quant EUDivLdHeg
+RPD,RBC Quant EU DivLdCA
+RPD.U,RBC Quant EU DivLdUS
+RUDH,RBC Quant US DivLead
+RUD,RBC QntUS DivLead Un
+RUD.U,RBC QntUS DivLeadUSD
+RUSB,RBC ST US CorpBndCAD
+RUSB.U,RBC ST US CorpBndUSF
+RQP,RBC Tgt27CDNCorp Bnd
+RGQP,RBC Tgt27 CDN GovBnd
+RUQP,RBC Tgt2027USCopBnCA
+RUQP.U,RBC Tgt2027USCopBnUS
+RQQ,RBC Tgt28CDNCorp Bnd
+RGQQ,RBC Tgt28 CDN GovBnd
+RUQQ,RBC Tgt2028USCopBnCA
+RUQQ.U,RBC Tgt2028USCopBnUS
+RQR,RBC Tgt29CDNCorp Bnd
+RGQR,RBC Tgt29 CDN GovBnd
+RUQR,RBC Tgt2029USCopBnCA
+RUQR.U,RBC Tgt2029USCopBnUS
+RQS,RBC Tg30CDNCorpCaBnd
+RGQS,RBC Tgt30CDNGovCaBnd
+RUQS,RBC Tgt2030USCopBnCA
+RUQS.U,RBC Tgt2030USCopBnUS
+RQT,RBC Tg2031 Ca Cop Bd
+RGQT,RBC Tg2031 Ca Gvt Bd
+RUQT,RBC Tg2031 Us Cop Bd
+RUQT.U,RBC T2031 Us CoBd US
+RQU,RBC32 CanCorpBnd ETf
+RGQU,RBC 2032CanGovBd ETF
+RUQU,RBC Tg32USCorp Bd CA
+RUQU.U,RBC Tg32USCorp Bd US
+RDBH,RBC US DiscountBndHg
+RUDB,RBC US Discount Bond
+RUDB.U,RBC US DiscountBndUS
+RUDC,RBC US DivCovCall CA
+RUDC.U,RBC US DivCovCall US
+RUSA,RBC USLgCapEq CA ETF
+RUSA.U,RBC USLgCapEq US ETF
+RS,Rl Estate Split Cl A
+RS.PR.A,Rl Estate Split Pr
+REAL,Real Matters Inc.
+RDDT,Reddit CDR CAD Hgd
+QSR,Restaurant Brnd Intl
+QSP.UN,Restaurant BrndLP Un
+RVX,Resverlogix Corp. J
+RGBM,Return Sta GlBlM ETF
+RGBM.U,Return Sta GlBlM USD
+RFA,RFA Financial Inc
+RFA.PR.E,RFA Financial Inc P
+RFA.PR.I,RFA Financial Inc I
+RIC,Richards Grp Inc Unt
+RCH,Richelieu Hardware
+RIO,Rio2 Limited
+REI.UN,RioCan Rl Est Tr Un
+HOOD,Robinhood CDR CAD HD
+ROG,Roche CDR CAD Hedge
+RKLB,Rocket Lab CDR CAD H
+RKLC,Rcklnc Prncpl Eq ETF
+RGSI,Rockpoint Gs Strg In
+RCI.A,Rogers Comm Cl A
+RCI.B,Rogers Comm Cl B NV
+RSI,Rogers Sugar Inc.
+RSI.DB.G,Rogers Sugar I 6 Deb
+RSI.DB.H,Rogers Sugar 5.5 Deb
+RM,Roxmore Resources In
+RY,Royal Bank of Canada
+RY.PR.S,Royal Bank Pr Ser BO
+MNT,Ry Cdn Mint-Gold ETR
+MNT.U,Ry CA MintGld ETR US
+MNS,Ry Cdn Mint-Sil ETR
+MNS.U,Ry CA MintSil ETR US
+RTG,RTG Mining Inc Ord J
+RTX,RTX CDR Hgd
+RUA,Rua Gold Inc
+RBY,Rubellite Energy Cor
+RUS,Russel Metals Inc.
+RBND,Russell InvCP Fx Inc
+HALO,Russell Iv Falln Ang
+RIFI,Russell InvstFxdIncm
+RIGE,Russ InvGl EqPl ETF
+RIIN,Russl InvGlbInfrasPl
+RQCA,Russell InvMF Cnd Eq
+RQIN,Russell InvMF intl P
+RQUS,Russell Inv MF US Eq
+RIRA,Russl InvestRl Asset
+SPGI,S&PGlobal CDR Hgd
+MIC.PR.A,Sagen MI Cda A Pr 1
+SFC,Sagicor Fin Co
+CRM,Salesforce CDR Hgd
+SLT,Saltire Capital CAD
+SLT.U,Saltire Capital USD
+SLT.WT,Saltire Cap Wts CAD
+SLT.WT.U,Saltire Cap Wts USD
+SNDK,Sandisk CDR CAD Hgd
+STC,Sangoma Tech Corp.
+SNY,Sanofi CDR CAD Hedg
+SCZ,Santacruz Silv Min L
+SAPS,SAP CDR CAD Hedged
+SAP,Saputo Inc.
+MSCL,Satellos Bioscience
+SOIL,Saturn Oil & Gas Inc
+SIS,Savaria Corp. J
+AAPU,SavvyLong (2X) AAPL
+AMDU,SavvyLong 2X AMD ETF
+AMZU,SavvyLong (2X) AMZN
+ANTU,SavvyLong 2X Anthr E
+ABXU,SavvyLong2x BarriETF
+CCOU,SavvyLng2X Camec ETF
+CNQU,SavvyLng2XCdnNResETF
+COIU,SavvyLong 2X COIN E
+CSUU,SavvyLg2X CoSoft ETF
+ALPU,SavvyLong 2X GOOGL E
+RBNU,SavvyLong 2X HOOD E
+METU,SavvyLong 2XMETA ETF
+MUU,SavvyLong2X Micro ET
+MSFU,SavvyLong (2X) MSFT
+MSTU,SavvyLong 2X MSTR E
+NVDU,SavvyLong (2X) NVDA
+PLTU,SavvyLong 2X PLTR E
+SNDU,SavvyLong 2X SanDisk
+SHPU,SavvyLg2X Shopi ETF
+ORBU,SavvyLong 2x SpaceX
+TSLU,SavvyLong (2X) TSLA
+COMU,SavvyLg2XCIBC EqtETF
+NBCU,SavvyLng2xNB EQTETF
+RBCU,SavvyLg2X RBC EqtETF
+TDU,SavvyLg2X TDB EqtETF
+OILU,SavvyLong GeCrOi ETF
+GASU,SavvyLong GeNaGa ETF
+COID,SavvyShort 2X CN ETF
+MSTZ,SavvyShort 2X MSTR E
+NVDD,SavvyShort -2X NVDA
+SHPD,Savvy Shrt -2x Shp E
+TSLD,SavvyShort -2X TSLA
+OILD,SavvyShort GeCrO ETF
+GASD,SavvyShort GeNaG ETF
+SCHN,SchneiderElecCDR CaH
+SEA,Seabridge Gold Inc J
+PME,Sentry Prime Metal A
+SEC,Senvest Capital Inc
+SBI,Serabi Gld plc Ord J
+SVA,Sernova Biothera Inc
+NOWS,ServiceNow CDR Hgd
+S,Sherritt Int'l Corp
+SHOP,Shopify Inc A SV
+SMNS,Siemens CDR CAD Hed
+SIA,Sienna Senior Living
+SVB,Silver Bull Res J
+ELEF,Silver Elephant J
+AGMR,Silver Mntn Rsrc Inc
+AGMR.WT.B,Silv Mntn Rsrc Inc W
+SLVR,Silver Tiger Mtl Inc
+SVM,Silvercorp Metals J
+SRV.UN,SIR Royalty Incm Un
+SKE,Skeena Resources J
+SGR.U,Slate GroceryREIT US
+SGR.UN,Slate GroceryREIT Un
+SBGE,SLGI MFS Blnd Rs G E
+SBIE,SLGI MFS Blnd Rs I E
+SBLG,SLGI MFS Bl Rs L V G
+SBLI,SLGI MFS Bl Rs L V I
+SRU.UN,SmartCtr REIT VV Un
+SNOW,Snowflake CDR CAD HD
+SGD,Snowline Gold Corp
+SLS,Solaris Res Inc. J
+SLR,Solitario Res J
+SFI,Solution Financial J
+SHLE,Source Energy Serv J
+SOBO,South Bow Corp
+SXGC,Southern Cross Gold
+SPCX,SpaceX CDR (CAD Hgd)
+SDE,Spartan Delta Corp.
+EDT,Spectral Medical Inc
+TOY,Spin Master Corp SV
+SII,Sprott Inc.
+COP.U,Sprott Phys Copp Usd
+COP.UN,Sprott Phys Copp Cdn
+CEF,Sprott PhyGld&Sil Tr
+CEF.U,Sprott PhyGld&Sil US
+PHYS,Sprott PhyGold CA Un
+PHYS.U,Sprott Phy Gld Un US
+SPPP,Sprott PhyPlat CA Un
+SPPP.U,Sprott PhyPlat US Un
+PSLV,Sprott Phy Sil Cdn
+PSLV.U,Sprott Phy Silver US
+U.U,Sprott PhysUraniumUS
+U.UN,Sprott PhysUraniumUn
+SSRM,SSR Mining Inc.
+SAU,St. Augustine Gld J
+STCK,Stack Capital Grp J
+STCK.WT.A,Stack Cap GrpInc Wts
+STCK.WT.B,Stack Capital Gr WtB
+STCK.WT.C,Stack Capital Gp Wts
+STN,Stantec Inc.
+DIAM,Star Diamond Corp J
+SBUX,Starbucks CDR Hgd
+SAM,Starcore Intl Mine J
+SJ,Stella-Jones Inc.
+STGO,Steppe Gold Ltd. J
+RAY,StingrayGroup SVVSV
+STLR,STLLR Gold Inc.
+SVI,StorageVault Cda
+SVI.DB.C,StorageVault 5% Deb
+SVI.DB.D,StrgVlt Canada Inc
+STG,STRACON Grp Hldg Inc
+MSTR,Strategy CDR CAD HD
+SCR,Strathcona Res Ltd.
+SYK,Stryker CDR CAD Hgd
+SBAL,Sun Life Blncd E P
+SCNS,Sun Life Cons E P
+SLCA,Sun Life Cacpp ETF
+SLSC,Sun Life Crs Spcl C
+SEQT,Sun Life Eq ETF P
+SLF,Sun Life Fin Inc.
+SLF.PR.C,Sun Life Fin Ser3 Pr
+SLF.PR.D,Sun Life Fin Ser4 Pr
+SLF.PR.E,Sun Life Fin Ser5 Pr
+SLF.PR.G,Sun Life Fin Sr8R Pr
+SLF.PR.H,Sun Life Fin 10R Pr
+SLF.PR.J,Sun Life Fin 9QR Pr
+SFIX,Sun Life Fxd Inc E P
+SGRW,Sun Life Growth E P
+SLGC,Sun Lfe Glb C P B F
+SU,Suncor Energy Inc.
+SNDY,Sunday Lake Gold Crp
+SPB,Superior Plus Corp.
+SMCI,Supermicro CDR Hgd
+SXP,Supremex Inc.
+SGY,Surge Energy Inc.
+SGY.DB.B,Surge Engy 8.5 Db 3
+SIH.UN,Sustain Innov&HlthUn
+SWP,Swiss Water Coffee
+SYZ,Sylogist Ltd.
+TMUS,T Mobile CDR CAD Hdg
+TBL,Taiga Building Prod
+TALA,Talamore Mining Corp
+TSK,Talisker Res Ltd J
+TSK.WT,Talisker Res Ltd Wts
+TSK.WT.A,Talisker Resources L
+TLO,Talon Metals Corp. J
+TVE,Tamarack Valley Engy
+GRID,Tantalus Sys Hldg J
+TRP,TC Energy Corp
+TRP.PR.A,TC Energy Corp Pr 1
+TRP.PR.B,TC Energy Corp Pr 3
+TRP.PR.C,TC Energy Corp Pr 5
+TRP.PR.D,TC Energy Corp Pr 7
+TRP.PR.E,TC Energy Corp Pr 9
+TRP.PR.F,TC Energy Corp Pr 2
+TRP.PR.H,TC Energy Corp Pr 4
+TRP.PR.L,TC Energy Corp Pr10
+TGED,TD ActvGlbEnhncDivCA
+TGED.U,TD ActvGlbEnhncDivUS
+TGGR,TD ActvGlb EqGrow CA
+TGFI,TD Actv Glbl Incm Un
+TINF,TD ActvGlbInfrasEqUn
+TGRE,TD Actv Glb RlEst Eq
+TPRF,TD Active Pref ShrUn
+TUEX,TD ActvUS EnhncDivHg
+TUED,TD ActvUS EnhanDivCA
+TUED.U,TD ActvUS EnhanDivUS
+TUHY,TD ActvUS HiYldBndUn
+TEQT,TD All Eq ETF Portfo
+TCOM,TD Alt Commod Pool E
+TBAL,TD Balanced Port Un
+TDB,TD Cdn Aggregate Bnd
+TBNK,TD Cdn Bank Div Un
+TCCB,TD Can Corp Bond Fd
+TCB,TD Cdn Corp Bd Ind E
+TTP,TD Cdn Equity Idx Un
+TGB,TD Cdn Gov Bd Ind E
+TCLB,TD Cdn LT FedBond Un
+TCSH,Td Cash Mgmt ETF
+TCON,TD Conserv Port Un
+TDOC,TD GlbHealthcr Leadr
+TDOC.U,TD GlbHlthcr LeadrUS
+TECI,TD Glb Tech Innov Un
+TECX,TD Glb TechLdr CA Hg
+TEC,TD Glbl TechLeadrsCA
+TEC.U,TD Glbl TechLeadrsUS
+TGRO,TD Growth Port Un
+THE,TD Int'l Eqty CA Heg
+TPE,TD Int'l Eqty Idx Un
+TDNA,TD NA Divd Fund ETF
+TQCD,TD Q Cdn Div ETF Un
+TCLV,TD Q Cdn LowVolty CA
+TQGD,TD Q Glbl Div ETF Un
+TQGM,TD Q Glbl Multifact
+TQID,TD Q Intl Div ETF
+TILV,TD Q IntlLowVolatile
+TULV,TD Q US LowVolty CAD
+TQSM,TD Q US SmlMidCap Eq
+TQSM.U,TD Q US SmMiCap EqUS
+TCSB,TD SlctST CorpBndLad
+TUSB,TD SlctUS CorpBndlad
+TUSB.U,TD SlctUS CorpBndUSF
+TSTB,TD Short Term Bond F
+TBCG,TdTgt 27 InvGr B Etf
+TBUG.U,TdTgtUS27 InvGrB Etf
+TBCH,TD Target2028 IG ETF
+TBCI,TD Target2029 IG ETF
+TBCJ,TD Target2030 IG ETF
+TBCK,TD Target 2031 Inv G
+TUSD.U,TD US Cash Mag ETF U
+THU,TD US Eq CAD Heg Un
+TPU,TD US Equity Indx Un
+TPU.U,TD US Eqty Index US
+TULB,TD U.S. LT TreasBond
+TUST,TD Ultra Short Bond
+XTD,TDb Split Cl A
+XTD.PR.A,TDb Split Prior Eqty
+TECK.A,Teck Res Cl A MV
+TECK.B,Teck Res Cl B SV
+TCS,Tecsys Inc. J
+TSAT,Telesat Corp A & B
+T,TELUS Corporation
+TELY,TelyRx Holdings SubV
+TNZ,Tenaz Energy Corp.
+TGO,TeraGo Inc.
+TSND,TerrAscend Corp. J
+TVK,TerraVest Industries
+TSLA,Tesla CDR CAD HD
+TXN,TexasInst CDR Hgd
+TFII,TFI International
+QETH.U,The EtherFnd A Un US
+QETH.UN,The EtherFnd A C$ Un
+TMO,ThermoFisher CDR Hgd
+THNC,Thinkific Labs Inc.
+TRI,Thomson Reuters Corp
+TRI.PR.B,Thomson Reuter Pr II
+TWM,Tidewater MdStrmInfr
+TWM.DB.A,Twater Mdstrm USubDb
+LCFS,Tidewater Renew
+TLRY,Tilray Brands J
+TF,Timbercreek Fin Corp
+TF.DB.D,Timbercrk Fin 5.25Db
+TF.DB.E,Timbercrk Fin 5% Deb
+TF.DB.F,Timbercrk Fin 7.5 Db
+TINY,Tiny Ltd
+TINY.WT,Tiny Ltd Wts
+TI,Titan Mining Corp J
+TJX,TJX CDR CAN Hgd
+X,TMX Group Limited
+TPZ,Topaz Energy Corp.
+TXR,Torex Resources Inc.
+TIH,Toromont Industries
+TD,T.D. Bank
+TD.PF.A,T.D. Bank Ser 1 Pr
+TD.PF.I,T.D. Bank Ser 16 Pr
+TD.PF.J,T.D. Bank Ser 18 Pr
+TOT,Total Engy Serv Inc.
+TTES,TotalEnergiesCDRCaHg
+TXP,Touchstone Expl Inc.
+TOU,Tourmaline Oil Corp.
+TCCA,TC Quant Can 50 ETF
+TCEU,TC Quant Eur 50 ETF
+TCWW,TC Quant Gbl 50 ETF
+TCUS,TC Quant US50 Eq ETF
+TGAF,Tralucent Glb L/S Eq
+TA,TransAlta Corp.
+TA.PR.D,TransAlta Ser A Pr
+TA.PR.E,TransAlta Ser B Pr
+TA.PR.F,TransAlta Ser C Pr
+TA.PR.G,TransAlta Ser D Pr
+TA.PR.H,TransAlta Ser E Pr
+TA.PR.J,TransAlta Ser G Pr
+TRZ,Transat A.T. V & VV
+TCL.A,Transcontinentl A SV
+TCL.B,Transcontinentl B MV
+TSL,Tree Island Steel
+TKO,Trekor Metals Limite
+TBX,Tributary Expl Inc C
+TBX.WT,Tributary Expl Inc W
+TCW,Trican Well Service
+TMQ,Trilogy Metals Inc J
+TFPM,Triple Flag Precious
+TSU,Trisura Group J
+TLG,Troilus Mining Corp
+TERP,TRU.X Exog Risk Pool
+TERP.U,TRU.XExogRiskPool Us
+TNT.UN,True NthCommrcl J Un
+TRX,TRX Gold Corp J
+TC,Tucows Inc.
+TVA.B,TVA Group Inc. B NV
+TWC,TWC Enterprises Ltd.
+UBER,Uber CDR CAN Hgd
+UBSS,UBS CDR CAD Hedged
+UNP,UnionPacif CDR Hgd
+UNI,Unisync Corp.
+UNC,United Corporations
+UNC.PR.A,United Corp 1st Pr
+UNC.PR.B,United Corp Pr 59
+UNC.PR.C,United Corp Pr 63
+UNH,UnitedHealth CDR Hgd
+UPS,UPS CDR CAN Hgd
+URE,Ur-Energy Inc. J
+URB,Urbana Corporation
+URB.A,Urbana Corp. Cl A NV
+FTU,US Financial 15 Cl A
+FTU.PR.B,US Financial15 Pr 12
+HISU.U,US HiIntrstSvgUNH US
+HISU.V,US Hi Int Sav Ac Fnd
+MUSD.U,US PremiumCshMgUH US
+VLO,Valero Enrgy CDR CAD
+VLE,Valeura Energy Inc J
+VGC,Valor Gold Corp
+VEQT,Vanguard AllEqPortfl
+VBAL,Vanguard BalETF Port
+VAB,Vanguard Cdn Agr Bnd
+VCB,Vanguard Cdn CorpBnd
+VGV,Vanguard CdnGvt Bond
+VLB,Vangrd CdnLT GvtBond
+VSB,Vanguard Cdn S-T Bnd
+VSC,Vanguard S-T CrpBond
+VVSG,Vn Cd Ush GB Idx ETF
+VCNS,Vanguard ConservPort
+VCIP,Vanguard Consrv Incm
+VIGG,Vang Dev exNA D Ap I
+VCN,Vanguard CdaAllCapUn
+VCE,Vanguard FTSE CdaIdx
+VRE,Vanguard FTSECdnREIT
+VDY,Vanguard FTSE DivYld
+VIU,Vanguard exNA Idx Un
+VI,Vanguard exNA CA-Heg
+VDU,Vangrd FTSE Dev exUS
+VEF,Vangrd Dev US CA-heg
+VA,Vanguard Dev AsiaPac
+VE,Vanguard FTSE Dev EU
+VIDY,VanguardFTSE NADivYl
+VEE,Vanguard FTSEEmrgMkt
+VXC,Vanguard FTSEGlobeCA
+VCOR,Vang Glb CorePlus B
+VMO,Vanguard GlbMomntFac
+VVL,Vanguard GlbValFactr
+VGRO,Vanguard GroETF Port
+VUN,Vanguard MrnSt US TM
+VUS,Vanguard MrnSt US CD
+VRIF,Vanguard Retire Incm
+VFV,Vanguard S&P500 Indx
+VSP,Vanguard S&P500 C-Hg
+VGG,Vanguard US DivAppr
+VGH,Vanguard USDivCad-hg
+VUDV,Vngrd US Hi Div Yld
+VUDH,VangUS HiDiv Yld I E
+VCM,Vecima Networks Inc.
+VLN,Velan Inc. SV
+NPK,Verde Agritech J Ord
+VZ,Verizon CDR Hgd
+VET,Vermilion Energy Inc
+VRSA,Versa Bancorp
+VMET,Versamet Rylt Corp
+FORA,VerticalScope J SV
+VRTS,Vertiqal StudiosCorp
+VRT,Vertiv CDR CAD Hdg
+VISA,Visa CDR CAN Hgd
+VGZ,Vista Gold Corp
+VITL.DB.I,Vital Infrast 7.75Db
+VITL.UN,Vital Infra Propt Un
+VHI,Vitalhub Corp. J
+VZLA,Vizsla Silver Corp
+FLT,Volatus Aerspce Inc
+VOXR,Vox Royalty Corp. J
+WJX,Wajax Corporation
+WFC,Wall Financial Corp
+WMT,Walmart CDR Hgd
+DIS,Walt Disney CDR Hgd
+WCN,Waste Connections
+WAST,WasteMgmt CDR Hgd
+WAAV,WaveFront AWAF ETF
+WSRD,WealthsimpDevMktexNA
+WSRI,WealthsimplNA Social
+WELL,WELL Health Tech J
+WFCS,WellsFargo CDR Hgd
+WDO,Wesdome Gold Mines
+WFG,West Fraser Timber
+WHYP,Westcourt Ham Yld P
+WHYP.U,Westcourt Ham YldP U
+WRN,Wstrn Copper & Gld J
+WDC,Western Dgtl CDR Hd
+WRG,Western Energy Serv
+WEF,Western Forest Prod
+WGX,Westgold Res Ltd
+WTE,Westshore Terminals
+WPM,Wheaton Precious Mtl
+WCP,Whitecap Resources
+WILD,WildBrain Ltd Com&VV
+WCM.A,Wilmington Cap A NV
+WCM.B,Wilmington Cap B
+WPK,Winpak Limited
+WSP,WSP Global Inc.
+XNDU,Xanadu Quant Tch Ltd
+XTG,Xtra-Gold Resource J
+XTRA,Xtract One Tech J
+XTRA.WT,Xtract One Tech Wts
+YGR,Yangarra Res Ltd.
+Y,Yellow Pages Limited
+YRB,Yorbeau Resources J
