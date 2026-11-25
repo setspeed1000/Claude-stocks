@@ -6,9 +6,6 @@ on:
       limit:
         description: "Only screen the first N symbols (blank = all)"
         required: false
-  push:
-    branches: [claude/project-thread-lxrqgw]   # temporary: test run on the PR branch
-    paths: ["screener/**", ".github/workflows/screener.yml"]
 
 permissions:
   contents: write

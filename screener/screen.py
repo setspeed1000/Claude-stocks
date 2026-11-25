@@ -335,7 +335,7 @@ def write(df: pd.DataFrame) -> None:
 
 def summary(out: pd.DataFrame, p: dict) -> str:
     s = p["stats"]
-    top = out[out["trend_ok"]].head(15)
+    top = out[out["score"] > 0].head(15)
     lines = [f"# TSX screener, {p['generated'][:10]}", "",
              f"Universe {s.get('universe')} -> history {s.get('enough_history')} -> "
              f"${CFG['min_price']:.0f}-${CFG['max_price']:.0f} {s.get('in_price_range')} -> liquid {s.get('liquid')} -> "
