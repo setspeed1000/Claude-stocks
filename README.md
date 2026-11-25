@@ -26,13 +26,13 @@ To preview the layout with sample numbers, add `#demo` to the URL.
 
 ## What's on the page
 
-- **The race**: Claude's account against the same deposits held in XEQT, today.
-- **Key numbers**: profit from closed trades, win rate, money at risk if every stop-loss fills, and how much room is left above the 30% stop rule.
-- **The race over time**: profit over the money put in, day by day, for both sides. Hover or use the arrow keys for any day's numbers.
-- **What the account holds**, with a bar showing the split between cash and each stock.
-- **Trade plans**: each open or planned trade on a ruler from stop-loss to target, with today's price, the risk-to-reward ratio and days left before the exit date.
-- **Watchlist**, **How each trade ended** (profit or loss per closed trade, matched oldest buy first), **Trade log** and **Money put in**.
+The site has six tabs. Link straight to one with `#trades`, `#performance` and so on; `#demo/trades` shows a tab with sample numbers.
 
-Don't rename these tabs, the keys in column A of Dashboard feed, or the column headers. The sheet ID is set in `SHEET_ID` at the top of the script in `index.html`.
+- **Overview**: the race against XEQT, key numbers, profit over time, today's to-do steps, holdings with a cash and stock split, and trade plans.
+- **Trades**: a trading record (win rate, average win and loss, profit factor, expectancy, average R, hold time, fill rate, best and worst trade, fees), trade plans on a stop-to-target ruler, a profit or loss bar per closed trade, profit by stock, and the full trade log with status filters, search and a CSV download.
+- **Performance**: profit over time, Claude against XEQT side by side (time-weighted return, worst drop, best and worst day, up days, streaks, volatility), return and drawdown charts, a month-by-month table, and every deposit.
+- **Watchlist**: the watchlist with sorting, a momentum map (price against the 90-day average across, position in the 30-day range up), and plain-language signals.
+- **Journal**: trades with Claude's reasoning, to-do steps, deposits and Daily Log notes on one timeline.
+- **Tools**: a position size calculator, a what-if projection of the monthly deposits, and the stop rule in numbers.
 
-Note that the repo is public and includes the sheet ID, so anyone who finds it can view the sheet.
+The header also shows whether the TSX is open (regular hours only; holidays aren't counted).
