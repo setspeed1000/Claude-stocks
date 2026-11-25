@@ -1,6 +1,9 @@
 name: TSX screener
 
 on:
+  schedule:
+    # Fridays 19:30 UTC = 2:30 PM ET in winter, 3:30 PM in summer; market open so bid/ask quotes are live.
+    - cron: "30 19 * * 5"
   workflow_dispatch:
     inputs:
       limit:
