@@ -8,6 +8,10 @@ import screen
 assert screen.to_yahoo("BBD.B") == "BBD-B.TO" and screen.to_yahoo("REI.UN") == "REI-UN.TO"
 for bad in ["ENB.PR.A", "ABC.WT", "XYZ.DB.B", "DLR.U"]:
     assert screen.EXCLUDE.search(bad), bad
+for lev in ["BetaPro S&P500 -2xBr", "BetaProS&PTSX60 2xBl", "Some Inverse ETF"]:
+    assert screen.LEVERAGED.search(lev), lev
+for ok in ["Knight Therapeutics", "Algonquin Pwr & Util", "iShares Core Equity ETF Portfolio"]:
+    assert not screen.LEVERAGED.search(ok), ok
 for good in ["REI.UN", "BBD.B", "AQN", "XEQT"]:
     assert not screen.EXCLUDE.search(good), good
 

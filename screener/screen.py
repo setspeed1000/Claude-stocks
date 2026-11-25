@@ -47,6 +47,8 @@ CFG = {
 
 # Instrument suffixes that are not common shares, REIT units or ETFs.
 EXCLUDE = re.compile(r"\.(PR|WT|DB|NT|RT|SB|NO|IR|PS)(\.|$)|\.U$")
+# Leveraged and inverse ETFs decay over time; not for a steady-compounding account.
+LEVERAGED = re.compile(r"BetaPro|(?<![\w.])-?[1-3](?:\.\d+)?x\b|Inverse|Leveraged", re.I)
 ETF_HINT = re.compile(r"\b(?:ETF|INDEX|FUND|PORTFOLIO|ISHARES|VANGUARD)\b", re.I)
 
 
@@ -86,7 +88,7 @@ def load_universe(limit: int | None) -> tuple[pd.DataFrame, str]:
         if not cache.exists():
             raise SystemExit(f"Universe fetch failed and no cache: {e}")
         uni, src = pd.read_csv(cache), f"cached universe.csv (live fetch failed: {e})"
-    uni = uni[~uni["ticker"].str.contains(EXCLUDE)].copy()
+    uni = uni[~uni["ticker"].str.contains(EXCLUDE) & ~uni["name"].fillna("").str.contains(LEVERAGED)].copy()
     uni["yahoo"] = uni["ticker"].map(to_yahoo)
     if limit:
         uni = uni.head(limit)
@@ -191,7 +193,7 @@ def score_row(r: pd.Series) -> float:
     blended 3/6-month return divided by volatility, minus round-trip spread cost
     and a drawdown penalty. Names below their 50- or 100-day average score zero.
     """
-    if not (r["close"] > r["sma50"] > r["sma100"]):
+    if not (r["close"] > r["sma50"] > r["sma100"]) or r["pinned"]:
         return 0.0
     vol = max(r["vol_60d_ann_pct"], 5.0)
     mom = 0.4 * r["mom_3m_pct"] + 0.6 * r["mom_6m_pct"]
@@ -261,6 +263,8 @@ def run(limit: int | None, skip_quotes: bool) -> pd.DataFrame:
     stats["liquid"] = len(df)
     df = df[df["spread_est_pct"].fillna(99) <= CFG["max_spread_pct"] * 1.5].copy()  # loose pre-filter
 
+    # Daily range far below what past volatility implies: usually a takeover bid has pinned the price.
+    df["pinned"] = df["atr14_pct"] < 0.45 * df["vol_60d_ann_pct"] / math.sqrt(252)
     df["spread_pct"] = df["spread_est_pct"]
     df["score"] = df.apply(score_row, axis=1)
     df = df.sort_values("score", ascending=False).reset_index(drop=True)
@@ -294,6 +298,8 @@ def run(limit: int | None, skip_quotes: bool) -> pd.DataFrame:
 
 def note(r: pd.Series) -> str:
     bits = []
+    if r["pinned"]:
+        bits.append("price pinned after a jump, check for takeover")
     if not r["trend_ok"]:
         bits.append("no uptrend")
     if r["shares_at_20"] == 0:
