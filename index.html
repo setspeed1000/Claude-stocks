@@ -177,6 +177,7 @@
   .empty { margin: 0; color: var(--slate); max-width: var(--measure); }
 
   .split {
+    margin-top: 3rem;
     display: grid;
     grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
     gap: 2.5rem;
@@ -391,6 +392,143 @@
   button:hover { background: #fff; }
   button[disabled] { opacity: 0.6; cursor: progress; }
 
+  /* ---------- Charts ---------- */
+  :root {
+    --s-claude: #1D5FD1;
+    --s-bench: #E8702A;
+    --s-in: #8E99A8;
+    --grid: #E1E6EC;
+    --axis: #B4BDC9;
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem 1.5rem;
+    border-top: 2px solid var(--ink);
+    padding-top: 1rem;
+  }
+  .stat .label { display: block; color: var(--slate); font-size: 0.875rem; }
+  .stat .value {
+    display: block;
+    font-size: 1.625rem; font-weight: 800; font-variation-settings: "wdth" 110;
+    line-height: 1.2; font-variant-numeric: proportional-nums;
+  }
+  .stat .sub { display: block; color: var(--slate); font-size: 0.8125rem; }
+  .meter {
+    position: relative; height: 8px; border-radius: 999px;
+    background: #DCE4F1; margin: 0.5rem 0 0.25rem; overflow: hidden;
+  }
+  .meter > i { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 999px; background: var(--s-claude); }
+  .meter.is-warn > i { background: #F2A600; }
+  .meter.is-bad > i { background: var(--loss); }
+
+  .chart-card { position: relative; }
+  .chart-host { position: relative; width: 100%; }
+  .chart-host svg { display: block; width: 100%; overflow: visible; }
+  .chart-host svg:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+  .chart-legend {
+    display: flex; flex-wrap: wrap; gap: 0.375rem 1.25rem;
+    margin: 0 0 0.75rem; font-size: 0.8125rem; color: var(--slate);
+  }
+  .chart-legend span { display: inline-flex; align-items: center; gap: 0.4rem; }
+  .key-line { display: inline-block; width: 14px; height: 2px; border-radius: 1px; }
+  .key-block { display: inline-block; width: 10px; height: 10px; border-radius: 2px; }
+
+  .tip {
+    position: absolute; pointer-events: none; z-index: 5;
+    background: var(--ink); color: #fff;
+    padding: 0.5rem 0.625rem; border-radius: 4px;
+    font-size: 0.8125rem; line-height: 1.35; white-space: nowrap;
+    box-shadow: 0 4px 14px rgba(19,35,58,.18);
+    opacity: 0; transition: opacity 120ms;
+  }
+  .tip.is-on { opacity: 1; }
+  .tip .tip-date { color: #B9C4D2; margin-bottom: 0.25rem; display: block; }
+  .tip .tip-row { display: flex; align-items: center; gap: 0.5rem; }
+  .tip .tip-row b { font-weight: 700; min-width: 4.5rem; }
+  .tip .tip-row span { color: #D5DCE5; }
+
+  .chart-empty {
+    display: grid; place-items: center; text-align: center;
+    min-height: 14rem; padding: 1.5rem;
+    border: 1px solid var(--rule); border-radius: 4px;
+    background:
+      linear-gradient(var(--grid) 1px, transparent 1px) 0 0 / 100% 25%,
+      var(--sheet);
+    color: var(--slate);
+  }
+  .chart-empty p { margin: 0; max-width: 40ch; background: var(--sheet); padding: 0.5rem 0.75rem; }
+  .chart-empty b { color: var(--ink); display: block; margin-bottom: 0.25rem; }
+
+  .table-toggle { margin-top: 0.75rem; font-size: 0.875rem; color: var(--slate); }
+  .table-toggle summary { cursor: pointer; width: max-content; }
+  .table-scroll { overflow-x: auto; }
+  .data-table { width: 100%; white-space: nowrap; border-collapse: collapse; margin-top: 0.5rem; font-size: 0.875rem; }
+  .data-table th, .data-table td { padding: 0.375rem 0.5rem; border-bottom: 1px solid var(--rule); text-align: right; }
+  .data-table th:first-child, .data-table td:first-child { text-align: left; }
+  .data-table th { font-weight: 600; color: var(--slate); }
+  .data-table td { color: var(--ink); }
+
+  /* Allocation */
+  .alloc { margin-top: 1rem; }
+  .alloc-bar { display: flex; gap: 2px; height: 28px; }
+  .alloc-bar > div {
+    position: relative; border-radius: 4px; min-width: 2px;
+    display: flex; align-items: center; padding-left: 0.5rem;
+    color: #fff; font-size: 0.8125rem; font-weight: 700; white-space: nowrap; overflow: visible;
+    outline-offset: 2px;
+  }
+  .alloc-bar > div:hover, .alloc-bar > div:focus-visible { filter: brightness(1.08); }
+  .alloc-bar > div.is-dark-text { color: #0b0b0b; }
+
+  /* Trade plans */
+  .plans { display: grid; gap: 1.25rem; border-top: 2px solid var(--ink); padding-top: 1rem; }
+  .plan { display: grid; grid-template-columns: 9rem minmax(0, 1fr) 13rem; gap: 1.25rem; align-items: center; }
+  .plan-name b { display: block; font-size: 1.125rem; font-variation-settings: "wdth" 108; }
+  .plan-name span { color: var(--slate); font-size: 0.875rem; }
+  .ruler { position: relative; height: 4.25rem; }
+  .ruler-track { position: absolute; left: 0; right: 0; top: 1.875rem; height: 2px; background: var(--rule); }
+  .ruler-zone { position: absolute; top: 1.375rem; height: 1.125rem; }
+  .ruler-zone.is-risk { background: rgba(194,65,45,.16); border-left: 2px solid var(--loss); }
+  .ruler-zone.is-reward { background: rgba(15,123,95,.16); border-right: 2px solid var(--gain); }
+  .ruler-entry { position: absolute; top: 1.125rem; width: 2px; height: 1.625rem; background: var(--ink); transform: translateX(-1px); }
+  .ruler-now {
+    position: absolute; top: 1.9375rem; width: 0.875rem; height: 0.875rem; border-radius: 50%;
+    background: var(--s-claude); box-shadow: 0 0 0 2px var(--paper);
+    transform: translate(-50%, -50%);
+  }
+  .ruler-label {
+    position: absolute; font-size: 0.75rem; color: var(--slate); white-space: nowrap; line-height: 1.2;
+  }
+  .ruler-label b { color: var(--ink); font-weight: 700; }
+  .ruler-label.is-below { top: 2.75rem; }
+  .ruler-label.is-above { top: 0; }
+  .plan-odds { font-size: 0.875rem; color: var(--slate); line-height: 1.4; }
+  .plan-odds b { color: var(--ink); }
+  .plan-odds .ratio { display: block; font-size: 1.25rem; font-weight: 800; color: var(--ink); font-variation-settings: "wdth" 110; }
+
+  /* Trade results */
+  .results { border-top: 2px solid var(--ink); padding-top: 0.5rem; }
+  .result { display: grid; grid-template-columns: 11rem minmax(0, 1fr); gap: 1rem; align-items: center; padding: 0.375rem 0; }
+  .result-name { font-size: 0.9375rem; line-height: 1.25; }
+  .result-name span { display: block; color: var(--slate); font-size: 0.8125rem; }
+  .result-track { position: relative; height: 1.75rem; }
+  .result-track::before { content: ""; position: absolute; left: 50%; top: -0.375rem; bottom: -0.375rem; width: 1px; background: var(--axis); }
+  .result-bar { position: absolute; top: 0.25rem; height: 1.25rem; outline-offset: 2px; }
+  .result-bar.is-gain { background: var(--gain); border-radius: 0 4px 4px 0; }
+  .result-bar.is-loss { background: var(--loss); border-radius: 4px 0 0 4px; }
+  .result-val { position: absolute; top: 0.25rem; line-height: 1.25rem; font-size: 0.8125rem; font-weight: 700; white-space: nowrap; }
+
+  @media (max-width: 52rem) {
+    .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .plan { grid-template-columns: 1fr; gap: 0.375rem; }
+    .result { grid-template-columns: 1fr; gap: 0.125rem; }
+  }
+  @media (max-width: 30rem) {
+    .result-pct { display: none; }
+  }
+
   .loading { color: var(--slate); margin: 3rem 0; }
 
   .sr-only {
@@ -465,6 +603,9 @@ const TABS = {
   watchlist: "Watchlist",
   contributions: "Contributions",
 };
+// Optional tab. Its "Account value (CAD)" and "Benchmark value (CAD)" columns
+// (one row per trading day) draw the equity curve.
+const DAILY_LOG_TAB = "Daily Log";
 
 /* ---------------- Data loading (Google Visualization API) ---------------- */
 
@@ -510,6 +651,9 @@ async function loadAll() {
     Object.entries(TABS).map(async ([key, tab]) => [key, await loadTab(tab)])
   );
   const data = Object.fromEntries(entries);
+  // Optional: the Daily Log tab feeds the "over time" chart. A missing tab or
+  // missing columns just leave the chart in its empty state.
+  try { data.dailyLog = await loadTab(DAILY_LOG_TAB); } catch (e) { data.dailyLog = []; }
   const feed = {};
   data.feed.forEach(r => { if (r.Key) feed[r.Key] = r.Value; });
   data.feed = feed;
@@ -527,6 +671,7 @@ const timeFmt = new Intl.DateTimeFormat("en-CA", { hour: "numeric", minute: "2-d
 const isNum = v => typeof v === "number" && isFinite(v);
 const fmtMoney = v => isNum(v) ? money.format(v) : "–";
 const fmtPct = v => isNum(v) ? pctFmt.format(v) : "–";
+const fmtSigned = v => !isNum(v) ? "–" : Math.abs(v) < 0.005 ? money.format(0) : `${v > 0 ? "+" : "−"}${money.format(Math.abs(v))}`;
 const signClass = v => !isNum(v) || Math.abs(v) < 1e-9 ? "" : (v > 0 ? "up" : "down");
 
 function serialToDate(serial) {
@@ -715,6 +860,8 @@ function renderPositions(holdings, f) {
   });
   sec.append(list);
   sec.append(el("div", { class: "cash-line" }, el("span", {}, "Cash"), el("b", {}, fmtMoney(f.cash))));
+  const alloc = renderAllocation(holdings, f);
+  if (alloc) sec.append(alloc);
   if (!open.length) sec.append(el("p", { class: "empty", style: "margin-top:0.75rem" }, "No stocks held right now. Everything is in cash."));
   return sec;
 }
@@ -811,6 +958,479 @@ function renderMoneyIn(contribs, f) {
       el("div", {}, el("span", {}, "Total put in"), el("b", {}, fmtMoney(f.total_in)))));
 }
 
+/* ---------------- Shared helpers for the charts ---------------- */
+
+const SVGNS = "http://www.w3.org/2000/svg";
+function svg(tag, attrs = {}) {
+  const n = document.createElementNS(SVGNS, tag);
+  for (const [k, v] of Object.entries(attrs)) if (v !== null && v !== undefined) n.setAttribute(k, v);
+  return n;
+}
+// Sheet cells can arrive as numbers or as text like "$8.25" or "2".
+function num(v) {
+  if (isNum(v)) return v;
+  if (typeof v === "string") {
+    const s = v.replace(/[$,\s]/g, "");
+    if (s !== "" && isFinite(+s)) return +s;
+  }
+  return null;
+}
+function asDate(v) {
+  if (v instanceof Date) return v;
+  if (isNum(v)) return serialToDate(v);
+  if (typeof v === "string" && /^\d{4}-\d{2}-\d{2}/.test(v)) { const [y, m, d] = v.slice(0, 10).split("-").map(Number); return new Date(y, m - 1, d); }
+  return null;
+}
+const dayKey = d => `${d.getFullYear()}-${d.getMonth()}-${d.getDate()}`;
+const daysBetween = (a, b) => Math.round((b - a) / 86400000);
+const css = name => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+
+// Charts that depend on the container's width are drawn after the page is in
+// the DOM, and again when the window is resized.
+const drawers = [];
+let resizeTimer;
+window.addEventListener("resize", () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => drawers.forEach(fn => fn()), 120);
+});
+
+function niceTicks(lo, hi, count = 4) {
+  const span = hi - lo || 1;
+  const raw = span / count;
+  const mag = Math.pow(10, Math.floor(Math.log10(raw)));
+  const step = [1, 2, 2.5, 5, 10].map(m => m * mag).find(s => s >= raw);
+  const start = Math.floor(lo / step) * step;
+  const ticks = [];
+  for (let v = start; v <= hi + step * 0.001; v += step) ticks.push(+v.toFixed(6));
+  if (ticks[ticks.length - 1] < hi) ticks.push(+(ticks[ticks.length - 1] + step).toFixed(6));
+  return ticks;
+}
+
+function tableToggle(caption, head, rows) {
+  return el("details", { class: "table-toggle" },
+    el("summary", {}, "Show as a table"),
+    el("div", { class: "table-scroll" }, el("table", { class: "data-table" },
+      el("caption", { class: "sr-only" }, caption),
+      el("thead", {}, el("tr", {}, head.map(h => el("th", { scope: "col" }, h)))),
+      el("tbody", {}, rows.map(r => el("tr", {}, r.map(c => el("td", {}, c))))))));
+}
+
+/* ---------------- Trade maths ---------------- */
+
+// Matches filled sells to earlier filled buys, oldest first, per ticker.
+function roundTrips(trades) {
+  const filled = trades
+    .filter(t => t.Ticker && t.Status === "Filled" && asDate(t.Date) && num(t.Shares) > 0)
+    .map(t => ({ ...t, _d: asDate(t.Date), _n: num(t.Shares) }))
+    .sort((a, b) => a._d - b._d);
+  const lots = {};
+  const trips = [];
+  for (const t of filled) {
+    const px = num(t["Fill price"]);
+    const fees = num(t.Fees) || 0;
+    const cf = num(t["Cash flow"]);
+    if (t.Action === "Buy") {
+      const costPer = isNum(cf) ? -cf / t._n : (px * t._n + fees) / t._n;
+      (lots[t.Ticker] = lots[t.Ticker] || []).push({ n: t._n, costPer, date: t._d, price: px });
+    } else if (t.Action === "Sell") {
+      const proceedsPer = isNum(cf) ? cf / t._n : (px * t._n - fees) / t._n;
+      let left = t._n, cost = 0, firstBuy = null, buyPx = 0, matched = 0;
+      const q = lots[t.Ticker] || [];
+      while (left > 1e-9 && q.length) {
+        const lot = q[0];
+        const take = Math.min(lot.n, left);
+        cost += take * lot.costPer;
+        buyPx += take * (lot.price || lot.costPer);
+        matched += take;
+        firstBuy = firstBuy || lot.date;
+        lot.n -= take; left -= take;
+        if (lot.n <= 1e-9) q.shift();
+      }
+      if (!matched) continue;
+      const pl = matched * proceedsPer - cost;
+      trips.push({ ticker: t.Ticker, shares: matched, buyDate: firstBuy, sellDate: t._d,
+        buyPrice: buyPx / matched, sellPrice: px, pl, ret: pl / cost, days: daysBetween(firstBuy, t._d) });
+    }
+  }
+  return trips;
+}
+
+// Trades that still have a live plan: planned buys, and filled buys whose shares are still held.
+function livePlans(trades, holdings, watch) {
+  const held = new Map(holdings.filter(h => h.Ticker && num(h["Shares held"]) > 0).map(h => [h.Ticker, h]));
+  const price = new Map(watch.filter(w => w.Ticker).map(w => [w.Ticker, num(w["Price (CAD)"])]));
+  const seen = new Set();
+  const out = [];
+  const rows = trades.filter(t => t.Ticker && t.Action === "Buy" && num(t["Stop-loss"]) && num(t.Target))
+    .sort((a, b) => (asDate(b.Date) || 0) - (asDate(a.Date) || 0));
+  for (const t of rows) {
+    const isPlanned = t.Status === "Planned";
+    const isOpen = t.Status === "Filled" && held.has(t.Ticker);
+    if (!isPlanned && !isOpen) continue;
+    if (seen.has(t.Ticker)) continue;
+    seen.add(t.Ticker);
+    const shares = isOpen ? num(held.get(t.Ticker)["Shares held"]) : num(t.Shares);
+    const entry = isOpen ? (num(held.get(t.Ticker)["Avg buy price"]) || num(t["Fill price"])) : num(t["Limit price"]);
+    const now = price.get(t.Ticker) || (isOpen ? num(held.get(t.Ticker)["Last close (CAD)"]) : null);
+    out.push({ ticker: t.Ticker, planned: isPlanned, shares, entry, stop: num(t["Stop-loss"]), target: num(t.Target),
+      now, exitBy: asDate(t["Exit by"]), date: asDate(t.Date) });
+  }
+  return out;
+}
+
+/* ---------------- Stat tiles ---------------- */
+
+function renderStats(data) {
+  const f = data.feed;
+  const trips = roundTrips(data.trades);
+  const plans = livePlans(data.trades, data.holdings, data.watchlist);
+  const realised = trips.reduce((s, t) => s + t.pl, 0);
+  const wins = trips.filter(t => t.pl > 0).length;
+  const account = num(f.account_value);
+  const putIn = num(f.total_in) || num(f.start_cash) || 20;
+  const stopLevel = num(f.stop_level) || 0.7;
+
+  const risk = plans.reduce((s, p) => s + (isNum(p.entry) && isNum(p.stop) && p.shares ? Math.max(0, (p.entry - p.stop) * p.shares) : 0), 0);
+
+  // Cushion: how much of the gap between "money put in" and the stop line is left.
+  const stopValue = putIn * stopLevel;
+  const cushion = isNum(account) ? Math.max(0, Math.min(1, (account - stopValue) / (putIn - stopValue))) : 1;
+  const meterClass = cushion < 0.34 ? "is-bad" : cushion < 0.67 ? "is-warn" : "";
+
+  const tile = (label, value, sub, extra) =>
+    el("div", { class: "stat" }, el("span", { class: "label" }, label), el("span", { class: "value" }, value), extra || null, el("span", { class: "sub" }, sub));
+
+  return el("section", { "aria-labelledby": "stats-title" },
+    el("h2", { id: "stats-title", class: "sr-only" }, "Key numbers"),
+    el("div", { class: "stats" },
+      tile("Closed-trade profit", trips.length ? el("span", { class: signClass(realised) }, `${realised >= 0 ? "+" : "−"}${fmtMoney(Math.abs(realised))}`) : "–",
+        trips.length ? `from ${trips.length} closed trade${trips.length === 1 ? "" : "s"}` : "No trades closed yet"),
+      tile("Win rate", trips.length ? `${Math.round(wins / trips.length * 100)}%` : "–",
+        trips.length ? `${wins} won, ${trips.length - wins} lost` : "Counts once a sell fills"),
+      tile("Money at risk", fmtMoney(risk),
+        plans.length ? `if every stop is hit${isNum(account) && account > 0 ? `, ${(risk / account * 100).toFixed(1)}% of the account` : ""}` : "No open or planned trades"),
+      tile("Room above the stop rule", isNum(account) ? fmtMoney(Math.max(0, account - stopValue)) : "–",
+        `The experiment ends at ${fmtMoney(stopValue)}, ${Math.round((1 - stopLevel) * 100)}% below the money put in`,
+        el("div", { class: `meter ${meterClass}`, role: "meter", "aria-valuemin": "0", "aria-valuemax": "100", "aria-valuenow": String(Math.round(cushion * 100)), "aria-label": "Cushion left before the stop rule" },
+          el("i", { style: `width:${(cushion * 100).toFixed(1)}%` })))
+    ));
+}
+
+/* ---------------- Equity curve: Claude vs XEQT over time ---------------- */
+
+function moneyInOn(day, f, contribs) {
+  const start = num(f.start_cash) || 0;
+  return start + contribs
+    .filter(c => asDate(c.Date) && asDate(c.Date) <= day)
+    .reduce((s, c) => s + (num(c["Deposit into Claude's account (CAD)"]) || 0), 0);
+}
+
+function equitySeries(data) {
+  const f = data.feed;
+  const byDay = new Map();
+  for (const r of data.dailyLog || []) {
+    const d = asDate(r.Date);
+    const a = num(r["Account value (CAD)"]);
+    const b = num(r["Benchmark value (CAD)"]);
+    if (!d || (!isNum(a) && !isNum(b))) continue;
+    byDay.set(dayKey(d), { date: d, claude: a, bench: b });
+  }
+  const start = serialToDate(f.start_date);
+  if (start && isNum(num(f.xeqt_start))) {
+    const sd = new Date(start.getFullYear(), start.getMonth(), start.getDate());
+    if (!byDay.has(dayKey(sd))) {
+      const s = num(f.start_cash) || 20;
+      byDay.set(dayKey(sd), { date: sd, claude: s, bench: s });
+    }
+    const t = new Date(); const today = new Date(t.getFullYear(), t.getMonth(), t.getDate());
+    if (isNum(num(f.account_value)) && today > sd)
+      byDay.set(dayKey(today), { date: today, claude: num(f.account_value), bench: num(f.benchmark_value), live: true });
+  }
+  const pts = [...byDay.values()].sort((a, b) => a.date - b.date);
+  pts.forEach(p => {
+    p.putIn = moneyInOn(p.date, f, data.contributions);
+    p.gc = isNum(p.claude) ? p.claude - p.putIn : null;
+    p.gb = isNum(p.bench) ? p.bench - p.putIn : null;
+  });
+  return pts;
+}
+
+function renderEquity(data) {
+  const pts = equitySeries(data);
+  const sec = el("section", { "aria-labelledby": "eq-title" },
+    el("h2", { id: "eq-title" }, "The race over time"),
+    el("p", { class: "section-note" }, "Profit or loss at each day's close, after taking out the money put in, for Claude's picks and for the same deposits held in XEQT. Above the zero line is profit."));
+  if (pts.length < 2) {
+    sec.append(el("div", { class: "chart-empty" },
+      el("p", {}, el("b", {}, "The lines start on day one."),
+        "Each trading day's closing value adds a point here, for both Claude and XEQT. Two days in, there's a line to look at.")));
+    return sec;
+  }
+
+  sec.append(el("div", { class: "chart-legend", "aria-hidden": "true" },
+    el("span", {}, el("i", { class: "key-line", style: "background:var(--s-claude)" }), "Claude's picks"),
+    el("span", {}, el("i", { class: "key-line", style: "background:var(--s-bench)" }), "XEQT")));
+  const host = el("div", { class: "chart-host" });
+  sec.append(host);
+  sec.append(tableToggle("Account value and benchmark by day", ["Date", "Put in", "Claude", "Claude profit", "XEQT", "XEQT profit"],
+    pts.slice().reverse().map(p => [dateFmt.format(p.date), fmtMoney(p.putIn), fmtMoney(p.claude), fmtSigned(p.gc), fmtMoney(p.bench), fmtSigned(p.gb)])));
+
+  const draw = () => drawEquity(host, pts);
+  drawers.push(draw);
+  return sec;
+}
+
+function drawEquity(host, pts) {
+  if (!host.isConnected) return;
+  host.replaceChildren();
+  const W = Math.max(280, host.clientWidth);
+  const H = W < 520 ? 220 : 280;
+  const m = { t: 12, r: W < 520 ? 64 : 104, b: 28, l: 44 };
+  const iw = W - m.l - m.r, ih = H - m.t - m.b;
+
+  const vals = pts.flatMap(p => [p.gc, p.gb, 0]).filter(isNum);
+  let lo = Math.min(...vals), hi = Math.max(...vals);
+  const pad = Math.max((hi - lo) * 0.08, 0.1);
+  const ticks = niceTicks(lo - pad, hi + pad, 4);
+  lo = ticks[0]; hi = ticks[ticks.length - 1];
+  const t0 = pts[0].date.getTime(), t1 = pts[pts.length - 1].date.getTime();
+  const x = d => m.l + (t1 === t0 ? iw / 2 : (d.getTime() - t0) / (t1 - t0) * iw);
+  const y = v => m.t + (1 - (v - lo) / (hi - lo)) * ih;
+
+  const root = svg("svg", { viewBox: `0 0 ${W} ${H}`, height: H, role: "img", tabindex: "0",
+    "aria-label": `Line chart of profit over the money put in, from ${dateFmt.format(pts[0].date)} to ${dateFmt.format(pts[pts.length - 1].date)}. Claude ends at ${fmtSigned(pts[pts.length - 1].gc)}, XEQT at ${fmtSigned(pts[pts.length - 1].gb)}. Use the left and right arrow keys to step through days.` });
+
+  // grid + y ticks
+  for (const tv of ticks) {
+    root.append(svg("line", { x1: m.l, x2: m.l + iw, y1: y(tv), y2: y(tv), stroke: Math.abs(tv) < 1e-9 ? css("--axis") : css("--grid"), "stroke-width": 1, "shape-rendering": "crispEdges" }));
+    const lab = svg("text", { x: m.l - 8, y: y(tv) + 4, "text-anchor": "end", "font-size": 12, fill: css("--slate") });
+    const dec = ticks.some(t => Math.abs(t % 1) > 1e-9) ? 2 : 0;
+    lab.textContent = Math.abs(tv) < 1e-9 ? "$0" : `${tv > 0 ? "+" : "−"}$${Math.abs(tv).toFixed(dec)}`;
+    root.append(lab);
+  }
+  // x ticks: first, last, and up to 3 between
+  const nX = Math.min(pts.length, W < 520 ? 3 : 5);
+  const xIdx = [...new Set(Array.from({ length: nX }, (_, i) => Math.round(i * (pts.length - 1) / Math.max(1, nX - 1))))];
+  for (const i of xIdx) {
+    const lab = svg("text", { x: x(pts[i].date), y: H - 6, "text-anchor": i === 0 ? "start" : i === pts.length - 1 ? "end" : "middle", "font-size": 12, fill: css("--slate") });
+    lab.textContent = shortDate.format(pts[i].date);
+    root.append(lab);
+  }
+
+  const line = key => pts.filter(p => isNum(p[key])).map((p, i) => `${i ? "L" : "M"}${x(p.date).toFixed(1)},${y(p[key]).toFixed(1)}`).join("");
+  // soft wash between Claude's line and break-even
+  const claudePts = pts.filter(p => isNum(p.gc));
+  if (claudePts.length > 1) {
+    const area = line("gc") + `L${x(claudePts[claudePts.length - 1].date).toFixed(1)},${y(0).toFixed(1)}L${x(claudePts[0].date).toFixed(1)},${y(0).toFixed(1)}Z`;
+    root.append(svg("path", { d: area, fill: css("--s-claude"), "fill-opacity": 0.08 }));
+  }
+  const series = [
+    { key: "gb", color: css("--s-bench"), name: "XEQT" },
+    { key: "gc", color: css("--s-claude"), name: "Claude" },
+  ];
+  for (const s of series) root.append(svg("path", { d: line(s.key), fill: "none", stroke: s.color, "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }));
+
+  // end dots + end labels (skip labels if they'd collide; the legend still names them)
+  const last = pts[pts.length - 1];
+  const ends = series.filter(s => isNum(last[s.key])).map(s => ({ ...s, yy: y(last[s.key]), v: last[s.key] }));
+  const collide = ends.length === 2 && Math.abs(ends[0].yy - ends[1].yy) < 30;
+  for (const e of ends) {
+    root.append(svg("circle", { cx: x(last.date), cy: e.yy, r: 4, fill: e.color, stroke: css("--paper"), "stroke-width": 2 }));
+    if (!collide) {
+      const t = svg("text", { x: x(last.date) + 10, y: e.yy - 2, "font-size": 12, fill: css("--ink"), "font-weight": 700 });
+      t.textContent = fmtSigned(e.v);
+      const t2 = svg("text", { x: x(last.date) + 10, y: e.yy + 12, "font-size": 11, fill: css("--slate") });
+      t2.textContent = e.name;
+      root.append(t, t2);
+    }
+  }
+  if (collide) {
+    const t = svg("text", { x: x(last.date) + 10, y: (ends[0].yy + ends[1].yy) / 2 + 4, "font-size": 12, fill: css("--ink"), "font-weight": 700 });
+    const gap = last.gc - last.gb;
+    t.textContent = `${gap >= 0 ? "+" : "−"}${fmtMoney(Math.abs(gap))}`;
+    const t2 = svg("text", { x: x(last.date) + 10, y: (ends[0].yy + ends[1].yy) / 2 + 18, "font-size": 11, fill: css("--slate") });
+    t2.textContent = W < 520 ? "vs XEQT" : "Claude vs XEQT";
+    root.append(t, t2);
+  }
+
+  // crosshair + tooltip
+  const cross = svg("line", { y1: m.t, y2: m.t + ih, stroke: css("--ink"), "stroke-width": 1, opacity: 0 });
+  const hoverDots = series.map(s => svg("circle", { r: 4, fill: s.color, stroke: css("--paper"), "stroke-width": 2, opacity: 0 }));
+  root.append(cross, ...hoverDots);
+  const hit = svg("rect", { x: m.l, y: m.t, width: iw, height: ih, fill: "transparent" });
+  root.append(hit);
+  host.append(root);
+  const tip = el("div", { class: "tip", "aria-hidden": "true" });
+  host.append(tip);
+
+  let cur = -1;
+  const show = i => {
+    cur = i;
+    const p = pts[i];
+    const px = x(p.date);
+    cross.setAttribute("x1", px); cross.setAttribute("x2", px); cross.setAttribute("opacity", 0.35);
+    series.forEach((s, k) => {
+      if (isNum(p[s.key])) { hoverDots[k].setAttribute("cx", px); hoverDots[k].setAttribute("cy", y(p[s.key])); hoverDots[k].setAttribute("opacity", 1); }
+      else hoverDots[k].setAttribute("opacity", 0);
+    });
+    const row = (color, g, v, name) => el("div", { class: "tip-row" }, el("i", { class: "key-line", style: `background:${color}` }), el("b", {}, fmtSigned(g)), el("span", {}, `${name}, worth ${fmtMoney(v)}`));
+    const gap = isNum(p.claude) && isNum(p.bench) ? p.claude - p.bench : null;
+    tip.replaceChildren(
+      el("span", { class: "tip-date" }, `${dateFmt.format(p.date)}${p.live ? ", live" : ""}`),
+      row(css("--s-claude"), p.gc, p.claude, "Claude"),
+      row(css("--s-bench"), p.gb, p.bench, "XEQT"),
+      el("span", { class: "tip-date", style: "margin:0.25rem 0 0" }, `${fmtMoney(p.putIn)} put in`),
+      isNum(gap) ? el("span", { class: "tip-date", style: "margin:0.25rem 0 0" }, Math.abs(gap) < 0.005 ? "Dead even" : `Claude ${gap > 0 ? "ahead" : "behind"} by ${fmtMoney(Math.abs(gap))}`) : null);
+    tip.classList.add("is-on");
+    const scale = host.clientWidth / W;
+    const tw = tip.offsetWidth;
+    let left = px * scale + 14;
+    if (left + tw > host.clientWidth) left = px * scale - tw - 14;
+    tip.style.left = `${Math.max(0, left)}px`;
+    tip.style.top = `${m.t}px`;
+  };
+  const hide = () => { cur = -1; tip.classList.remove("is-on"); cross.setAttribute("opacity", 0); hoverDots.forEach(d => d.setAttribute("opacity", 0)); };
+  const nearest = clientX => {
+    const r = root.getBoundingClientRect();
+    const sx = (clientX - r.left) * (W / r.width);
+    let best = 0, bd = Infinity;
+    pts.forEach((p, i) => { const d = Math.abs(x(p.date) - sx); if (d < bd) { bd = d; best = i; } });
+    return best;
+  };
+  hit.addEventListener("pointermove", e => show(nearest(e.clientX)));
+  hit.addEventListener("pointerdown", e => show(nearest(e.clientX)));
+  root.addEventListener("pointerleave", hide);
+  root.addEventListener("blur", hide);
+  root.addEventListener("keydown", e => {
+    if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+      e.preventDefault();
+      const next = cur < 0 ? pts.length - 1 : Math.max(0, Math.min(pts.length - 1, cur + (e.key === "ArrowRight" ? 1 : -1)));
+      show(next);
+    } else if (e.key === "Escape") hide();
+  });
+}
+
+/* ---------------- Allocation: where the money sits ---------------- */
+
+const ALLOC_COLOURS = ["#1D5FD1", "#E8702A", "#00A37F", "#6A4CE2", "#D94B8C", "#2E8B3A"];
+function renderAllocation(holdings, f) {
+  const open = holdings.filter(h => h.Ticker && num(h["Shares held"]) > 0 && num(h["Market value (CAD)"]) > 0)
+    .sort((a, b) => num(b["Market value (CAD)"]) - num(a["Market value (CAD)"]));
+  const parts = open.slice(0, 5).map((h, i) => ({ name: h.Ticker, value: num(h["Market value (CAD)"]), color: ALLOC_COLOURS[i] }));
+  const rest = open.slice(5).reduce((s, h) => s + num(h["Market value (CAD)"]), 0);
+  if (rest > 0) parts.push({ name: "Other", value: rest, color: "#5E6B7C" });
+  const cash = num(f.cash);
+  if (cash > 0) parts.push({ name: "Cash", value: cash, color: "#C8D0DA", dark: true });
+  const total = parts.reduce((s, p) => s + p.value, 0);
+  if (!total) return null;
+
+  const bar = el("div", { class: "alloc-bar", role: "img", "aria-label": "Account split: " + parts.map(p => `${p.name} ${fmtMoney(p.value)}, ${Math.round(p.value / total * 100)}%`).join("; ") });
+  parts.forEach(p => {
+    const share = p.value / total;
+    bar.append(el("div", {
+      class: p.dark ? "is-dark-text" : "",
+      style: `flex:${share} 1 0;background:${p.color}`,
+      title: `${p.name}: ${fmtMoney(p.value)} (${Math.round(share * 100)}%)`,
+    }, share >= 0.16 ? `${Math.round(share * 100)}%` : ""));
+  });
+  return el("div", { class: "alloc" },
+    bar,
+    el("div", { class: "chart-legend", style: "margin:0.5rem 0 0" },
+      parts.map(p => el("span", {}, el("i", { class: "key-block", style: `background:${p.color}` }), `${p.name} ${fmtMoney(p.value)}`))));
+}
+
+/* ---------------- Trade plans: stop, entry, target, now ---------------- */
+
+function renderPlans(data) {
+  const plans = livePlans(data.trades, data.holdings, data.watchlist);
+  const sec = el("section", { "aria-labelledby": "plans-title" },
+    el("h2", { id: "plans-title" }, "Trade plans"),
+    el("p", { class: "section-note" }, "Each open or planned trade on one ruler: the red band is what's lost if the stop-loss fills, the green band is the gain at the target, and the blue dot is today's price."));
+  if (!plans.length) {
+    sec.append(el("p", { class: "empty" }, "No open or planned trades right now."));
+    return sec;
+  }
+  const list = el("div", { class: "plans" });
+  const today = new Date(); today.setHours(0, 0, 0, 0);
+  for (const p of plans) {
+    const prices = [p.stop, p.entry, p.target, p.now].filter(isNum);
+    let lo = Math.min(...prices), hi = Math.max(...prices);
+    const pad = (hi - lo) * 0.06 || 0.1;
+    lo -= pad; hi += pad;
+    const pos = v => ((v - lo) / (hi - lo) * 100).toFixed(2);
+    const risk = (p.entry - p.stop) * (p.shares || 0);
+    const reward = (p.target - p.entry) * (p.shares || 0);
+    const ratio = p.entry > p.stop ? (p.target - p.entry) / (p.entry - p.stop) : null;
+    const daysLeft = p.exitBy ? daysBetween(today, p.exitBy) : null;
+    const nowPos = isNum(p.now) ? +pos(p.now) : null;
+
+    const ruler = el("div", { class: "ruler", role: "img",
+      "aria-label": `${p.ticker}: stop ${fmtMoney(p.stop)}, ${p.planned ? "buy limit" : "bought at"} ${fmtMoney(p.entry)}, target ${fmtMoney(p.target)}${isNum(p.now) ? `, now ${fmtMoney(p.now)}` : ""}` },
+      el("div", { class: "ruler-track" }),
+      el("div", { class: "ruler-zone is-risk", style: `left:${pos(p.stop)}%;width:${pos(p.entry) - pos(p.stop)}%` }),
+      el("div", { class: "ruler-zone is-reward", style: `left:${pos(p.entry)}%;width:${pos(p.target) - pos(p.entry)}%` }),
+      el("div", { class: "ruler-entry", style: `left:${pos(p.entry)}%` }),
+      el("span", { class: "ruler-label is-below", style: `left:${pos(p.stop)}%` }, "Stop ", el("b", {}, fmtMoney(p.stop))),
+      el("span", { class: "ruler-label is-below", style: `left:${pos(p.target)}%;transform:translateX(-100%)` }, "Target ", el("b", {}, fmtMoney(p.target))),
+      el("span", { class: "ruler-label is-above", style: `left:${pos(p.entry)}%;transform:translateX(-50%)` }, p.planned ? "Buy at " : "Bought ", el("b", {}, fmtMoney(p.entry))),
+      isNum(nowPos) ? el("div", { class: "ruler-now", style: `left:${nowPos}%`, title: `Now ${fmtMoney(p.now)}` }) : null);
+
+    let progress = "";
+    if (isNum(p.now) && !p.planned) {
+      const pl = (p.now - p.entry) * (p.shares || 0);
+      progress = `${pl >= 0 ? "Up" : "Down"} ${fmtMoney(Math.abs(pl))} so far. `;
+    } else if (isNum(p.now) && p.planned) {
+      const gap = p.now / p.entry - 1;
+      progress = `Now ${fmtMoney(p.now)}, ${Math.abs(gap) < 0.0005 ? "right at" : `${fmtPct(gap)} from`} the limit. `;
+    }
+
+    list.append(el("div", { class: "plan" },
+      el("div", { class: "plan-name" }, el("b", {}, p.ticker),
+        el("span", {}, `${p.shares || "?"} share${p.shares === 1 ? "" : "s"}, ${p.planned ? "planned" : "held"}`)),
+      ruler,
+      el("div", { class: "plan-odds" },
+        el("span", { class: "ratio" }, isNum(ratio) ? `${ratio.toFixed(1)} to 1` : "–"),
+        el("span", {}, "Risk ", el("b", {}, fmtMoney(risk)), " to make ", el("b", {}, fmtMoney(reward)), ". "),
+        el("span", {}, progress),
+        p.exitBy ? el("span", {}, daysLeft > 0 ? `Exit by ${shortDate.format(p.exitBy)}, ${daysLeft} day${daysLeft === 1 ? "" : "s"} left.` : daysLeft === 0 ? "Exit date is today." : `Exit date passed ${shortDate.format(p.exitBy)}.`) : null)));
+  }
+  sec.append(list);
+  return sec;
+}
+
+/* ---------------- Closed trades: profit and loss per trade ---------------- */
+
+function renderResults(trades) {
+  const trips = roundTrips(trades).slice(-12);
+  const sec = el("section", { "aria-labelledby": "res-title" },
+    el("h2", { id: "res-title" }, "How each trade ended"),
+    el("p", { class: "section-note" }, "Profit or loss on every closed trade, after fees, oldest at the top."));
+  if (!trips.length) {
+    sec.append(el("p", { class: "empty" }, "No closed trades yet. A bar appears here each time a position is sold."));
+    return sec;
+  }
+  const maxAbs = Math.max(...trips.map(t => Math.abs(t.pl)), 0.01);
+  const list = el("div", { class: "results" });
+  for (const t of trips) {
+    const w = Math.abs(t.pl) / maxAbs * 30; // up to 30% of the track either side, leaves room for the label
+    const gain = t.pl >= 0;
+    const label = `${gain ? "+" : "−"}${fmtMoney(Math.abs(t.pl))} (${fmtPct(t.ret)})`;
+    const labelNode = [`${gain ? "+" : "−"}${fmtMoney(Math.abs(t.pl))}`, el("span", { class: "result-pct" }, ` (${fmtPct(t.ret)})`)];
+    list.append(el("div", { class: "result" },
+      el("div", { class: "result-name" }, `${t.ticker}, ${t.shares} share${t.shares === 1 ? "" : "s"}`,
+        el("span", {}, `${shortDate.format(t.buyDate)} to ${shortDate.format(t.sellDate)}, ${t.days} day${t.days === 1 ? "" : "s"}`)),
+      el("div", { class: "result-track" },
+        el("div", { class: `result-bar ${gain ? "is-gain" : "is-loss"}`, tabindex: "0",
+          style: gain ? `left:50%;width:max(2px, ${w}%)` : `right:50%;width:max(2px, ${w}%)`,
+          title: `Bought at ${fmtMoney(t.buyPrice)}, sold at ${fmtMoney(t.sellPrice)}`,
+          "aria-label": `${t.ticker}: ${label}, bought at ${fmtMoney(t.buyPrice)}, sold at ${fmtMoney(t.sellPrice)}` }),
+        el("span", { class: `result-val ${gain ? "up" : "down"}`, "aria-hidden": "true",
+          style: gain ? `left:calc(50% + ${w}% + 0.375rem)` : `right:calc(50% + ${w}% + 0.375rem)` }, labelNode))));
+  }
+  sec.append(list);
+  return sec;
+}
+
 let firstRender = true;
 function render(data) {
   const f = data.feed;
@@ -819,13 +1439,19 @@ function render(data) {
   renderHeader(f);
   renderAlerts(f);
   const app = document.getElementById("app");
+  drawers.length = 0;
   app.replaceChildren(
     renderRace(f),
+    renderStats(data),
+    renderEquity(data),
     el("div", { class: "split" }, renderTodo(data.todo), renderPositions(data.holdings, f)),
+    renderPlans(data),
     renderWatchlist(data.watchlist, data.holdings),
+    renderResults(data.trades),
     renderLog(data.trades),
     renderMoneyIn(data.contributions, f)
   );
+  drawers.forEach(fn => fn());
   const xt = serialToDate(f.xeqt_time);
   document.getElementById("source").textContent =
     `Loaded from the Google Sheet at ${timeFmt.format(new Date())}${xt ? `, with prices as of ${shortDate.format(xt)}, ${timeFmt.format(xt)}` : ""}. Prices come from Google Finance and can be up to 20 minutes behind.`.replace("..", ".");
@@ -845,6 +1471,22 @@ function renderError(err) {
 
 /* ---------------- Demo data for previewing the layout (add #demo to the URL) ---------------- */
 
+function demoHistory() {
+  // A made-up month of closes so the over-time chart has something to draw.
+  const out = [];
+  let a = 20, b = 20;
+  const start = new Date(2026, 10, 25);
+  for (let i = 1; i <= 35; i++) {
+    const day = new Date(start.getFullYear(), start.getMonth(), start.getDate() + i);
+    if (day.getDay() === 0 || day.getDay() === 6) continue;
+    a *= 1 + Math.sin(i * 1.7) * 0.012 + 0.0009;
+    b *= 1 + Math.cos(i * 0.9) * 0.006 + 0.0006;
+    if (day.getMonth() === 11 && day.getDate() === 24) { a += 20; b += 20; } // Dec 24 deposit
+    out.push({ Date: day, "Account value (CAD)": +a.toFixed(2), "Benchmark value (CAD)": +b.toFixed(2) });
+  }
+  return out;
+}
+
 function demoData() {
   const d = (y, m, day) => new Date(y, m - 1, day);
   return {
@@ -854,7 +1496,12 @@ function demoData() {
     trades: [
       { Date: d(2026,11,25), Ticker: "AQN", Action: "Buy", Shares: 2, "Limit price": 8.25, "Stop-loss": 7.85, Target: 8.9, "Exit by": d(2026,12,8), Status: "Filled", "Fill price": 8.25, Fees: 0, "Cash flow": -16.5, Reason: "New 30-day closing high, above its 30-day and 90-day averages while defensive sectors hold up." },
       { Date: d(2026,11,26), Ticker: "BB", Action: "Buy", Shares: 1, "Limit price": 11.8, "Stop-loss": 11.2, Target: 12.9, "Exit by": d(2026,12,9), Status: "Not filled", Reason: "Pullback to the 90-day average; the limit wasn't reached." },
-      { Date: d(2026,11,30), Ticker: "AQN", Action: "Sell", Shares: 2, "Limit price": 8.9, "Stop-loss": null, Target: null, "Exit by": d(2026,12,8), Status: "Planned", Reason: "Take profit at the target if it trades there tomorrow." },
+      { Date: d(2026,12,1), Ticker: "T", Action: "Buy", Shares: 1, "Limit price": 14.2, "Stop-loss": 13.6, Target: 15.2, "Exit by": d(2026,12,15), Status: "Filled", "Fill price": 14.2, Fees: 0, "Cash flow": -14.2, Reason: "Breakout over the 30-day high on volume." },
+      { Date: d(2026,12,9), Ticker: "T", Action: "Sell", Shares: 1, "Limit price": 15.1, Status: "Filled", "Fill price": 15.1, Fees: 0, "Cash flow": 15.1, Reason: "Take-profit filled just under the target." },
+      { Date: d(2026,12,10), Ticker: "BTO", Action: "Buy", Shares: 1, "Limit price": 6.9, "Stop-loss": 6.55, Target: 7.6, "Exit by": d(2026,12,22), Status: "Filled", "Fill price": 6.9, Fees: 0, "Cash flow": -6.9, Reason: "Gold bounce off the 90-day average." },
+      { Date: d(2026,12,15), Ticker: "BTO", Action: "Sell", Shares: 1, "Limit price": 6.55, Status: "Filled", "Fill price": 6.53, Fees: 0, "Cash flow": 6.53, Reason: "Stop-loss hit." },
+      { Date: d(2026,12,29), Ticker: "BB", Action: "Buy", Shares: 1, "Limit price": 11.8, "Stop-loss": 11.2, Target: 12.9, "Exit by": d(2027,1,12), Status: "Planned", Reason: "Second try at the 90-day average." },
+      { Date: d(2026,12,30), Ticker: "AQN", Action: "Sell", Shares: 2, "Limit price": 8.9, "Stop-loss": null, Target: null, "Exit by": d(2026,12,8), Status: "Planned", Reason: "Take profit at the target if it trades there tomorrow." },
     ],
     todo: [
       { Date: d(2026,11,30), Step: 1, Action: "Move stop-loss", Ticker: "AQN", Shares: 2, "Order type": "Stop-limit sell", Price: 8.2, "Limit (stop-limit only)": 8.15, "Time in force": "Good till cancelled", Why: "Locks in a small gain now that AQN is up 4%. Cancel the old $7.85 stop first.", Done: true },
@@ -866,9 +1513,11 @@ function demoData() {
       { Ticker: "XEQT", Name: "iShares Core Equity ETF Portfolio", "Price (CAD)": 43.9, "Day change": 0.006, "30-day avg close": 44.7, "90-day avg close": 45.3, "30-day high": 45.86, "30-day low": 41.97, Note: "Benchmark" },
       { Ticker: "AQN", Name: "Algonquin Power & Utilities Corp", "Price (CAD)": 8.59, "Day change": 0.012, "30-day avg close": 7.9, "90-day avg close": 7.6, "30-day high": 8.6, "30-day low": 7.45 },
       { Ticker: "BTO", Name: "B2Gold Corp", "Price (CAD)": 6.15, "Day change": -0.033, "30-day avg close": 6.91, "90-day avg close": 7.27, "30-day high": 8.05, "30-day low": 5.88 },
+      { Ticker: "BB", Name: "BlackBerry Ltd", "Price (CAD)": 11.95, "Day change": -0.008, "30-day avg close": 12.1, "90-day avg close": 11.84, "30-day high": 12.9, "30-day low": 11.3 },
       { Ticker: "T", Name: "Telus Corporation", "Price (CAD)": 15.39, "Day change": 0.0199, "30-day avg close": 13.02, "90-day avg close": 12.52, "30-day high": 15.86, "30-day low": 11.99 },
     ],
     contributions: [{ Date: d(2026,12,24), "Deposit into Claude's account (CAD)": 20 }],
+    dailyLog: demoHistory(),
   };
 }
 
