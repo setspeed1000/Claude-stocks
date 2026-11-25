@@ -529,6 +529,114 @@
     .result-pct { display: none; }
   }
 
+  /* ---------- Tabs and header bits ---------- */
+  .mast-meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 1rem; }
+  .market {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    font-size: 0.8125rem; color: var(--slate);
+  }
+  .market::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--axis); }
+  .market.is-open { color: var(--ink); }
+  .market.is-open::before { background: var(--gain); box-shadow: 0 0 0 3px rgba(15,123,95,.18); }
+
+  .tabs {
+    position: sticky; top: 0; z-index: 10;
+    display: flex; gap: 0.25rem;
+    margin: 0 -1.25rem; padding: 0.5rem 1.25rem;
+    background: var(--paper);
+    border-bottom: 1px solid var(--rule);
+    overflow-x: auto; scrollbar-width: none;
+  }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab {
+    flex: none;
+    padding: 0.4375rem 0.875rem;
+    border-radius: 999px;
+    text-decoration: none; font-weight: 600; font-size: 0.9375rem;
+    color: var(--slate);
+  }
+  .tab:hover { background: rgba(19,35,58,.06); color: var(--ink); }
+  .tab[aria-current="page"] { background: var(--ink); color: var(--sheet); }
+
+  main[data-view]:not([data-view="overview"]) > section:first-child { margin-top: 2rem; }
+
+  /* ---------- Controls ---------- */
+  .controls { display: flex; flex-wrap: wrap; align-items: center; gap: 0.625rem 1rem; margin: 0 0 1rem; }
+  .control-label { color: var(--slate); font-size: 0.875rem; }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.375rem; }
+  .chip {
+    padding: 0.3125rem 0.75rem; border-radius: 999px; font-size: 0.875rem; font-weight: 600;
+    background: transparent; border: 1px solid var(--rule); color: var(--ink);
+    display: inline-flex; gap: 0.4rem; align-items: center;
+  }
+  .chip:hover { background: var(--sheet); }
+  .chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--sheet); }
+  .chip-n { font-weight: 400; opacity: 0.75; }
+  .search, .select, .field input[type="number"] {
+    font: inherit; font-size: 0.9375rem; color: var(--ink);
+    background: var(--sheet); border: 1px solid var(--rule); border-radius: 4px;
+    padding: 0.4375rem 0.625rem; min-width: 0;
+  }
+  .search { flex: 1 1 12rem; max-width: 20rem; }
+  .btn-link {
+    font-weight: 600; font-size: 0.875rem; text-decoration: none;
+    border: 1px solid var(--ink); border-radius: 3px; padding: 0.375rem 0.75rem; background: var(--sheet);
+  }
+  .btn-link:hover { background: #fff; }
+  .key-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; }
+  .key-dot.is-ring { background: transparent; border: 2px solid var(--slate); width: 10px; height: 10px; box-sizing: border-box; }
+
+  /* ---------- Tables ---------- */
+  .compare th[scope="row"] { text-align: left; font-weight: 600; color: var(--ink); }
+  .compare td.win { color: var(--slate); }
+
+  /* ---------- Signals ---------- */
+  .signals { border-top: 2px solid var(--ink); }
+  .signal-row { display: grid; grid-template-columns: 4.5rem 1fr; gap: 1rem; padding: 0.625rem 0; border-bottom: 1px solid var(--rule); }
+  .signal-row b { font-variation-settings: "wdth" 110; }
+  .signal-row ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.375rem; }
+  .sig { font-size: 0.8125rem; padding: 0.125rem 0.5rem; border-radius: 999px; background: var(--sheet); border: 1px solid var(--rule); }
+  .sig span { font-size: 0.625rem; vertical-align: 1px; }
+  .sig-up span { color: var(--gain); }
+  .sig-down span { color: var(--loss); }
+
+  /* ---------- Journal ---------- */
+  .timeline { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--ink); }
+  .tl-day { padding: 1rem 0 0.5rem; border-bottom: 1px solid var(--rule); }
+  .tl-day h3 { margin: 0 0 0.5rem; font-size: 0.9375rem; color: var(--slate); font-weight: 600; }
+  .tl-day ul { list-style: none; margin: 0; padding: 0; }
+  .tl-item { position: relative; padding: 0.25rem 0 0.75rem 1.25rem; }
+  .tl-item::before { content: ""; position: absolute; left: 0; top: 0.6rem; width: 8px; height: 8px; border-radius: 50%; background: var(--slate); }
+  .tl-trade::before { background: var(--ink); }
+  .tl-deposit::before { background: var(--gain); }
+  .tl-todo::before { background: var(--ticket-ink); border-radius: 2px; }
+  .tl-head { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.75rem; }
+  .tl-item p { margin: 0.25rem 0 0; color: var(--slate); max-width: var(--measure); }
+
+  /* ---------- Tools ---------- */
+  .sizer { display: grid; grid-template-columns: minmax(0, 20rem) minmax(0, 1fr); gap: 2rem; border-top: 2px solid var(--ink); padding-top: 1rem; }
+  .fields { display: grid; gap: 0.75rem; }
+  .fields-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem 1.5rem; border-top: 2px solid var(--ink); padding-top: 1rem; }
+  .field { display: grid; gap: 0.25rem; font-size: 0.875rem; }
+  .field > span { color: var(--slate); font-weight: 600; }
+  .field small { color: var(--slate); }
+  .field output { color: var(--ink); font-weight: 800; }
+  .range-field input { width: 100%; accent-color: var(--s-claude); }
+  .sizer-out .stats { border-top: 0; padding-top: 0; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .sizer-head { font-size: 1.375rem; margin: 0 0 1rem; line-height: 1.3; }
+  .warn-line { margin: 1rem 0 0; padding: 0.5rem 0.75rem; border-left: 4px solid #F2A600; background: #FDF3DA; max-width: var(--measure); }
+  .proj-sum { margin: 0.75rem 0 0; }
+
+  @media (max-width: 52rem) {
+    .sizer { grid-template-columns: 1fr; }
+    .fields-3 { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 40rem) {
+    .tabs { flex-wrap: wrap; position: static; }
+    .signal-row { grid-template-columns: 1fr; gap: 0.25rem; }
+    .sizer-out .stats { grid-template-columns: 1fr 1fr; }
+  }
+
   .loading { color: var(--slate); margin: 3rem 0; }
 
   .sr-only {
@@ -573,8 +681,13 @@
 <div class="wrap">
   <header class="masthead">
     <h1>Claude's fund vs XEQT</h1>
-    <p id="started">Loading the sheet</p>
+    <div class="mast-meta">
+      <span id="market" class="market"></span>
+      <p id="started">Loading the sheet</p>
+    </div>
   </header>
+
+  <nav class="tabs" id="tabs" aria-label="Sections"></nav>
 
   <div id="alerts" aria-live="polite"></div>
 
@@ -916,34 +1029,6 @@ function renderWatchlist(watch, holdings) {
   return sec;
 }
 
-function renderLog(trades) {
-  const done = trades.filter(t => t.Ticker && t.Status && t.Status !== "Planned");
-  const sec = el("section", { "aria-labelledby": "log-title" },
-    el("h2", { id: "log-title" }, "Trade log"));
-  if (!done.length) {
-    sec.append(el("p", { class: "empty" }, "No trades yet. Filled, unfilled and cancelled orders are listed here with Claude's reasoning."));
-    return sec;
-  }
-  done.sort((a, b) => (b.Date instanceof Date ? b.Date : 0) - (a.Date instanceof Date ? a.Date : 0));
-  const list = el("div", { class: "log" });
-  done.forEach(t => {
-    const filled = t.Status === "Filled";
-    const price = filled ? t["Fill price"] : t["Limit price"];
-    list.append(el("details", { class: "trade" },
-      el("summary", {},
-        el("span", { class: "tr-date" }, t.Date instanceof Date ? dateFmt.format(t.Date) : "–"),
-        el("span", { class: "tr-what" }, el("b", {}, `${t.Action || ""} ${isNum(t.Shares) ? t.Shares : ""} ${t.Ticker}`), ` at ${fmtMoney(price)}`),
-        el("span", { class: `status ${filled ? "is-filled" : ""}` }, t.Status),
-        el("span", { class: `num tr-cash ${signClass(t["Cash flow"])}` }, filled ? fmtMoney(t["Cash flow"]) : "")),
-      el("div", { class: "tr-body" },
-        el("p", {}, `Limit ${fmtMoney(t["Limit price"])}, stop ${fmtMoney(t["Stop-loss"])}, target ${fmtMoney(t.Target)}${isNum(t.Fees) && t.Fees > 0 ? `, fees ${fmtMoney(t.Fees)}` : ""}.`),
-        t.Reason ? el("p", {}, t.Reason) : null)
-    ));
-  });
-  sec.append(list);
-  return sec;
-}
-
 function renderMoneyIn(contribs, f) {
   const deposits = contribs.filter(c => isNum(c["Deposit into Claude's account (CAD)"]));
   const last = deposits.filter(c => c.Date instanceof Date).sort((a, b) => b.Date - a.Date)[0];
@@ -1031,16 +1116,17 @@ function roundTrips(trades) {
     const cf = num(t["Cash flow"]);
     if (t.Action === "Buy") {
       const costPer = isNum(cf) ? -cf / t._n : (px * t._n + fees) / t._n;
-      (lots[t.Ticker] = lots[t.Ticker] || []).push({ n: t._n, costPer, date: t._d, price: px });
+      (lots[t.Ticker] = lots[t.Ticker] || []).push({ n: t._n, costPer, date: t._d, price: px, stop: num(t["Stop-loss"]) });
     } else if (t.Action === "Sell") {
       const proceedsPer = isNum(cf) ? cf / t._n : (px * t._n - fees) / t._n;
-      let left = t._n, cost = 0, firstBuy = null, buyPx = 0, matched = 0;
+      let left = t._n, cost = 0, firstBuy = null, buyPx = 0, matched = 0, riskAmt = 0;
       const q = lots[t.Ticker] || [];
       while (left > 1e-9 && q.length) {
         const lot = q[0];
         const take = Math.min(lot.n, left);
         cost += take * lot.costPer;
         buyPx += take * (lot.price || lot.costPer);
+        if (isNum(lot.stop) && isNum(lot.price) && lot.price > lot.stop) riskAmt += take * (lot.price - lot.stop);
         matched += take;
         firstBuy = firstBuy || lot.date;
         lot.n -= take; left -= take;
@@ -1049,7 +1135,7 @@ function roundTrips(trades) {
       if (!matched) continue;
       const pl = matched * proceedsPer - cost;
       trips.push({ ticker: t.Ticker, shares: matched, buyDate: firstBuy, sellDate: t._d,
-        buyPrice: buyPx / matched, sellPrice: px, pl, ret: pl / cost, days: daysBetween(firstBuy, t._d) });
+        buyPrice: buyPx / matched, sellPrice: px, pl, ret: pl / cost, days: daysBetween(firstBuy, t._d), r: riskAmt > 0 ? pl / riskAmt : null });
     }
   }
   return trips;
@@ -1181,79 +1267,103 @@ function renderEquity(data) {
 }
 
 function drawEquity(host, pts) {
-  if (!host.isConnected) return;
+  drawLineChart(host, pts, {
+    series: [
+      { key: "gb", color: css("--s-bench"), name: "XEQT", full: "bench" },
+      { key: "gc", color: css("--s-claude"), name: "Claude", full: "claude" },
+    ],
+    fmt: fmtSigned,
+    area: "gc",
+    aria: `Line chart of profit over the money put in, from ${dateFmt.format(pts[0].date)} to ${dateFmt.format(pts[pts.length - 1].date)}. Claude ends at ${fmtSigned(pts[pts.length - 1].gc)}, XEQT at ${fmtSigned(pts[pts.length - 1].gb)}.`,
+    gapLabel: (a, b) => `${a - b >= 0 ? "+" : "−"}${fmtMoney(Math.abs(a - b))}`,
+    tipRow: (s, p) => `${s.name}, worth ${fmtMoney(p[s.full])}`,
+    tipFooter: p => {
+      const gap = isNum(p.claude) && isNum(p.bench) ? p.claude - p.bench : null;
+      return [`${fmtMoney(p.putIn)} put in`, isNum(gap) ? (Math.abs(gap) < 0.005 ? "Dead even" : `Claude ${gap > 0 ? "ahead" : "behind"} by ${fmtMoney(Math.abs(gap))}`) : null];
+    },
+  });
+}
+
+/* A line chart with a shared y-axis, crosshair tooltip and keyboard stepping.
+   opts: series [{key,color,name}], fmt (value -> text), area (key to wash down to 0),
+   aria, gapLabel(a,b) for the collided end label, tipRow(s,p), tipFooter(p) -> [text]. */
+function drawLineChart(host, pts, opts) {
+  if (!host.isConnected || !host.clientWidth) return;
   host.replaceChildren();
+  const series = opts.series;
+  const fmt = opts.fmt || fmtMoney;
   const W = Math.max(280, host.clientWidth);
-  const H = W < 520 ? 220 : 280;
-  const m = { t: 12, r: W < 520 ? 64 : 104, b: 28, l: 44 };
+  const H = opts.height || (W < 520 ? 220 : 280);
+  const m = { t: 12, r: W < 520 ? 64 : 104, b: 28, l: 52 };
   const iw = W - m.l - m.r, ih = H - m.t - m.b;
 
-  const vals = pts.flatMap(p => [p.gc, p.gb, 0]).filter(isNum);
+  const vals = pts.flatMap(p => series.map(s => p[s.key])).filter(isNum);
+  if (opts.zero !== false) vals.push(0);
   let lo = Math.min(...vals), hi = Math.max(...vals);
-  const pad = Math.max((hi - lo) * 0.08, 0.1);
-  const ticks = niceTicks(lo - pad, hi + pad, 4);
+  const pad = Math.max((hi - lo) * 0.08, opts.minPad || 0.1);
+  const ticks = niceTicks(opts.floorZero && lo >= 0 ? lo : lo - pad, opts.ceilZero && hi <= 0 ? hi : hi + pad, 4);
   lo = ticks[0]; hi = ticks[ticks.length - 1];
   const t0 = pts[0].date.getTime(), t1 = pts[pts.length - 1].date.getTime();
   const x = d => m.l + (t1 === t0 ? iw / 2 : (d.getTime() - t0) / (t1 - t0) * iw);
   const y = v => m.t + (1 - (v - lo) / (hi - lo)) * ih;
 
   const root = svg("svg", { viewBox: `0 0 ${W} ${H}`, height: H, role: "img", tabindex: "0",
-    "aria-label": `Line chart of profit over the money put in, from ${dateFmt.format(pts[0].date)} to ${dateFmt.format(pts[pts.length - 1].date)}. Claude ends at ${fmtSigned(pts[pts.length - 1].gc)}, XEQT at ${fmtSigned(pts[pts.length - 1].gb)}. Use the left and right arrow keys to step through days.` });
+    "aria-label": `${opts.aria} Use the left and right arrow keys to step through the points.` });
 
-  // grid + y ticks
+  const tickFmt = opts.tickFmt || (tv => {
+    const dec = ticks.some(t => Math.abs(t % 1) > 1e-9) ? 2 : 0;
+    return Math.abs(tv) < 1e-9 ? "$0" : `${tv > 0 && opts.signed !== false ? "+" : tv < 0 ? "−" : ""}$${Math.abs(tv).toFixed(dec)}`;
+  });
   for (const tv of ticks) {
     root.append(svg("line", { x1: m.l, x2: m.l + iw, y1: y(tv), y2: y(tv), stroke: Math.abs(tv) < 1e-9 ? css("--axis") : css("--grid"), "stroke-width": 1, "shape-rendering": "crispEdges" }));
     const lab = svg("text", { x: m.l - 8, y: y(tv) + 4, "text-anchor": "end", "font-size": 12, fill: css("--slate") });
-    const dec = ticks.some(t => Math.abs(t % 1) > 1e-9) ? 2 : 0;
-    lab.textContent = Math.abs(tv) < 1e-9 ? "$0" : `${tv > 0 ? "+" : "−"}$${Math.abs(tv).toFixed(dec)}`;
+    lab.textContent = tickFmt(tv);
     root.append(lab);
   }
-  // x ticks: first, last, and up to 3 between
   const nX = Math.min(pts.length, W < 520 ? 3 : 5);
   const xIdx = [...new Set(Array.from({ length: nX }, (_, i) => Math.round(i * (pts.length - 1) / Math.max(1, nX - 1))))];
+  const xFmt = opts.xFmt || (d => shortDate.format(d));
   for (const i of xIdx) {
     const lab = svg("text", { x: x(pts[i].date), y: H - 6, "text-anchor": i === 0 ? "start" : i === pts.length - 1 ? "end" : "middle", "font-size": 12, fill: css("--slate") });
-    lab.textContent = shortDate.format(pts[i].date);
+    lab.textContent = xFmt(pts[i].date);
     root.append(lab);
   }
 
   const line = key => pts.filter(p => isNum(p[key])).map((p, i) => `${i ? "L" : "M"}${x(p.date).toFixed(1)},${y(p[key]).toFixed(1)}`).join("");
-  // soft wash between Claude's line and break-even
-  const claudePts = pts.filter(p => isNum(p.gc));
-  if (claudePts.length > 1) {
-    const area = line("gc") + `L${x(claudePts[claudePts.length - 1].date).toFixed(1)},${y(0).toFixed(1)}L${x(claudePts[0].date).toFixed(1)},${y(0).toFixed(1)}Z`;
-    root.append(svg("path", { d: area, fill: css("--s-claude"), "fill-opacity": 0.08 }));
+  if (opts.area) {
+    const ap = pts.filter(p => isNum(p[opts.area]));
+    const base = Math.min(Math.max(0, lo), hi);
+    if (ap.length > 1) {
+      const area = line(opts.area) + `L${x(ap[ap.length - 1].date).toFixed(1)},${y(base).toFixed(1)}L${x(ap[0].date).toFixed(1)},${y(base).toFixed(1)}Z`;
+      const col = (series.find(s => s.key === opts.area) || series[0]).color;
+      root.append(svg("path", { d: area, fill: col, "fill-opacity": 0.08 }));
+    }
   }
-  const series = [
-    { key: "gb", color: css("--s-bench"), name: "XEQT" },
-    { key: "gc", color: css("--s-claude"), name: "Claude" },
-  ];
-  for (const s of series) root.append(svg("path", { d: line(s.key), fill: "none", stroke: s.color, "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }));
+  for (const s of series) root.append(svg("path", { d: line(s.key), fill: "none", stroke: s.color, "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round", "stroke-dasharray": s.dash || null }));
 
-  // end dots + end labels (skip labels if they'd collide; the legend still names them)
   const last = pts[pts.length - 1];
   const ends = series.filter(s => isNum(last[s.key])).map(s => ({ ...s, yy: y(last[s.key]), v: last[s.key] }));
-  const collide = ends.length === 2 && Math.abs(ends[0].yy - ends[1].yy) < 30;
+  let collide = false;
+  for (let i = 0; i < ends.length; i++) for (let j = i + 1; j < ends.length; j++) if (Math.abs(ends[i].yy - ends[j].yy) < 30) collide = true;
   for (const e of ends) {
     root.append(svg("circle", { cx: x(last.date), cy: e.yy, r: 4, fill: e.color, stroke: css("--paper"), "stroke-width": 2 }));
     if (!collide) {
       const t = svg("text", { x: x(last.date) + 10, y: e.yy - 2, "font-size": 12, fill: css("--ink"), "font-weight": 700 });
-      t.textContent = fmtSigned(e.v);
+      t.textContent = fmt(e.v);
       const t2 = svg("text", { x: x(last.date) + 10, y: e.yy + 12, "font-size": 11, fill: css("--slate") });
       t2.textContent = e.name;
       root.append(t, t2);
     }
   }
-  if (collide) {
-    const t = svg("text", { x: x(last.date) + 10, y: (ends[0].yy + ends[1].yy) / 2 + 4, "font-size": 12, fill: css("--ink"), "font-weight": 700 });
-    const gap = last.gc - last.gb;
-    t.textContent = `${gap >= 0 ? "+" : "−"}${fmtMoney(Math.abs(gap))}`;
-    const t2 = svg("text", { x: x(last.date) + 10, y: (ends[0].yy + ends[1].yy) / 2 + 18, "font-size": 11, fill: css("--slate") });
-    t2.textContent = W < 520 ? "vs XEQT" : "Claude vs XEQT";
+  if (collide && ends.length === 2 && opts.gapLabel) {
+    const midY = (ends[0].yy + ends[1].yy) / 2;
+    const t = svg("text", { x: x(last.date) + 10, y: midY + 4, "font-size": 12, fill: css("--ink"), "font-weight": 700 });
+    t.textContent = opts.gapLabel(last[ends[1].key], last[ends[0].key]);
+    const t2 = svg("text", { x: x(last.date) + 10, y: midY + 18, "font-size": 11, fill: css("--slate") });
+    t2.textContent = W < 520 ? `vs ${ends[0].name}` : `${ends[1].name} vs ${ends[0].name}`;
     root.append(t, t2);
   }
 
-  // crosshair + tooltip
   const cross = svg("line", { y1: m.t, y2: m.t + ih, stroke: css("--ink"), "stroke-width": 1, opacity: 0 });
   const hoverDots = series.map(s => svg("circle", { r: 4, fill: s.color, stroke: css("--paper"), "stroke-width": 2, opacity: 0 }));
   root.append(cross, ...hoverDots);
@@ -1273,14 +1383,11 @@ function drawEquity(host, pts) {
       if (isNum(p[s.key])) { hoverDots[k].setAttribute("cx", px); hoverDots[k].setAttribute("cy", y(p[s.key])); hoverDots[k].setAttribute("opacity", 1); }
       else hoverDots[k].setAttribute("opacity", 0);
     });
-    const row = (color, g, v, name) => el("div", { class: "tip-row" }, el("i", { class: "key-line", style: `background:${color}` }), el("b", {}, fmtSigned(g)), el("span", {}, `${name}, worth ${fmtMoney(v)}`));
-    const gap = isNum(p.claude) && isNum(p.bench) ? p.claude - p.bench : null;
-    tip.replaceChildren(
-      el("span", { class: "tip-date" }, `${dateFmt.format(p.date)}${p.live ? ", live" : ""}`),
-      row(css("--s-claude"), p.gc, p.claude, "Claude"),
-      row(css("--s-bench"), p.gb, p.bench, "XEQT"),
-      el("span", { class: "tip-date", style: "margin:0.25rem 0 0" }, `${fmtMoney(p.putIn)} put in`),
-      isNum(gap) ? el("span", { class: "tip-date", style: "margin:0.25rem 0 0" }, Math.abs(gap) < 0.005 ? "Dead even" : `Claude ${gap > 0 ? "ahead" : "behind"} by ${fmtMoney(Math.abs(gap))}`) : null);
+    const rows = series.slice().reverse().map(s => el("div", { class: "tip-row" },
+      el("i", { class: "key-line", style: `background:${s.color}` }), el("b", {}, fmt(p[s.key])),
+      el("span", {}, opts.tipRow ? opts.tipRow(s, p) : s.name)));
+    const foot = (opts.tipFooter ? opts.tipFooter(p) : []).filter(Boolean).map(t => el("span", { class: "tip-date", style: "margin:0.25rem 0 0" }, t));
+    tip.replaceChildren(el("span", { class: "tip-date" }, `${(opts.tipDate || (d => dateFmt.format(d)))(p.date)}${p.live ? ", live" : ""}`), ...rows, ...foot);
     tip.classList.add("is-on");
     const scale = host.clientWidth / W;
     const tw = tip.offsetWidth;
@@ -1304,8 +1411,7 @@ function drawEquity(host, pts) {
   root.addEventListener("keydown", e => {
     if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
       e.preventDefault();
-      const next = cur < 0 ? pts.length - 1 : Math.max(0, Math.min(pts.length - 1, cur + (e.key === "ArrowRight" ? 1 : -1)));
-      show(next);
+      show(cur < 0 ? pts.length - 1 : Math.max(0, Math.min(pts.length - 1, cur + (e.key === "ArrowRight" ? 1 : -1))));
     } else if (e.key === "Escape") hide();
   });
 }
@@ -1431,30 +1537,785 @@ function renderResults(trades) {
   return sec;
 }
 
+/* ================================================================
+   Tabs, routing and view state
+================================================================ */
+
+const VIEWS = [
+  ["overview", "Overview"],
+  ["trades", "Trades"],
+  ["performance", "Performance"],
+  ["watchlist", "Watchlist"],
+  ["journal", "Journal"],
+  ["tools", "Tools"],
+];
+// "#trades" opens a tab. "#demo" or "#demo/trades" (or ?demo in the URL) shows sample numbers.
+function parseRoute() {
+  const parts = location.hash.replace(/^#/, "").split("/").filter(Boolean);
+  const demo = parts[0] === "demo" || new URLSearchParams(location.search).has("demo");
+  const view = parts.find(p => VIEWS.some(v => v[0] === p)) || "overview";
+  return { demo, view };
+}
+let route = parseRoute();
+const viewHref = v => `#${route.demo && !new URLSearchParams(location.search).has("demo") ? "demo/" : ""}${v}`;
+
+// UI state that survives the 5-minute refresh.
+const ui = {
+  logStatus: "All",
+  logQuery: "",
+  watchSort: "order",
+  sizer: null,
+  proj: { months: 24, xeqt: 7, claude: 7 },
+};
+
+function renderTabs() {
+  const nav = document.getElementById("tabs");
+  nav.replaceChildren(...VIEWS.map(([id, name]) =>
+    el("a", { href: viewHref(id), class: "tab", "aria-current": route.view === id ? "page" : null }, name)));
+}
+
+/* ---------------- Market hours (TSX, Toronto time; holidays not counted) ---------------- */
+
+function marketStatus(now = new Date()) {
+  const parts = Object.fromEntries(new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/Toronto", weekday: "short", hour: "numeric", minute: "numeric", hourCycle: "h23",
+  }).formatToParts(now).map(p => [p.type, p.value]));
+  const wd = parts.weekday;
+  const mins = (+parts.hour % 24) * 60 + +parts.minute;
+  const weekend = wd === "Sat" || wd === "Sun";
+  if (!weekend && mins >= 570 && mins < 960) {
+    const left = 960 - mins;
+    return { open: true, text: `TSX open, closes in ${left >= 60 ? `${Math.floor(left / 60)} h ` : ""}${left % 60} min` };
+  }
+  if (!weekend && mins < 570) return { open: false, text: "TSX opens at 9:30 a.m. ET" };
+  const next = wd === "Fri" || wd === "Sat" || wd === "Sun" ? "Monday" : "tomorrow";
+  return { open: false, text: `TSX closed, opens ${next} at 9:30 a.m. ET` };
+}
+function renderMarket() {
+  const node = document.getElementById("market");
+  const s = marketStatus();
+  node.className = `market ${s.open ? "is-open" : ""}`;
+  node.textContent = s.text;
+  node.title = "Regular TSX hours, 9:30 a.m. to 4:00 p.m. Eastern. Market holidays aren't counted.";
+}
+
+/* ---------------- Small shared pieces ---------------- */
+
+function statGrid(tiles, cols) {
+  return el("div", { class: "stats", style: cols ? `--cols:${cols}` : null },
+    tiles.map(([label, value, sub, extra]) =>
+      el("div", { class: "stat" }, el("span", { class: "label" }, label), el("span", { class: "value" }, value), extra || null, sub ? el("span", { class: "sub" }, sub) : null)));
+}
+const signedNode = v => isNum(v) ? el("span", { class: signClass(v) }, fmtSigned(v)) : "–";
+const pctNode = v => isNum(v) ? el("span", { class: signClass(v) }, fmtPct(v)) : "–";
+
+function section(id, title, note, ...children) {
+  return el("section", { "aria-labelledby": id },
+    el("h2", { id }, title),
+    note ? el("p", { class: "section-note" }, note) : null,
+    ...children);
+}
+
+/* Diverging horizontal bars around zero, one row per item: [{name, sub, value, label, title}] */
+function divergingRows(items) {
+  const maxAbs = Math.max(...items.map(i => Math.abs(i.value)), 0.01);
+  const list = el("div", { class: "results" });
+  for (const it of items) {
+    const w = Math.abs(it.value) / maxAbs * 30;
+    const gain = it.value >= 0;
+    list.append(el("div", { class: "result" },
+      el("div", { class: "result-name" }, it.name, it.sub ? el("span", {}, it.sub) : null),
+      el("div", { class: "result-track" },
+        el("div", { class: `result-bar ${gain ? "is-gain" : "is-loss"}`, tabindex: "0",
+          style: gain ? `left:50%;width:max(2px, ${w}%)` : `right:50%;width:max(2px, ${w}%)`,
+          title: it.title || "", "aria-label": `${it.name}: ${it.aria || it.label}` }),
+        el("span", { class: `result-val ${gain ? "up" : "down"}`, "aria-hidden": "true",
+          style: gain ? `left:calc(50% + ${w}% + 0.375rem)` : `right:calc(50% + ${w}% + 0.375rem)` }, it.labelNode || it.label))));
+  }
+  return list;
+}
+
+/* ================================================================
+   Trades tab
+================================================================ */
+
+function tradeAnalytics(trades) {
+  const trips = roundTrips(trades);
+  const wins = trips.filter(t => t.pl > 0), losses = trips.filter(t => t.pl <= 0);
+  const sum = a => a.reduce((s, t) => s + t.pl, 0);
+  const avg = (a, f) => a.length ? a.reduce((s, t) => s + f(t), 0) / a.length : null;
+  const grossWin = sum(wins), grossLoss = -sum(losses);
+  const buys = trades.filter(t => t.Ticker && t.Action === "Buy" && t.Status && t.Status !== "Planned");
+  const filledBuys = buys.filter(t => t.Status === "Filled").length;
+  const rs = trips.map(t => t.r).filter(isNum);
+  return {
+    trips,
+    count: trips.length,
+    winRate: trips.length ? wins.length / trips.length : null,
+    avgWin: avg(wins, t => t.pl), avgLoss: avg(losses, t => t.pl),
+    profitFactor: grossLoss > 0 ? grossWin / grossLoss : (grossWin > 0 ? Infinity : null),
+    expectancy: avg(trips, t => t.pl),
+    avgR: rs.length ? rs.reduce((a, b) => a + b, 0) / rs.length : null,
+    avgDays: avg(trips, t => t.days),
+    fillRate: buys.length ? filledBuys / buys.length : null,
+    best: trips.length ? trips.reduce((a, b) => (b.pl > a.pl ? b : a)) : null,
+    worst: trips.length ? trips.reduce((a, b) => (b.pl < a.pl ? b : a)) : null,
+    total: sum(trips),
+    fees: trades.filter(t => t.Status === "Filled").reduce((s, t) => s + (num(t.Fees) || 0), 0),
+  };
+}
+
+function renderTradeStats(trades) {
+  const a = tradeAnalytics(trades);
+  const none = "Needs a closed trade";
+  return section("tstats-title", "Trading record", "Every closed trade, with sells matched to the oldest buys first. Fees are included.",
+    statGrid([
+      ["Closed trades", String(a.count), a.count ? `${fmtSigned(a.total)} in total` : "None yet"],
+      ["Win rate", isNum(a.winRate) ? `${Math.round(a.winRate * 100)}%` : "–", a.count ? `${a.trips.filter(t => t.pl > 0).length} won, ${a.trips.filter(t => t.pl <= 0).length} lost` : none],
+      ["Average win", isNum(a.avgWin) ? signedNode(a.avgWin) : "–", isNum(a.avgWin) ? "per winning trade" : "No wins yet"],
+      ["Average loss", isNum(a.avgLoss) ? signedNode(a.avgLoss) : "–", isNum(a.avgLoss) ? "per losing trade" : "No losses yet"],
+      ["Profit factor", a.profitFactor === Infinity ? "No losses" : isNum(a.profitFactor) ? a.profitFactor.toFixed(2) : "–", "Money won for each $1 lost. Above 1 makes money."],
+      ["Expectancy", isNum(a.expectancy) ? signedNode(a.expectancy) : "–", "Average profit per closed trade"],
+      ["Average R", isNum(a.avgR) ? `${a.avgR >= 0 ? "+" : "−"}${Math.abs(a.avgR).toFixed(2)}R` : "–", "Profit measured in units of the risk taken. +1R made what the stop risked."],
+      ["Average hold", isNum(a.avgDays) ? `${a.avgDays.toFixed(1)} days` : "–", "Buy to sell"],
+      ["Fill rate", isNum(a.fillRate) ? `${Math.round(a.fillRate * 100)}%` : "–", "Limit buys that filled, of those sent"],
+      ["Best trade", a.best ? signedNode(a.best.pl) : "–", a.best ? `${a.best.ticker}, ${shortDate.format(a.best.sellDate)}` : none],
+      ["Worst trade", a.worst ? signedNode(a.worst.pl) : "–", a.worst ? `${a.worst.ticker}, ${shortDate.format(a.worst.sellDate)}` : none],
+      ["Fees paid", fmtMoney(a.fees), "On filled orders"],
+    ]));
+}
+
+function renderByTicker(trades) {
+  const trips = roundTrips(trades);
+  const sec = section("tick-title", "Profit by stock", "Closed-trade profit added up for each stock.");
+  if (!trips.length) { sec.append(el("p", { class: "empty" }, "Shows up after the first sell fills.")); return sec; }
+  const by = new Map();
+  for (const t of trips) {
+    const g = by.get(t.ticker) || { pl: 0, n: 0, wins: 0 };
+    g.pl += t.pl; g.n += 1; g.wins += t.pl > 0 ? 1 : 0;
+    by.set(t.ticker, g);
+  }
+  const items = [...by.entries()].sort((a, b) => b[1].pl - a[1].pl).map(([tk, g]) => ({
+    name: tk, sub: `${g.n} trade${g.n === 1 ? "" : "s"}, ${g.wins} won`, value: g.pl, label: fmtSigned(g.pl),
+  }));
+  sec.append(divergingRows(items));
+  return sec;
+}
+
+function tradesCsv(trades) {
+  const cols = [...new Set(trades.flatMap(t => Object.keys(t)))].filter(c => !c.startsWith("_"));
+  const cell = v => {
+    if (v instanceof Date) v = `${v.getFullYear()}-${String(v.getMonth() + 1).padStart(2, "0")}-${String(v.getDate()).padStart(2, "0")}`;
+    if (v === null || v === undefined) v = "";
+    v = String(v);
+    return /[",\n]/.test(v) ? `"${v.replace(/"/g, '""')}"` : v;
+  };
+  return [cols.map(cell).join(","), ...trades.map(t => cols.map(c => cell(t[c])).join(","))].join("\n");
+}
+
+function renderTradeLog(trades) {
+  const all = trades.filter(t => t.Ticker && t.Status);
+  const statuses = ["All", ...new Set(all.map(t => t.Status))];
+  if (!statuses.includes(ui.logStatus)) ui.logStatus = "All";
+  const q = ui.logQuery.trim().toUpperCase();
+  const shown = all
+    .filter(t => ui.logStatus === "All" || t.Status === ui.logStatus)
+    .filter(t => !q || String(t.Ticker).toUpperCase().includes(q) || String(t.Reason || "").toUpperCase().includes(q))
+    .sort((a, b) => (asDate(b.Date) || 0) - (asDate(a.Date) || 0));
+
+  const sec = section("log-title", "Trade log", "Every order Claude has planned or sent, with the reasoning. Open a row for the details.");
+  const csvUrl = all.length ? URL.createObjectURL(new Blob([tradesCsv(all)], { type: "text/csv" })) : null;
+  sec.append(el("div", { class: "controls" },
+    el("div", { class: "chips", role: "group", "aria-label": "Filter by status" },
+      statuses.map(s => {
+        const b = el("button", { type: "button", class: "chip", id: `chip-${s.replace(/\W+/g, "-")}`, "aria-pressed": String(ui.logStatus === s) },
+          s, el("span", { class: "chip-n" }, String(s === "All" ? all.length : all.filter(t => t.Status === s).length)));
+        b.addEventListener("click", () => { ui.logStatus = s; renderView(); });
+        return b;
+      })),
+    (() => {
+      const i = el("input", { type: "search", id: "log-search", class: "search", placeholder: "Search ticker or reason", value: ui.logQuery, "aria-label": "Search the trade log" });
+      i.addEventListener("input", () => { ui.logQuery = i.value; renderView(); });
+      return i;
+    })(),
+    csvUrl ? el("a", { class: "btn-link", href: csvUrl, download: "claude-trades.csv" }, "Download CSV") : null));
+
+  if (!shown.length) {
+    sec.append(el("p", { class: "empty" }, all.length ? "No trades match that filter." : "No trades yet. Planned, filled, unfilled and cancelled orders are listed here with Claude's reasoning."));
+    return sec;
+  }
+  const list = el("div", { class: "log" });
+  shown.forEach(t => {
+    const filled = t.Status === "Filled";
+    const price = filled ? num(t["Fill price"]) : num(t["Limit price"]);
+    const d = asDate(t.Date);
+    const statusCls = filled ? "is-filled" : t.Status === "Planned" ? "is-planned" : "";
+    const facts = [
+      isNum(num(t["Limit price"])) ? `Limit ${fmtMoney(num(t["Limit price"]))}` : null,
+      isNum(num(t["Fill price"])) ? `filled at ${fmtMoney(num(t["Fill price"]))}` : null,
+      isNum(num(t["Stop-loss"])) ? `stop ${fmtMoney(num(t["Stop-loss"]))}` : null,
+      isNum(num(t.Target)) ? `target ${fmtMoney(num(t.Target))}` : null,
+      asDate(t["Exit by"]) ? `exit by ${dateFmt.format(asDate(t["Exit by"]))}` : null,
+      num(t.Fees) > 0 ? `fees ${fmtMoney(num(t.Fees))}` : null,
+    ].filter(Boolean);
+    list.append(el("details", { class: "trade" },
+      el("summary", {},
+        el("span", { class: "tr-date" }, d ? dateFmt.format(d) : "–"),
+        el("span", { class: "tr-what" }, el("b", {}, `${t.Action || ""} ${isNum(num(t.Shares)) ? num(t.Shares) : ""} ${t.Ticker}`), isNum(price) ? ` at ${fmtMoney(price)}` : ""),
+        el("span", { class: `status ${statusCls}` }, t.Status),
+        el("span", { class: `num tr-cash ${signClass(num(t["Cash flow"]))}` }, filled ? fmtMoney(num(t["Cash flow"])) : "")),
+      el("div", { class: "tr-body" },
+        facts.length ? el("p", {}, facts.join(", ").replace(/^./, c => c.toUpperCase()) + ".") : null,
+        t.Reason ? el("p", {}, t.Reason) : null)));
+  });
+  sec.append(list);
+  return sec;
+}
+
+/* ================================================================
+   Performance tab
+================================================================ */
+
+// Time-weighted returns: each day's change with that day's deposit taken out.
+function perfSeries(pts) {
+  const out = [];
+  let ic = 1, ib = 1, pc = 1, pb = 1;
+  pts.forEach((p, i) => {
+    let rc = null, rb = null;
+    if (i > 0) {
+      const prev = pts[i - 1];
+      const dep = (p.putIn || 0) - (prev.putIn || 0);
+      if (isNum(p.claude) && isNum(prev.claude) && prev.claude > 0) rc = (p.claude - dep) / prev.claude - 1;
+      if (isNum(p.bench) && isNum(prev.bench) && prev.bench > 0) rb = (p.bench - dep) / prev.bench - 1;
+    }
+    if (isNum(rc)) ic *= 1 + rc;
+    if (isNum(rb)) ib *= 1 + rb;
+    pc = Math.max(pc, ic); pb = Math.max(pb, ib);
+    out.push({ date: p.date, live: p.live, rc, rb, tc: ic - 1, tb: ib - 1, dc: ic / pc - 1, db: ib / pb - 1, gc: p.gc, gb: p.gb });
+  });
+  return out;
+}
+
+function perfStats(ps, k) {
+  const rets = ps.map(p => p[`r${k}`]).filter(isNum);
+  if (!rets.length) return null;
+  const mean = rets.reduce((a, b) => a + b, 0) / rets.length;
+  const sd = Math.sqrt(rets.reduce((a, r) => a + (r - mean) ** 2, 0) / Math.max(1, rets.length - 1));
+  let streak = 0, bestStreak = 0;
+  for (const r of rets) { streak = r > 0 ? streak + 1 : 0; bestStreak = Math.max(bestStreak, streak); }
+  return {
+    total: ps[ps.length - 1][`t${k}`],
+    profit: ps[ps.length - 1][`g${k}`],
+    maxDD: Math.min(0, ...ps.map(p => p[`d${k}`])),
+    nowDD: ps[ps.length - 1][`d${k}`],
+    best: Math.max(...rets), worst: Math.min(...rets),
+    up: rets.filter(r => r > 0).length / rets.length,
+    vol: rets.length > 2 ? sd * Math.sqrt(252) : null,
+    streak: bestStreak,
+    days: rets.length,
+  };
+}
+
+const pctTicks = tv => Math.abs(tv) < 1e-9 ? "0%" : `${tv > 0 ? "+" : "−"}${(Math.abs(tv) * 100).toFixed(Math.abs(tv) < 0.1 ? 1 : 0)}%`;
+
+function renderPerfCompare(ps) {
+  const c = perfStats(ps, "c"), b = perfStats(ps, "b");
+  const sec = section("pc-title", "Claude against XEQT", "Returns are time-weighted, so monthly deposits don't count as gains.");
+  if (!c && !b) { sec.append(el("p", { class: "empty" }, "Needs at least two days in the Daily Log tab.")); return sec; }
+  const row = (label, f, better) => {
+    const cv = c ? f(c) : null, bv = b ? f(b) : null;
+    let winner = "";
+    if (better && c && b) {
+      const x = better(c), y = better(b);
+      if (isNum(x) && isNum(y) && Math.abs(x - y) > 1e-9) winner = x > y ? "Claude" : "XEQT";
+    }
+    return el("tr", {}, el("th", { scope: "row" }, label), el("td", {}, cv ?? "–"), el("td", {}, bv ?? "–"), el("td", { class: "win" }, winner));
+  };
+  sec.append(el("div", { class: "table-scroll" }, el("table", { class: "data-table compare" },
+    el("thead", {}, el("tr", {}, el("th", { scope: "col" }, ""), el("th", { scope: "col" }, "Claude"), el("th", { scope: "col" }, "XEQT"), el("th", { scope: "col" }, "Better"))),
+    el("tbody", {},
+      row("Return", s => pctNode(s.total), s => s.total),
+      row("Profit", s => signedNode(s.profit), s => s.profit),
+      row("Worst drop from a high", s => pctNode(s.maxDD), s => s.maxDD),
+      row("Below its high now", s => pctNode(s.nowDD), s => s.nowDD),
+      row("Best day", s => pctNode(s.best)),
+      row("Worst day", s => pctNode(s.worst), s => s.worst),
+      row("Up days", s => `${Math.round(s.up * 100)}%`, s => s.up),
+      row("Longest winning streak", s => `${s.streak} day${s.streak === 1 ? "" : "s"}`),
+      row("Volatility, yearly", s => isNum(s.vol) ? `${(s.vol * 100).toFixed(1)}%` : "–", s => isNum(s.vol) ? -s.vol : null),
+    ))));
+  return sec;
+}
+
+function renderPerfChart(ps, id, title, note, keys, opts = {}) {
+  const sec = section(id, title, note);
+  if (ps.length < 2) { sec.append(el("div", { class: "chart-empty" }, el("p", {}, el("b", {}, "Nothing to draw yet."), "This chart fills in from the Daily Log tab once there are two days of values."))); return sec; }
+  sec.append(el("div", { class: "chart-legend", "aria-hidden": "true" },
+    el("span", {}, el("i", { class: "key-line", style: "background:var(--s-claude)" }), "Claude's picks"),
+    el("span", {}, el("i", { class: "key-line", style: "background:var(--s-bench)" }), "XEQT")));
+  const host = el("div", { class: "chart-host" });
+  sec.append(host);
+  const last = ps[ps.length - 1];
+  drawers.push(() => drawLineChart(host, ps, {
+    series: [{ key: keys[1], color: css("--s-bench"), name: "XEQT" }, { key: keys[0], color: css("--s-claude"), name: "Claude" }],
+    fmt: fmtPct, tickFmt: pctTicks, area: opts.area, ceilZero: opts.ceilZero, minPad: 0.002,
+    gapLabel: (a, b) => `${a - b >= 0 ? "+" : "−"}${(Math.abs(a - b) * 100).toFixed(1)} pts`,
+    aria: `${title}. Claude ends at ${fmtPct(last[keys[0]])}, XEQT at ${fmtPct(last[keys[1]])}.`,
+  }));
+  return sec;
+}
+
+function renderMonthly(ps, data) {
+  const sec = section("mo-title", "Month by month", "Return in each calendar month, and the deposits made that month.");
+  if (ps.length < 2) { sec.append(el("p", { class: "empty" }, "The first month shows up once the Daily Log has values.")); return sec; }
+  const months = new Map();
+  let prevC = 1, prevB = 1;
+  const ends = [];
+  ps.forEach((p, i) => {
+    const k = `${p.date.getFullYear()}-${p.date.getMonth()}`;
+    const next = ps[i + 1];
+    if (!next || `${next.date.getFullYear()}-${next.date.getMonth()}` !== k) ends.push(p);
+  });
+  for (const p of ends) {
+    const ic = 1 + p.tc, ib = 1 + p.tb;
+    const dep = data.contributions.filter(c => { const d = asDate(c.Date); return d && d.getFullYear() === p.date.getFullYear() && d.getMonth() === p.date.getMonth(); })
+      .reduce((s, c) => s + (num(c["Deposit into Claude's account (CAD)"]) || 0), 0);
+    months.set(p.date, { c: ic / prevC - 1, b: ib / prevB - 1, dep });
+    prevC = ic; prevB = ib;
+  }
+  const monthFmt = new Intl.DateTimeFormat("en-CA", { month: "long", year: "numeric" });
+  sec.append(el("div", { class: "table-scroll" }, el("table", { class: "data-table" },
+    el("thead", {}, el("tr", {}, ["Month", "Claude", "XEQT", "Difference", "Deposits"].map(h => el("th", { scope: "col" }, h)))),
+    el("tbody", {}, [...months.entries()].reverse().map(([d, v]) => el("tr", {},
+      el("td", {}, monthFmt.format(d)), el("td", {}, pctNode(v.c)), el("td", {}, pctNode(v.b)),
+      el("td", {}, isNum(v.c - v.b) ? el("span", { class: signClass(v.c - v.b) }, `${v.c - v.b >= 0 ? "+" : "−"}${(Math.abs(v.c - v.b) * 100).toFixed(1)} pts`) : "–"),
+      el("td", {}, v.dep ? fmtMoney(v.dep) : "–")))))));
+  return sec;
+}
+
+function renderDeposits(data) {
+  const f = data.feed;
+  const rows = data.contributions.filter(c => asDate(c.Date) && isNum(num(c["Deposit into Claude's account (CAD)"])))
+    .sort((a, b) => asDate(b.Date) - asDate(a.Date));
+  const sec = renderMoneyIn(data.contributions, f);
+  const start = serialToDate(f.start_date);
+  const items = [
+    ...rows.map(c => [dateFmt.format(asDate(c.Date)), "Monthly deposit", fmtMoney(num(c["Deposit into Claude's account (CAD)"]))]),
+    start ? [dateFmt.format(start), "Starting deposit", fmtMoney(num(f.start_cash))] : null,
+  ].filter(Boolean);
+  if (items.length) {
+    sec.append(el("div", { class: "table-scroll" }, el("table", { class: "data-table", style: "margin-top:1rem" },
+      el("thead", {}, el("tr", {}, ["Date", "What", "Amount"].map(h => el("th", { scope: "col" }, h)))),
+      el("tbody", {}, items.map(r => el("tr", {}, r.map(c => el("td", {}, c))))))));
+  }
+  return sec;
+}
+
+/* ================================================================
+   Watchlist tab
+================================================================ */
+
+function watchMetrics(w) {
+  const px = num(w["Price (CAD)"]), lo = num(w["30-day low"]), hi = num(w["30-day high"]);
+  const a30 = num(w["30-day avg close"]), a90 = num(w["90-day avg close"]);
+  return {
+    px, lo, hi, a30, a90, day: num(w["Day change"]),
+    vs90: isNum(px) && a90 > 0 ? px / a90 - 1 : null,
+    vs30: isNum(px) && a30 > 0 ? px / a30 - 1 : null,
+    inRange: isNum(px) && isNum(lo) && hi > lo ? (px - lo) / (hi - lo) : null,
+    fromHigh: isNum(px) && hi > 0 ? px / hi - 1 : null,
+    trend: a30 > 0 && a90 > 0 ? a30 / a90 - 1 : null,
+  };
+}
+
+function watchSignals(w) {
+  const m = watchMetrics(w);
+  const out = [];
+  if (isNum(m.fromHigh) && m.fromHigh >= -0.015) out.push(["up", "At or near its 30-day high"]);
+  if (isNum(m.inRange) && m.inRange <= 0.1) out.push(["down", "Near its 30-day low"]);
+  if (isNum(m.trend) && m.trend > 0.01) out.push(["up", "30-day average above the 90-day: trending up"]);
+  if (isNum(m.trend) && m.trend < -0.01) out.push(["down", "30-day average below the 90-day: trending down"]);
+  if (isNum(m.vs90) && m.vs90 > 0.1) out.push(["up", `${fmtPct(m.vs90)} above its 90-day average, stretched`]);
+  if (isNum(m.vs90) && m.vs90 < -0.1) out.push(["down", `${fmtPct(m.vs90)} below its 90-day average`]);
+  if (isNum(m.day) && Math.abs(m.day) >= 0.03) out.push([m.day > 0 ? "up" : "down", `Big move today, ${fmtPct(m.day)}`]);
+  return out;
+}
+
+function sortedWatch(watch) {
+  const rows = watch.filter(w => w.Ticker).map((w, i) => ({ w, i, m: watchMetrics(w) }));
+  const key = {
+    order: r => r.i,
+    ticker: r => String(r.w.Ticker),
+    day: r => -(isNum(r.m.day) ? r.m.day : -Infinity),
+    vs90: r => -(isNum(r.m.vs90) ? r.m.vs90 : -Infinity),
+    range: r => -(isNum(r.m.inRange) ? r.m.inRange : -Infinity),
+  }[ui.watchSort] || (r => r.i);
+  return rows.sort((a, b) => { const x = key(a), y = key(b); return x < y ? -1 : x > y ? 1 : 0; }).map(r => r.w);
+}
+
+function renderWatchControls() {
+  const sel = el("select", { id: "watch-sort", class: "select", "aria-label": "Sort the watchlist" },
+    [["order", "Sheet order"], ["ticker", "Ticker A to Z"], ["day", "Today's change"], ["vs90", "Above 90-day average"], ["range", "Position in 30-day range"]]
+      .map(([v, t]) => el("option", { value: v, selected: ui.watchSort === v ? "" : null }, t)));
+  sel.addEventListener("change", () => { ui.watchSort = sel.value; renderView(); });
+  return el("div", { class: "controls" }, el("label", { for: "watch-sort", class: "control-label" }, "Sort by"), sel);
+}
+
+function renderMomentumMap(data) {
+  const held = new Set(data.holdings.filter(h => num(h["Shares held"]) > 0).map(h => h.Ticker));
+  const pts = data.watchlist.filter(w => w.Ticker).map(w => ({ w, m: watchMetrics(w) })).filter(p => isNum(p.m.vs90) && isNum(p.m.inRange));
+  const sec = section("mm-title", "Momentum map",
+    "Across: price against the 90-day average. Up: where today's price sits in the 30-day range. Top right is strong on both; bottom left is weak on both.");
+  if (!pts.length) { sec.append(el("p", { class: "empty" }, "Needs prices and 30-day ranges on the Watchlist tab.")); return sec; }
+  sec.append(el("div", { class: "chart-legend", "aria-hidden": "true" },
+    el("span", {}, el("i", { class: "key-dot", style: "background:var(--s-claude)" }), "Watching"),
+    held.size ? el("span", {}, el("i", { class: "key-dot", style: "background:var(--s-bench)" }), "Held now") : null,
+    el("span", {}, el("i", { class: "key-dot is-ring" }), "XEQT, the benchmark")));
+  const host = el("div", { class: "chart-host" });
+  sec.append(host);
+  sec.append(tableToggle("Momentum map values", ["Ticker", "vs 90-day avg", "In 30-day range"],
+    pts.map(p => [p.w.Ticker, fmtPct(p.m.vs90), `${Math.round(p.m.inRange * 100)}%`])));
+  drawers.push(() => drawScatter(host, pts, held));
+  return sec;
+}
+
+function drawScatter(host, pts, held) {
+  if (!host.isConnected || !host.clientWidth) return;
+  host.replaceChildren();
+  const W = host.clientWidth, H = W < 520 ? 300 : 340;
+  const m = { t: 16, r: 24, b: 36, l: 48 };
+  const iw = W - m.l - m.r, ih = H - m.t - m.b;
+  const ext = Math.max(0.05, ...pts.map(p => Math.abs(p.m.vs90))) * 1.15;
+  const ticks = niceTicks(-ext, ext, 4);
+  const lo = ticks[0], hi = ticks[ticks.length - 1];
+  const x = v => m.l + (v - lo) / (hi - lo) * iw;
+  const y = v => m.t + (1 - v) * ih;
+  const root = svg("svg", { viewBox: `0 0 ${W} ${H}`, height: H, role: "img", "aria-label": "Scatter plot of watchlist stocks by momentum. The table below lists every value." });
+  // quadrant wash
+  root.append(svg("rect", { x: x(0), y: y(1), width: x(hi) - x(0), height: y(0.5) - y(1), fill: css("--gain"), "fill-opacity": 0.05 }));
+  root.append(svg("rect", { x: x(lo), y: y(0.5), width: x(0) - x(lo), height: y(0) - y(0.5), fill: css("--loss"), "fill-opacity": 0.05 }));
+  for (const tv of ticks) {
+    root.append(svg("line", { x1: x(tv), x2: x(tv), y1: m.t, y2: m.t + ih, stroke: Math.abs(tv) < 1e-9 ? css("--axis") : css("--grid"), "stroke-width": 1, "shape-rendering": "crispEdges" }));
+    const t = svg("text", { x: x(tv), y: H - 18, "text-anchor": "middle", "font-size": 12, fill: css("--slate") });
+    t.textContent = pctTicks(tv);
+    root.append(t);
+  }
+  for (const v of [0, 0.5, 1]) {
+    root.append(svg("line", { x1: m.l, x2: m.l + iw, y1: y(v), y2: y(v), stroke: v === 0.5 ? css("--axis") : css("--grid"), "stroke-width": 1, "shape-rendering": "crispEdges" }));
+    const t = svg("text", { x: m.l - 8, y: y(v) + 4, "text-anchor": "end", "font-size": 12, fill: css("--slate") });
+    t.textContent = v === 0 ? "Low" : v === 1 ? "High" : "Mid";
+    root.append(t);
+  }
+  const xl = svg("text", { x: m.l + iw, y: H - 2, "text-anchor": "end", "font-size": 11, fill: css("--slate") });
+  xl.textContent = "vs 90-day average";
+  root.append(xl);
+  const ql = svg("text", { x: m.l + iw - 6, y: m.t + 14, "text-anchor": "end", "font-size": 11, fill: css("--gain") });
+  ql.textContent = "Strong";
+  const ql2 = svg("text", { x: m.l + 6, y: m.t + ih - 6, "font-size": 11, fill: css("--loss") });
+  ql2.textContent = "Weak";
+  root.append(ql, ql2);
+
+  const tip = el("div", { class: "tip", "aria-hidden": "true" });
+  const placed = [];
+  for (const p of pts) {
+    const cx = x(p.m.vs90), cy = y(p.m.inRange);
+    const isBench = p.w.Note === "Benchmark";
+    const color = held.has(p.w.Ticker) ? css("--s-bench") : css("--s-claude");
+    const g = svg("g", { tabindex: "0", role: "img", "aria-label": `${p.w.Ticker}: ${fmtPct(p.m.vs90)} vs its 90-day average, ${Math.round(p.m.inRange * 100)}% up its 30-day range` });
+    g.append(svg("circle", { cx, cy, r: 12, fill: "transparent" }));
+    g.append(isBench
+      ? svg("circle", { cx, cy, r: 5, fill: css("--paper"), stroke: css("--slate"), "stroke-width": 2 })
+      : svg("circle", { cx, cy, r: 5, fill: color, stroke: css("--paper"), "stroke-width": 2 }));
+    // label: right of the dot unless near the right edge; nudge if another label sits there
+    let lx = cx + 9, anchor = "start";
+    if (cx > m.l + iw - 50) { lx = cx - 9; anchor = "end"; }
+    let ly = cy + 4;
+    while (placed.some(q => Math.abs(q.y - ly) < 13 && Math.abs(q.x - lx) < 44)) ly += 13;
+    placed.push({ x: lx, y: ly });
+    const lab = svg("text", { x: lx, y: ly, "text-anchor": anchor, "font-size": 12, "font-weight": 700, fill: css("--ink") });
+    lab.textContent = p.w.Ticker;
+    g.append(lab);
+    const show = () => {
+      tip.replaceChildren(el("span", { class: "tip-date" }, p.w.Name || p.w.Ticker),
+        el("div", { class: "tip-row" }, el("b", {}, fmtMoney(p.m.px)), el("span", {}, "price")),
+        el("div", { class: "tip-row" }, el("b", {}, fmtPct(p.m.vs90)), el("span", {}, "vs 90-day average")),
+        el("div", { class: "tip-row" }, el("b", {}, `${Math.round(p.m.inRange * 100)}%`), el("span", {}, "up the 30-day range")));
+      tip.classList.add("is-on");
+      const scale = host.clientWidth / W;
+      let left = cx * scale + 14;
+      if (left + tip.offsetWidth > host.clientWidth) left = cx * scale - tip.offsetWidth - 14;
+      tip.style.left = `${Math.max(0, left)}px`;
+      tip.style.top = `${Math.max(0, cy * scale - 20)}px`;
+    };
+    const hide = () => tip.classList.remove("is-on");
+    g.addEventListener("pointerenter", show); g.addEventListener("pointerleave", hide);
+    g.addEventListener("focus", show); g.addEventListener("blur", hide);
+    root.append(g);
+  }
+  host.append(root, tip);
+}
+
+function renderSignals(watch) {
+  const rows = watch.filter(w => w.Ticker).map(w => [w, watchSignals(w)]).filter(([, s]) => s.length);
+  const sec = section("sig-title", "Signals", "Plain-language flags from the Watchlist numbers. They're prompts to look closer, not buy or sell calls.");
+  if (!rows.length) { sec.append(el("p", { class: "empty" }, "Nothing stands out right now.")); return sec; }
+  sec.append(el("div", { class: "signals" }, rows.map(([w, s]) => el("div", { class: "signal-row" },
+    el("b", {}, w.Ticker),
+    el("ul", {}, s.map(([tone, text]) => el("li", { class: `sig sig-${tone}` }, el("span", { "aria-hidden": "true" }, tone === "up" ? "▲" : "▼"), " ", text)))))));
+  return sec;
+}
+
+/* ================================================================
+   Journal tab
+================================================================ */
+
+function renderJournal(data) {
+  const entries = [];
+  for (const t of data.trades.filter(t => t.Ticker && asDate(t.Date))) {
+    const sh = num(t.Shares);
+    const px = t.Status === "Filled" ? num(t["Fill price"]) : num(t["Limit price"]);
+    entries.push({ date: asDate(t.Date), kind: "trade", title: `${t.Action} ${isNum(sh) ? sh + " " : ""}${t.Ticker}${isNum(px) ? ` at ${fmtMoney(px)}` : ""}`, tag: t.Status, body: t.Reason });
+  }
+  for (const r of data.dailyLog || []) {
+    const d = asDate(r.Date);
+    if (!d) continue;
+    const cash = num(r["Cash per Wealthsimple (CAD)"]);
+    const val = num(r["Account value (CAD)"]);
+    if (!r.Notes && !isNum(cash)) continue;
+    entries.push({ date: d, kind: "note", title: "Daily check", tag: null,
+      body: [r.Notes, [isNum(val) ? `Account ${fmtMoney(val)}` : null, isNum(cash) ? `cash per Wealthsimple ${fmtMoney(cash)}` : null].filter(Boolean).join(", ")].filter(Boolean).join(" ") });
+  }
+  for (const c of data.contributions) {
+    const d = asDate(c.Date), amt = num(c["Deposit into Claude's account (CAD)"]);
+    if (d && isNum(amt)) entries.push({ date: d, kind: "deposit", title: `Deposit of ${fmtMoney(amt)}`, tag: null, body: "Matched by the same amount of XEQT on the benchmark side." });
+  }
+  for (const t of data.todo.filter(t => asDate(t.Date) && t.Action)) {
+    entries.push({ date: asDate(t.Date), kind: "todo", title: `To do: ${stepTitle(t)}`, tag: t.Done === true ? "Done" : "Open", body: t.Why });
+  }
+  const sec = section("jr-title", "Journal", "Everything that happened, newest first: trades with Claude's reasoning, to-do steps, deposits and daily notes.");
+  if (!entries.length) { sec.append(el("p", { class: "empty" }, "Nothing logged yet.")); return sec; }
+  entries.sort((a, b) => b.date - a.date || a.kind.localeCompare(b.kind));
+  const days = new Map();
+  for (const e of entries) { const k = dayKey(e.date); if (!days.has(k)) days.set(k, []); days.get(k).push(e); }
+  const tl = el("ol", { class: "timeline" });
+  for (const list of days.values()) {
+    tl.append(el("li", { class: "tl-day" },
+      el("h3", {}, new Intl.DateTimeFormat("en-CA", { weekday: "long", month: "long", day: "numeric", year: "numeric" }).format(list[0].date)),
+      el("ul", {}, list.map(e => el("li", { class: `tl-item tl-${e.kind}` },
+        el("div", { class: "tl-head" }, el("b", {}, e.title), e.tag ? el("span", { class: `status ${e.tag === "Filled" ? "is-filled" : e.tag === "Planned" ? "is-planned" : ""}` }, e.tag) : null),
+        e.body ? el("p", {}, e.body) : null)))));
+  }
+  sec.append(tl);
+  return sec;
+}
+
+/* ================================================================
+   Tools tab
+================================================================ */
+
+function renderSizer(data) {
+  const f = data.feed;
+  const plan = livePlans(data.trades, data.holdings, data.watchlist)[0];
+  if (!ui.sizer) ui.sizer = {
+    account: +(num(f.account_value) || num(f.start_cash) || 20).toFixed(2),
+    cash: +(num(f.cash) || num(f.start_cash) || 20).toFixed(2),
+    risk: 4,
+    entry: plan ? plan.entry : "",
+    stop: plan ? plan.stop : "",
+    target: plan ? plan.target : "",
+  };
+  const s = ui.sizer;
+  const out = el("div", { class: "sizer-out", "aria-live": "polite" });
+  const field = (key, label, step, hint) => {
+    const i = el("input", { type: "number", id: `sz-${key}`, inputmode: "decimal", step, min: "0", value: s[key] === "" ? "" : String(s[key]) });
+    i.addEventListener("input", () => { s[key] = i.value === "" ? "" : +i.value; calc(); });
+    return el("label", { class: "field", for: `sz-${key}` }, el("span", {}, label), i, hint ? el("small", {}, hint) : null);
+  };
+  const pick = el("select", { id: "sz-pick", class: "select" },
+    el("option", { value: "" }, "Fill in a watchlist price"),
+    data.watchlist.filter(w => w.Ticker && isNum(num(w["Price (CAD)"]))).map(w => el("option", { value: w.Ticker }, `${w.Ticker}, ${fmtMoney(num(w["Price (CAD)"]))}`)));
+  pick.addEventListener("change", () => {
+    const w = data.watchlist.find(x => x.Ticker === pick.value);
+    if (!w) return;
+    s.entry = num(w["Price (CAD)"]);
+    document.getElementById("sz-entry").value = s.entry;
+    calc();
+  });
+
+  function calc() {
+    const { account, cash, risk, entry, stop, target } = s;
+    if (!(entry > 0) || !(stop > 0) || stop >= entry) {
+      out.replaceChildren(el("p", { class: "empty" }, "Enter a buy price and a stop-loss below it."));
+      return;
+    }
+    const riskBudget = account * risk / 100;
+    const perShare = entry - stop;
+    const byRisk = Math.floor(riskBudget / perShare + 1e-9);
+    const byCash = Math.floor(cash / entry + 1e-9);
+    const shares = Math.max(0, Math.min(byRisk, byCash));
+    const cost = shares * entry;
+    const maxLoss = shares * perShare;
+    const reward = target > entry ? shares * (target - entry) : null;
+    const rr = target > entry ? (target - entry) / perShare : null;
+    const stopRule = (num(f.total_in) || num(f.start_cash) || 20) * (num(f.stop_level) || 0.7);
+    const limiter = byCash < byRisk ? "cash on hand" : "your risk limit";
+    out.replaceChildren(...[
+      el("p", { class: "sizer-head" }, shares > 0
+        ? el("span", {}, "Buy ", el("b", {}, `${shares} share${shares === 1 ? "" : "s"}`), ` for ${fmtMoney(cost)}.`)
+        : el("span", {}, el("b", {}, "Too expensive for this setup."), ` One share risks ${fmtMoney(perShare)}, more than the ${fmtMoney(riskBudget)} limit, or costs more than the cash.`)),
+      statGrid([
+        ["Most you'd lose", fmtMoney(maxLoss), `${account > 0 ? ((maxLoss / account) * 100).toFixed(1) : "–"}% of the account, if the stop fills`],
+        ["Gain at target", isNum(reward) ? fmtMoney(reward) : "–", isNum(rr) ? `${rr.toFixed(1)} to 1 reward to risk` : "Add a target"],
+        ["Share of the account", account > 0 ? `${Math.round(cost / account * 100)}%` : "–", `Limited by ${limiter}`],
+        ["After a stop-out", fmtMoney(account - maxLoss), account - maxLoss <= stopRule ? "This would trigger the 30% stop rule" : `${fmtMoney(account - maxLoss - stopRule)} above the stop rule`],
+      ]),
+      isNum(rr) && rr < 1.5 ? el("p", { class: "warn-line" }, "Reward is less than 1.5 times the risk. Many traders skip setups like this.") : null].filter(Boolean));
+  }
+
+  const sec = section("sz-title", "Position size calculator", "How many shares to buy so a stop-loss costs no more than a set share of the account. Starts with the latest trade plan.");
+  sec.append(el("div", { class: "sizer" },
+    el("div", { class: "fields" },
+      field("account", "Account value", "0.01"),
+      field("cash", "Cash available", "0.01"),
+      field("risk", "Risk per trade, %", "0.5", "Claude's plans have used about 4%"),
+      el("label", { class: "field", for: "sz-pick" }, el("span", {}, "Stock"), pick),
+      field("entry", "Buy price", "0.01"),
+      field("stop", "Stop-loss", "0.01"),
+      field("target", "Target (optional)", "0.01")),
+    out));
+  calc();
+  return sec;
+}
+
+function renderProjection(data) {
+  const f = data.feed;
+  const p = ui.proj;
+  const sec = section("pj-title", "Where the deposits could go",
+    "A what-if, not a forecast: $20 a month added to today's values, growing at the yearly returns you pick. Change the numbers to compare.");
+  const host = el("div", { class: "chart-host" });
+  const summary = el("p", { class: "proj-sum", "aria-live": "polite" });
+  const input = (key, label, min, max, step, suffix) => {
+    const i = el("input", { type: "range", id: `pj-${key}`, min, max, step, value: String(p[key]) });
+    const v = el("output", { for: `pj-${key}` }, `${p[key]}${suffix}`);
+    i.addEventListener("input", () => { p[key] = +i.value; v.textContent = `${p[key]}${suffix}`; draw(); });
+    return el("label", { class: "field range-field", for: `pj-${key}` }, el("span", {}, label, " ", v), i);
+  };
+  sec.append(el("div", { class: "fields fields-3" },
+    input("months", "Months ahead", 3, 60, 1, ""),
+    input("claude", "Claude's yearly return", -30, 40, 1, "%"),
+    input("xeqt", "XEQT's yearly return", -30, 40, 1, "%")),
+    el("div", { class: "chart-legend", "aria-hidden": "true", style: "margin-top:1rem" },
+      el("span", {}, el("i", { class: "key-line", style: "background:var(--s-claude)" }), "Claude's picks"),
+      el("span", {}, el("i", { class: "key-line", style: "background:var(--s-bench)" }), "XEQT"),
+      el("span", {}, el("i", { class: "key-line", style: "background:var(--s-in)" }), "Money put in")),
+    host, summary);
+
+  function series() {
+    let c = num(f.account_value) || num(f.start_cash) || 20;
+    let b = num(f.benchmark_value) || c;
+    let put = num(f.total_in) || num(f.start_cash) || 20;
+    const today = new Date(); today.setHours(0, 0, 0, 0);
+    const pts = [{ date: today, c, b, put }];
+    const mc = Math.pow(1 + p.claude / 100, 1 / 12) - 1, mb = Math.pow(1 + p.xeqt / 100, 1 / 12) - 1;
+    for (let i = 1; i <= p.months; i++) {
+      c = c * (1 + mc) + 20; b = b * (1 + mb) + 20; put += 20;
+      pts.push({ date: new Date(today.getFullYear(), today.getMonth() + i, today.getDate()), c, b, put });
+    }
+    return pts;
+  }
+  function draw() {
+    const pts = series();
+    const last = pts[pts.length - 1];
+    drawLineChart(host, pts, {
+      series: [{ key: "put", color: css("--s-in"), name: "Put in" }, { key: "b", color: css("--s-bench"), name: "XEQT" }, { key: "c", color: css("--s-claude"), name: "Claude" }],
+      fmt: fmtMoney, signed: false, floorZero: true, minPad: 1,
+      xFmt: d => new Intl.DateTimeFormat("en-CA", { month: "short", year: "2-digit" }).format(d),
+      tipDate: d => new Intl.DateTimeFormat("en-CA", { month: "long", year: "numeric" }).format(d),
+      aria: `Projection over ${p.months} months. Claude reaches ${fmtMoney(last.c)}, XEQT ${fmtMoney(last.b)}, with ${fmtMoney(last.put)} put in.`,
+    });
+    const gap = last.c - last.b;
+    summary.replaceChildren(`In ${p.months} months: `, el("b", {}, fmtMoney(last.put)), " put in, Claude at ", el("b", {}, fmtMoney(last.c)),
+      ", XEQT at ", el("b", {}, fmtMoney(last.b)), `. ${Math.abs(gap) < 0.005 ? "Even." : `Claude ${gap > 0 ? "ahead" : "behind"} by ${fmtMoney(Math.abs(gap))}.`}`);
+  }
+  drawers.push(draw);
+  return sec;
+}
+
+function renderStopCheck(data) {
+  const f = data.feed;
+  const putIn = num(f.total_in) || num(f.start_cash) || 20;
+  const level = num(f.stop_level) || 0.7;
+  const acct = num(f.account_value);
+  const line = putIn * level;
+  return section("sr-title", "The stop rule", null,
+    el("p", { class: "section-note" }, `If the account falls to ${fmtMoney(line)} (${Math.round((1 - level) * 100)}% below the ${fmtMoney(putIn)} put in), the experiment ends and the money moves into XEQT. ${isNum(acct) ? `Right now the account can lose ${fmtMoney(Math.max(0, acct - line))}, or ${((Math.max(0, acct - line) / acct) * 100).toFixed(0)}% of its value, before that happens.` : ""} Each new deposit raises the line by ${fmtMoney(20 * level)}.`));
+}
+
+/* ================================================================
+   Views
+================================================================ */
+
+function viewContent(view, data) {
+  const f = data.feed;
+  switch (view) {
+    case "trades": return [renderTradeStats(data.trades), renderPlans(data), renderResults(data.trades), renderByTicker(data.trades), renderTradeLog(data.trades)];
+    case "performance": {
+      const ps = perfSeries(equitySeries(data));
+      return [
+        renderEquity(data),
+        renderPerfCompare(ps),
+        renderPerfChart(ps, "ret-title", "Return over time", "Time-weighted return since the start, so deposits don't show up as gains.", ["tc", "tb"], { area: "tc" }),
+        renderPerfChart(ps, "dd-title", "Drops from the high", "How far each side sits below its best point so far. Zero means at a new high.", ["dc", "db"], { ceilZero: true }),
+        renderMonthly(ps, data),
+        renderDeposits(data),
+      ];
+    }
+    case "watchlist": return [
+      (() => { const w = renderWatchlist(sortedWatch(data.watchlist), data.holdings); w.insertBefore(renderWatchControls(), w.querySelector(".watch")); return w; })(),
+      renderMomentumMap(data),
+      renderSignals(data.watchlist),
+    ];
+    case "journal": return [renderJournal(data)];
+    case "tools": return [renderSizer(data), renderProjection(data), renderStopCheck(data)];
+    default: return [
+      renderRace(f),
+      renderStats(data),
+      renderEquity(data),
+      el("div", { class: "split" }, renderTodo(data.todo), renderPositions(data.holdings, f)),
+      renderPlans(data),
+    ];
+  }
+}
+
+let lastData = null;
+function renderView() {
+  if (!lastData) return;
+  const focusId = document.activeElement && document.activeElement.id;
+  const selStart = document.activeElement && "selectionStart" in document.activeElement ? document.activeElement.selectionStart : null;
+  renderTabs();
+  const app = document.getElementById("app");
+  drawers.length = 0;
+  app.replaceChildren(...viewContent(route.view, lastData));
+  app.dataset.view = route.view;
+  drawers.forEach(fn => fn());
+  if (focusId) {
+    const n = document.getElementById(focusId);
+    if (n) { n.focus(); if (selStart !== null && n.setSelectionRange && n.type === "search") n.setSelectionRange(selStart, selStart); }
+  }
+}
+
 let firstRender = true;
 function render(data) {
   const f = data.feed;
   lane.animate = firstRender;
   firstRender = false;
+  lastData = data;
   renderHeader(f);
   renderAlerts(f);
-  const app = document.getElementById("app");
-  drawers.length = 0;
-  app.replaceChildren(
-    renderRace(f),
-    renderStats(data),
-    renderEquity(data),
-    el("div", { class: "split" }, renderTodo(data.todo), renderPositions(data.holdings, f)),
-    renderPlans(data),
-    renderWatchlist(data.watchlist, data.holdings),
-    renderResults(data.trades),
-    renderLog(data.trades),
-    renderMoneyIn(data.contributions, f)
-  );
-  drawers.forEach(fn => fn());
+  renderView();
   const xt = serialToDate(f.xeqt_time);
   document.getElementById("source").textContent =
-    `Loaded from the Google Sheet at ${timeFmt.format(new Date())}${xt ? `, with prices as of ${shortDate.format(xt)}, ${timeFmt.format(xt)}` : ""}. Prices come from Google Finance and can be up to 20 minutes behind.`.replace("..", ".");
+    `${route.demo ? "Showing sample numbers, not the real account. " : ""}Loaded from the Google Sheet at ${timeFmt.format(new Date())}${xt ? `, with prices as of ${shortDate.format(xt)}, ${timeFmt.format(xt)}` : ""}. Prices come from Google Finance and can be up to 20 minutes behind.`.replace("..", ".");
 }
 
 function renderError(err) {
@@ -1482,7 +2343,8 @@ function demoHistory() {
     a *= 1 + Math.sin(i * 1.7) * 0.012 + 0.0009;
     b *= 1 + Math.cos(i * 0.9) * 0.006 + 0.0006;
     if (day.getMonth() === 11 && day.getDate() === 24) { a += 20; b += 20; } // Dec 24 deposit
-    out.push({ Date: day, "Account value (CAD)": +a.toFixed(2), "Benchmark value (CAD)": +b.toFixed(2) });
+    const notes = { 1: "First full day. AQN order filled at the open.", 14: "T hit its take-profit.", 20: "BTO stopped out on a gold sell-off.", 29: "Monthly $20 deposit landed." };
+    out.push({ Date: day, "Account value (CAD)": +a.toFixed(2), "Benchmark value (CAD)": +b.toFixed(2), Notes: notes[i] || null, "Cash per Wealthsimple (CAD)": notes[i] ? 23.5 : null });
   }
   return out;
 }
@@ -1528,7 +2390,7 @@ async function refresh() {
   reloadBtn.disabled = true;
   reloadBtn.textContent = "Reloading";
   try {
-    const data = location.hash === "#demo" ? demoData() : await loadAll();
+    const data = route.demo ? demoData() : await loadAll();
     render(data);
   } catch (err) {
     console.error(err);
@@ -1539,6 +2401,15 @@ async function refresh() {
   }
 }
 reloadBtn.addEventListener("click", refresh);
+window.addEventListener("hashchange", () => {
+  const was = route.demo;
+  route = parseRoute();
+  if (route.demo !== was) { lastData = null; refresh(); }
+  else { renderView(); window.scrollTo({ top: 0 }); }
+});
+renderTabs();
+renderMarket();
+setInterval(renderMarket, 60 * 1000);
 refresh();
 setInterval(() => { if (!document.hidden) refresh(); }, REFRESH_MINUTES * 60 * 1000);
 </script>
