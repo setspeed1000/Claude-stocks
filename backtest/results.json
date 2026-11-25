@@ -1,0 +1,426 @@
+{
+  "edge_full": [
+    {
+      "strategy": "pullback",
+      "window": "2007-12-14 to 2026-11-20",
+      "trades": {
+        "n": 234,
+        "win_rate": 0.449,
+        "avg_r": -0.061,
+        "median_r": -0.242,
+        "avg_win_r": 1.121,
+        "avg_loss_r": -1.024,
+        "exits": {
+          "time": 106,
+          "stop": 104,
+          "target": 24
+        }
+      },
+      "account": {
+        "final": 48969.32,
+        "deposits": 100000.0,
+        "gain": -51030.68,
+        "max_drawdown": -0.723
+      },
+      "equal_weight_hold": 2.785
+    },
+    {
+      "strategy": "momentum",
+      "window": "2007-12-14 to 2026-11-20",
+      "trades": {
+        "n": 278,
+        "win_rate": 0.54,
+        "avg_r": 0.184,
+        "median_r": 0.146,
+        "avg_win_r": 1.139,
+        "avg_loss_r": -0.934,
+        "exits": {
+          "time": 184,
+          "stop": 87,
+          "target": 7
+        }
+      },
+      "account": {
+        "final": 531737.7,
+        "deposits": 100000.0,
+        "gain": 431737.7,
+        "max_drawdown": -0.756
+      },
+      "equal_weight_hold": 2.785
+    },
+    {
+      "strategy": "oversold",
+      "window": "2007-12-14 to 2026-11-20",
+      "trades": {
+        "n": 52,
+        "win_rate": 0.481,
+        "avg_r": -0.434,
+        "median_r": -0.12,
+        "avg_win_r": 0.706,
+        "avg_loss_r": -1.489,
+        "exits": {
+          "stop": 23,
+          "time": 17,
+          "target": 12
+        }
+      },
+      "account": {
+        "final": 48805.52,
+        "deposits": 100000.0,
+        "gain": -51194.48,
+        "max_drawdown": -0.514
+      },
+      "equal_weight_hold": 2.785
+    }
+  ],
+  "edge_3y": [
+    {
+      "strategy": "pullback",
+      "window": "2023-11-24 to 2026-11-20",
+      "trades": {
+        "n": 65,
+        "win_rate": 0.569,
+        "avg_r": 0.23,
+        "median_r": 0.366,
+        "avg_win_r": 1.195,
+        "avg_loss_r": -1.044,
+        "exits": {
+          "time": 34,
+          "stop": 19,
+          "target": 12
+        }
+      },
+      "account": {
+        "final": 146464.67,
+        "deposits": 100000.0,
+        "gain": 46464.67,
+        "max_drawdown": -0.179
+      },
+      "equal_weight_hold": 0.742
+    },
+    {
+      "strategy": "momentum",
+      "window": "2023-11-24 to 2026-11-20",
+      "trades": {
+        "n": 49,
+        "win_rate": 0.551,
+        "avg_r": 0.298,
+        "median_r": 0.113,
+        "avg_win_r": 1.327,
+        "avg_loss_r": -0.964,
+        "exits": {
+          "time": 29,
+          "stop": 17,
+          "target": 3
+        }
+      },
+      "account": {
+        "final": 154920.55,
+        "deposits": 100000.0,
+        "gain": 54920.55,
+        "max_drawdown": -0.332
+      },
+      "equal_weight_hold": 0.742
+    },
+    {
+      "strategy": "oversold",
+      "window": "2023-11-24 to 2026-11-20",
+      "trades": {
+        "n": 31,
+        "win_rate": 0.613,
+        "avg_r": 0.184,
+        "median_r": 0.429,
+        "avg_win_r": 0.712,
+        "avg_loss_r": -0.651,
+        "exits": {
+          "time": 18,
+          "target": 7,
+          "stop": 6
+        }
+      },
+      "account": {
+        "final": 126399.0,
+        "deposits": 100000.0,
+        "gain": 26399.0,
+        "max_drawdown": -0.211
+      },
+      "equal_weight_hold": 0.742
+    }
+  ],
+  "account_3y": [
+    {
+      "strategy": "pullback",
+      "fractional": false,
+      "idle_in_xeqt": false,
+      "final": 1274.98,
+      "deposits": 740.0,
+      "gain": 534.98,
+      "max_drawdown": -0.224,
+      "trades": {
+        "n": 45,
+        "win_rate": 0.6,
+        "avg_r": 0.263,
+        "median_r": 0.398,
+        "avg_win_r": 1.269,
+        "avg_loss_r": -1.247,
+        "exits": {
+          "time": 21,
+          "stop": 14,
+          "target": 10
+        }
+      }
+    },
+    {
+      "strategy": "pullback",
+      "fractional": false,
+      "idle_in_xeqt": true,
+      "final": 1112.52,
+      "deposits": 740.0,
+      "gain": 372.52,
+      "max_drawdown": -0.224,
+      "trades": {
+        "n": 44,
+        "win_rate": 0.636,
+        "avg_r": 0.381,
+        "median_r": 0.494,
+        "avg_win_r": 1.267,
+        "avg_loss_r": -1.17,
+        "exits": {
+          "time": 22,
+          "stop": 12,
+          "target": 10
+        }
+      }
+    },
+    {
+      "strategy": "pullback",
+      "fractional": true,
+      "idle_in_xeqt": false,
+      "final": 1281.91,
+      "deposits": 740.0,
+      "gain": 541.91,
+      "max_drawdown": -0.225,
+      "trades": {
+        "n": 42,
+        "win_rate": 0.667,
+        "avg_r": 0.376,
+        "median_r": 0.58,
+        "avg_win_r": 1.262,
+        "avg_loss_r": -1.398,
+        "exits": {
+          "time": 18,
+          "stop": 14,
+          "target": 10
+        }
+      }
+    },
+    {
+      "strategy": "pullback",
+      "fractional": true,
+      "idle_in_xeqt": true,
+      "final": 1300.07,
+      "deposits": 740.0,
+      "gain": 560.07,
+      "max_drawdown": -0.225,
+      "trades": {
+        "n": 42,
+        "win_rate": 0.667,
+        "avg_r": 0.376,
+        "median_r": 0.58,
+        "avg_win_r": 1.262,
+        "avg_loss_r": -1.398,
+        "exits": {
+          "time": 18,
+          "stop": 14,
+          "target": 10
+        }
+      }
+    },
+    {
+      "strategy": "momentum",
+      "fractional": false,
+      "idle_in_xeqt": false,
+      "final": 882.06,
+      "deposits": 740.0,
+      "gain": 142.06,
+      "max_drawdown": -0.254,
+      "trades": {
+        "n": 34,
+        "win_rate": 0.529,
+        "avg_r": 0.116,
+        "median_r": 0.062,
+        "avg_win_r": 0.933,
+        "avg_loss_r": -0.804,
+        "exits": {
+          "time": 25,
+          "stop": 9
+        }
+      }
+    },
+    {
+      "strategy": "momentum",
+      "fractional": false,
+      "idle_in_xeqt": true,
+      "final": 817.16,
+      "deposits": 740.0,
+      "gain": 77.16,
+      "max_drawdown": -0.26,
+      "trades": {
+        "n": 34,
+        "win_rate": 0.529,
+        "avg_r": 0.116,
+        "median_r": 0.062,
+        "avg_win_r": 0.933,
+        "avg_loss_r": -0.804,
+        "exits": {
+          "time": 25,
+          "stop": 9
+        }
+      }
+    },
+    {
+      "strategy": "momentum",
+      "fractional": true,
+      "idle_in_xeqt": false,
+      "final": 880.63,
+      "deposits": 740.0,
+      "gain": 140.63,
+      "max_drawdown": -0.256,
+      "trades": {
+        "n": 34,
+        "win_rate": 0.529,
+        "avg_r": 0.116,
+        "median_r": 0.062,
+        "avg_win_r": 0.933,
+        "avg_loss_r": -0.804,
+        "exits": {
+          "time": 25,
+          "stop": 9
+        }
+      }
+    },
+    {
+      "strategy": "momentum",
+      "fractional": true,
+      "idle_in_xeqt": true,
+      "final": 815.88,
+      "deposits": 740.0,
+      "gain": 75.88,
+      "max_drawdown": -0.265,
+      "trades": {
+        "n": 34,
+        "win_rate": 0.529,
+        "avg_r": 0.116,
+        "median_r": 0.062,
+        "avg_win_r": 0.933,
+        "avg_loss_r": -0.804,
+        "exits": {
+          "time": 25,
+          "stop": 9
+        }
+      }
+    },
+    {
+      "strategy": "oversold",
+      "fractional": false,
+      "idle_in_xeqt": false,
+      "final": 1100.23,
+      "deposits": 740.0,
+      "gain": 360.23,
+      "max_drawdown": -0.17,
+      "trades": {
+        "n": 27,
+        "win_rate": 0.667,
+        "avg_r": 0.222,
+        "median_r": 0.341,
+        "avg_win_r": 0.689,
+        "avg_loss_r": -0.713,
+        "exits": {
+          "time": 15,
+          "target": 7,
+          "stop": 5
+        }
+      }
+    },
+    {
+      "strategy": "oversold",
+      "fractional": false,
+      "idle_in_xeqt": true,
+      "final": 1304.87,
+      "deposits": 740.0,
+      "gain": 564.87,
+      "max_drawdown": -0.172,
+      "trades": {
+        "n": 27,
+        "win_rate": 0.667,
+        "avg_r": 0.222,
+        "median_r": 0.341,
+        "avg_win_r": 0.689,
+        "avg_loss_r": -0.713,
+        "exits": {
+          "time": 15,
+          "target": 7,
+          "stop": 5
+        }
+      }
+    },
+    {
+      "strategy": "oversold",
+      "fractional": true,
+      "idle_in_xeqt": false,
+      "final": 1103.59,
+      "deposits": 740.0,
+      "gain": 363.59,
+      "max_drawdown": -0.17,
+      "trades": {
+        "n": 27,
+        "win_rate": 0.667,
+        "avg_r": 0.222,
+        "median_r": 0.341,
+        "avg_win_r": 0.689,
+        "avg_loss_r": -0.713,
+        "exits": {
+          "time": 15,
+          "target": 7,
+          "stop": 5
+        }
+      }
+    },
+    {
+      "strategy": "oversold",
+      "fractional": true,
+      "idle_in_xeqt": true,
+      "final": 1320.73,
+      "deposits": 740.0,
+      "gain": 580.73,
+      "max_drawdown": -0.173,
+      "trades": {
+        "n": 27,
+        "win_rate": 0.667,
+        "avg_r": 0.222,
+        "median_r": 0.341,
+        "avg_win_r": 0.689,
+        "avg_loss_r": -0.713,
+        "exits": {
+          "time": 15,
+          "target": 7,
+          "stop": 5
+        }
+      }
+    }
+  ],
+  "bench_3y": {
+    "whole": {
+      "final": 897.67,
+      "deposits": 740.0,
+      "gain": 157.67,
+      "max_drawdown": -0.077
+    },
+    "fractional": {
+      "final": 912.22,
+      "deposits": 740.0,
+      "gain": 172.22,
+      "max_drawdown": -0.078
+    }
+  }
+}

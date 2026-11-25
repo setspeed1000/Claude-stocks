@@ -1,0 +1,872 @@
+{
+  "rolling_3y_vs_xeqt": [
+    {
+      "start": "2019-11-01",
+      "strategy": "pullback",
+      "deposits": 720.0,
+      "strat": 1086.04,
+      "xeqt": 754.65,
+      "beat": true,
+      "avg_r": 0.16,
+      "max_dd": -0.303
+    },
+    {
+      "start": "2019-11-01",
+      "strategy": "momentum",
+      "deposits": 720.0,
+      "strat": 1850.96,
+      "xeqt": 754.65,
+      "beat": true,
+      "avg_r": 0.285,
+      "max_dd": -0.436
+    },
+    {
+      "start": "2019-11-01",
+      "strategy": "oversold",
+      "deposits": 720.0,
+      "strat": 668.19,
+      "xeqt": 754.65,
+      "beat": false,
+      "avg_r": -0.288,
+      "max_dd": -0.477
+    },
+    {
+      "start": "2020-05-01",
+      "strategy": "pullback",
+      "deposits": 720.0,
+      "strat": 885.89,
+      "xeqt": 796.45,
+      "beat": true,
+      "avg_r": 0.17,
+      "max_dd": -0.347
+    },
+    {
+      "start": "2020-05-01",
+      "strategy": "momentum",
+      "deposits": 720.0,
+      "strat": 1249.3,
+      "xeqt": 796.45,
+      "beat": true,
+      "avg_r": 0.414,
+      "max_dd": -0.37
+    },
+    {
+      "start": "2020-05-01",
+      "strategy": "oversold",
+      "deposits": 720.0,
+      "strat": 582.52,
+      "xeqt": 796.45,
+      "beat": false,
+      "avg_r": -0.093,
+      "max_dd": -0.405
+    },
+    {
+      "start": "2020-11-01",
+      "strategy": "pullback",
+      "deposits": 720.0,
+      "strat": 686.75,
+      "xeqt": 732.07,
+      "beat": false,
+      "avg_r": 0.214,
+      "max_dd": -0.33
+    },
+    {
+      "start": "2020-11-01",
+      "strategy": "momentum",
+      "deposits": 720.0,
+      "strat": 677.55,
+      "xeqt": 732.07,
+      "beat": false,
+      "avg_r": 0.385,
+      "max_dd": -0.379
+    },
+    {
+      "start": "2020-11-01",
+      "strategy": "oversold",
+      "deposits": 720.0,
+      "strat": 425.59,
+      "xeqt": 732.07,
+      "beat": false,
+      "avg_r": -0.236,
+      "max_dd": -0.389
+    },
+    {
+      "start": "2021-05-01",
+      "strategy": "pullback",
+      "deposits": 720.0,
+      "strat": 533.73,
+      "xeqt": 849.68,
+      "beat": false,
+      "avg_r": -0.164,
+      "max_dd": -0.298
+    },
+    {
+      "start": "2021-05-01",
+      "strategy": "momentum",
+      "deposits": 720.0,
+      "strat": 442.52,
+      "xeqt": 849.68,
+      "beat": false,
+      "avg_r": 0.117,
+      "max_dd": -0.39
+    },
+    {
+      "start": "2021-05-01",
+      "strategy": "oversold",
+      "deposits": 720.0,
+      "strat": 481.09,
+      "xeqt": 849.68,
+      "beat": false,
+      "avg_r": -0.182,
+      "max_dd": -0.37
+    },
+    {
+      "start": "2021-11-01",
+      "strategy": "pullback",
+      "deposits": 740.0,
+      "strat": 686.93,
+      "xeqt": 937.28,
+      "beat": false,
+      "avg_r": -0.121,
+      "max_dd": -0.238
+    },
+    {
+      "start": "2021-11-01",
+      "strategy": "momentum",
+      "deposits": 740.0,
+      "strat": 445.46,
+      "xeqt": 937.28,
+      "beat": false,
+      "avg_r": -0.256,
+      "max_dd": -0.224
+    },
+    {
+      "start": "2021-11-01",
+      "strategy": "oversold",
+      "deposits": 740.0,
+      "strat": 622.3,
+      "xeqt": 937.28,
+      "beat": false,
+      "avg_r": -0.18,
+      "max_dd": -0.336
+    },
+    {
+      "start": "2022-05-01",
+      "strategy": "pullback",
+      "deposits": 720.0,
+      "strat": 732.86,
+      "xeqt": 883.09,
+      "beat": false,
+      "avg_r": -0.302,
+      "max_dd": -0.218
+    },
+    {
+      "start": "2022-05-01",
+      "strategy": "momentum",
+      "deposits": 720.0,
+      "strat": 452.0,
+      "xeqt": 883.09,
+      "beat": false,
+      "avg_r": -0.496,
+      "max_dd": -0.203
+    },
+    {
+      "start": "2022-05-01",
+      "strategy": "oversold",
+      "deposits": 720.0,
+      "strat": 600.31,
+      "xeqt": 883.09,
+      "beat": false,
+      "avg_r": -0.24,
+      "max_dd": -0.331
+    },
+    {
+      "start": "2022-11-01",
+      "strategy": "pullback",
+      "deposits": 720.0,
+      "strat": 1082.92,
+      "xeqt": 1004.2,
+      "beat": true,
+      "avg_r": -0.148,
+      "max_dd": -0.203
+    },
+    {
+      "start": "2022-11-01",
+      "strategy": "momentum",
+      "deposits": 720.0,
+      "strat": 540.27,
+      "xeqt": 1004.2,
+      "beat": false,
+      "avg_r": -0.403,
+      "max_dd": -0.254
+    },
+    {
+      "start": "2022-11-01",
+      "strategy": "oversold",
+      "deposits": 720.0,
+      "strat": 795.08,
+      "xeqt": 1004.2,
+      "beat": false,
+      "avg_r": -0.065,
+      "max_dd": -0.269
+    },
+    {
+      "start": "2023-05-01",
+      "strategy": "pullback",
+      "deposits": 740.0,
+      "strat": 1575.13,
+      "xeqt": 1007.64,
+      "beat": true,
+      "avg_r": 0.202,
+      "max_dd": -0.203
+    },
+    {
+      "start": "2023-05-01",
+      "strategy": "momentum",
+      "deposits": 740.0,
+      "strat": 1060.75,
+      "xeqt": 1007.64,
+      "beat": true,
+      "avg_r": -0.066,
+      "max_dd": -0.26
+    },
+    {
+      "start": "2023-05-01",
+      "strategy": "oversold",
+      "deposits": 740.0,
+      "strat": 818.35,
+      "xeqt": 1007.64,
+      "beat": false,
+      "avg_r": -0.056,
+      "max_dd": -0.182
+    },
+    {
+      "start": "2023-11-01",
+      "strategy": "pullback",
+      "deposits": 720.0,
+      "strat": 1201.85,
+      "xeqt": 951.38,
+      "beat": true,
+      "avg_r": 0.307,
+      "max_dd": -0.225
+    },
+    {
+      "start": "2023-11-01",
+      "strategy": "momentum",
+      "deposits": 720.0,
+      "strat": 1111.21,
+      "xeqt": 951.38,
+      "beat": true,
+      "avg_r": 0.145,
+      "max_dd": -0.256
+    },
+    {
+      "start": "2023-11-01",
+      "strategy": "oversold",
+      "deposits": 720.0,
+      "strat": 963.34,
+      "xeqt": 951.38,
+      "beat": true,
+      "avg_r": 0.148,
+      "max_dd": -0.17
+    }
+  ],
+  "rolling_3y_edge": [
+    {
+      "start": "2008-01-01",
+      "strategy": "pullback",
+      "n": 24,
+      "avg_r": 0.95,
+      "strat_ret": 0.703,
+      "hold_ret": 0.712
+    },
+    {
+      "start": "2008-01-01",
+      "strategy": "momentum",
+      "n": 22,
+      "avg_r": 0.764,
+      "strat_ret": 0.71,
+      "hold_ret": 0.712
+    },
+    {
+      "start": "2008-01-01",
+      "strategy": "oversold",
+      "n": 10,
+      "avg_r": -1.911,
+      "strat_ret": -0.448,
+      "hold_ret": 0.712
+    },
+    {
+      "start": "2009-01-01",
+      "strategy": "pullback",
+      "n": 50,
+      "avg_r": 0.242,
+      "strat_ret": 0.515,
+      "hold_ret": 2.532
+    },
+    {
+      "start": "2009-01-01",
+      "strategy": "momentum",
+      "n": 38,
+      "avg_r": 0.618,
+      "strat_ret": 1.061,
+      "hold_ret": 2.532
+    },
+    {
+      "start": "2009-01-01",
+      "strategy": "oversold",
+      "n": 13,
+      "avg_r": 0.489,
+      "strat_ret": 0.347,
+      "hold_ret": 2.532
+    },
+    {
+      "start": "2010-01-01",
+      "strategy": "pullback",
+      "n": 71,
+      "avg_r": -0.124,
+      "strat_ret": -0.002,
+      "hold_ret": 1.231
+    },
+    {
+      "start": "2010-01-01",
+      "strategy": "momentum",
+      "n": 52,
+      "avg_r": 0.064,
+      "strat_ret": -0.027,
+      "hold_ret": 1.231
+    },
+    {
+      "start": "2010-01-01",
+      "strategy": "oversold",
+      "n": 23,
+      "avg_r": 0.184,
+      "strat_ret": 0.161,
+      "hold_ret": 1.231
+    },
+    {
+      "start": "2011-01-01",
+      "strategy": "pullback",
+      "n": 72,
+      "avg_r": -0.222,
+      "strat_ret": -0.355,
+      "hold_ret": 0.327
+    },
+    {
+      "start": "2011-01-01",
+      "strategy": "momentum",
+      "n": 54,
+      "avg_r": -0.033,
+      "strat_ret": -0.154,
+      "hold_ret": 0.327
+    },
+    {
+      "start": "2011-01-01",
+      "strategy": "oversold",
+      "n": 30,
+      "avg_r": 0.165,
+      "strat_ret": 0.32,
+      "hold_ret": 0.327
+    },
+    {
+      "start": "2012-01-01",
+      "strategy": "pullback",
+      "n": 71,
+      "avg_r": -0.213,
+      "strat_ret": -0.365,
+      "hold_ret": 0.079
+    },
+    {
+      "start": "2012-01-01",
+      "strategy": "momentum",
+      "n": 52,
+      "avg_r": 0.17,
+      "strat_ret": 0.209,
+      "hold_ret": 0.079
+    },
+    {
+      "start": "2012-01-01",
+      "strategy": "oversold",
+      "n": 33,
+      "avg_r": -0.393,
+      "strat_ret": -0.476,
+      "hold_ret": 0.079
+    },
+    {
+      "start": "2013-01-01",
+      "strategy": "pullback",
+      "n": 56,
+      "avg_r": -0.086,
+      "strat_ret": -0.244,
+      "hold_ret": -0.094
+    },
+    {
+      "start": "2013-01-01",
+      "strategy": "momentum",
+      "n": 40,
+      "avg_r": 0.288,
+      "strat_ret": 0.479,
+      "hold_ret": -0.094
+    },
+    {
+      "start": "2013-01-01",
+      "strategy": "oversold",
+      "n": 44,
+      "avg_r": -0.43,
+      "strat_ret": -0.569,
+      "hold_ret": -0.094
+    },
+    {
+      "start": "2014-01-01",
+      "strategy": "pullback",
+      "n": 61,
+      "avg_r": 0.059,
+      "strat_ret": 0.019,
+      "hold_ret": 0.092
+    },
+    {
+      "start": "2014-01-01",
+      "strategy": "momentum",
+      "n": 38,
+      "avg_r": 0.349,
+      "strat_ret": 0.784,
+      "hold_ret": 0.092
+    },
+    {
+      "start": "2014-01-01",
+      "strategy": "oversold",
+      "n": 26,
+      "avg_r": -0.564,
+      "strat_ret": -0.534,
+      "hold_ret": 0.092
+    },
+    {
+      "start": "2015-01-01",
+      "strategy": "pullback",
+      "n": 57,
+      "avg_r": -0.055,
+      "strat_ret": -0.061,
+      "hold_ret": 0.072
+    },
+    {
+      "start": "2015-01-01",
+      "strategy": "momentum",
+      "n": 31,
+      "avg_r": -0.05,
+      "strat_ret": 0.052,
+      "hold_ret": 0.072
+    },
+    {
+      "start": "2015-01-01",
+      "strategy": "oversold",
+      "n": 26,
+      "avg_r": -0.467,
+      "strat_ret": -0.558,
+      "hold_ret": 0.072
+    },
+    {
+      "start": "2016-01-01",
+      "strategy": "pullback",
+      "n": 69,
+      "avg_r": -0.085,
+      "strat_ret": -0.116,
+      "hold_ret": 0.229
+    },
+    {
+      "start": "2016-01-01",
+      "strategy": "momentum",
+      "n": 44,
+      "avg_r": -0.006,
+      "strat_ret": 0.081,
+      "hold_ret": 0.229
+    },
+    {
+      "start": "2016-01-01",
+      "strategy": "oversold",
+      "n": 46,
+      "avg_r": -0.157,
+      "strat_ret": -0.322,
+      "hold_ret": 0.229
+    },
+    {
+      "start": "2017-01-01",
+      "strategy": "pullback",
+      "n": 58,
+      "avg_r": -0.218,
+      "strat_ret": -0.336,
+      "hold_ret": -0.14
+    },
+    {
+      "start": "2017-01-01",
+      "strategy": "momentum",
+      "n": 39,
+      "avg_r": 0.01,
+      "strat_ret": -0.162,
+      "hold_ret": -0.14
+    },
+    {
+      "start": "2017-01-01",
+      "strategy": "oversold",
+      "n": 53,
+      "avg_r": -0.145,
+      "strat_ret": -0.29,
+      "hold_ret": -0.14
+    },
+    {
+      "start": "2018-01-01",
+      "strategy": "pullback",
+      "n": 55,
+      "avg_r": -0.291,
+      "strat_ret": -0.401,
+      "hold_ret": -0.132
+    },
+    {
+      "start": "2018-01-01",
+      "strategy": "momentum",
+      "n": 42,
+      "avg_r": 0.025,
+      "strat_ret": 0.11,
+      "hold_ret": -0.132
+    },
+    {
+      "start": "2018-01-01",
+      "strategy": "oversold",
+      "n": 44,
+      "avg_r": -0.36,
+      "strat_ret": -0.528,
+      "hold_ret": -0.132
+    },
+    {
+      "start": "2019-01-01",
+      "strategy": "pullback",
+      "n": 54,
+      "avg_r": -0.109,
+      "strat_ret": 0.086,
+      "hold_ret": 0.441
+    },
+    {
+      "start": "2019-01-01",
+      "strategy": "momentum",
+      "n": 50,
+      "avg_r": 0.41,
+      "strat_ret": 1.915,
+      "hold_ret": 0.441
+    },
+    {
+      "start": "2019-01-01",
+      "strategy": "oversold",
+      "n": 23,
+      "avg_r": -0.581,
+      "strat_ret": -0.563,
+      "hold_ret": 0.441
+    },
+    {
+      "start": "2020-01-01",
+      "strategy": "pullback",
+      "n": 68,
+      "avg_r": -0.012,
+      "strat_ret": 0.023,
+      "hold_ret": 0.764
+    },
+    {
+      "start": "2020-01-01",
+      "strategy": "momentum",
+      "n": 58,
+      "avg_r": 0.301,
+      "strat_ret": 1.744,
+      "hold_ret": 0.764
+    },
+    {
+      "start": "2020-01-01",
+      "strategy": "oversold",
+      "n": 9,
+      "avg_r": -1.75,
+      "strat_ret": -0.62,
+      "hold_ret": 0.764
+    },
+    {
+      "start": "2021-01-01",
+      "strategy": "pullback",
+      "n": 66,
+      "avg_r": -0.07,
+      "strat_ret": -0.161,
+      "hold_ret": 1.16
+    },
+    {
+      "start": "2021-01-01",
+      "strategy": "momentum",
+      "n": 52,
+      "avg_r": 0.224,
+      "strat_ret": 0.766,
+      "hold_ret": 1.16
+    },
+    {
+      "start": "2021-01-01",
+      "strategy": "oversold",
+      "n": 40,
+      "avg_r": -0.234,
+      "strat_ret": -0.284,
+      "hold_ret": 1.16
+    },
+    {
+      "start": "2022-01-01",
+      "strategy": "pullback",
+      "n": 65,
+      "avg_r": -0.203,
+      "strat_ret": -0.309,
+      "hold_ret": -0.049
+    },
+    {
+      "start": "2022-01-01",
+      "strategy": "momentum",
+      "n": 40,
+      "avg_r": -0.341,
+      "strat_ret": -0.454,
+      "hold_ret": -0.049
+    },
+    {
+      "start": "2022-01-01",
+      "strategy": "oversold",
+      "n": 42,
+      "avg_r": -0.175,
+      "strat_ret": -0.237,
+      "hold_ret": -0.049
+    },
+    {
+      "start": "2023-01-01",
+      "strategy": "pullback",
+      "n": 56,
+      "avg_r": 0.037,
+      "strat_ret": 0.105,
+      "hold_ret": 0.233
+    },
+    {
+      "start": "2023-01-01",
+      "strategy": "momentum",
+      "n": 20,
+      "avg_r": -0.798,
+      "strat_ret": -0.519,
+      "hold_ret": 0.233
+    },
+    {
+      "start": "2023-01-01",
+      "strategy": "oversold",
+      "n": 41,
+      "avg_r": 0.044,
+      "strat_ret": 0.068,
+      "hold_ret": 0.233
+    }
+  ],
+  "cost_sensitivity_3y": [
+    {
+      "cost_mult": 0,
+      "strategy": "pullback",
+      "final": 1358.73,
+      "xeqt": 913.63
+    },
+    {
+      "cost_mult": 0,
+      "strategy": "momentum",
+      "final": 908.71,
+      "xeqt": 913.63
+    },
+    {
+      "cost_mult": 0,
+      "strategy": "oversold",
+      "final": 1118.08,
+      "xeqt": 913.63
+    },
+    {
+      "cost_mult": 1,
+      "strategy": "pullback",
+      "final": 1281.91,
+      "xeqt": 912.22
+    },
+    {
+      "cost_mult": 1,
+      "strategy": "momentum",
+      "final": 880.63,
+      "xeqt": 912.22
+    },
+    {
+      "cost_mult": 1,
+      "strategy": "oversold",
+      "final": 1103.59,
+      "xeqt": 912.22
+    },
+    {
+      "cost_mult": 2,
+      "strategy": "pullback",
+      "final": 1209.8,
+      "xeqt": 910.82
+    },
+    {
+      "cost_mult": 2,
+      "strategy": "momentum",
+      "final": 853.49,
+      "xeqt": 910.82
+    },
+    {
+      "cost_mult": 2,
+      "strategy": "oversold",
+      "final": 1089.36,
+      "xeqt": 910.82
+    },
+    {
+      "cost_mult": 3,
+      "strategy": "pullback",
+      "final": 1142.12,
+      "xeqt": 909.42
+    },
+    {
+      "cost_mult": 3,
+      "strategy": "momentum",
+      "final": 827.26,
+      "xeqt": 909.42
+    },
+    {
+      "cost_mult": 3,
+      "strategy": "oversold",
+      "final": 1075.4,
+      "xeqt": 909.42
+    }
+  ],
+  "leave_one_out_3y": [
+    {
+      "dropped": "AQN",
+      "strategy": "pullback",
+      "final": 1166.7,
+      "xeqt": 912.22
+    },
+    {
+      "dropped": "AQN",
+      "strategy": "momentum",
+      "final": 724.81,
+      "xeqt": 912.22
+    },
+    {
+      "dropped": "AQN",
+      "strategy": "oversold",
+      "final": 968.36,
+      "xeqt": 912.22
+    },
+    {
+      "dropped": "BTO",
+      "strategy": "pullback",
+      "final": 1394.15,
+      "xeqt": 912.22
+    },
+    {
+      "dropped": "BTO",
+      "strategy": "momentum",
+      "final": 1104.02,
+      "xeqt": 912.22
+    },
+    {
+      "dropped": "BTO",
+      "strategy": "oversold",
+      "final": 990.48,
+      "xeqt": 912.22
+    },
+    {
+      "dropped": "WCP",
+      "strategy": "pullback",
+      "final": 1248.15,
+      "xeqt": 912.22
+    },
+    {
+      "dropped": "WCP",
+      "strategy": "momentum",
+      "final": 839.39,
+      "xeqt": 912.22
+    },
+    {
+      "dropped": "WCP",
+      "strategy": "oversold",
+      "final": 1117.91,
+      "xeqt": 912.22
+    },
+    {
+      "dropped": "BTE",
+      "strategy": "pullback",
+      "final": 1013.33,
+      "xeqt": 912.22
+    },
+    {
+      "dropped": "BTE",
+      "strategy": "momentum",
+      "final": 894.34,
+      "xeqt": 912.22
+    },
+    {
+      "dropped": "BTE",
+      "strategy": "oversold",
+      "final": 1117.17,
+      "xeqt": 912.22
+    },
+    {
+      "dropped": "TVE",
+      "strategy": "pullback",
+      "final": 916.45,
+      "xeqt": 912.22
+    },
+    {
+      "dropped": "TVE",
+      "strategy": "momentum",
+      "final": 692.33,
+      "xeqt": 912.22
+    },
+    {
+      "dropped": "TVE",
+      "strategy": "oversold",
+      "final": 1103.59,
+      "xeqt": 912.22
+    },
+    {
+      "dropped": "VET",
+      "strategy": "pullback",
+      "final": 1163.78,
+      "xeqt": 912.22
+    },
+    {
+      "dropped": "VET",
+      "strategy": "momentum",
+      "final": 945.75,
+      "xeqt": 912.22
+    },
+    {
+      "dropped": "VET",
+      "strategy": "oversold",
+      "final": 1037.57,
+      "xeqt": 912.22
+    }
+  ],
+  "pnl_by_ticker_3y": {
+    "pullback": {
+      "AQN": 136.54,
+      "BTE": 46.93,
+      "BTO": 12.85,
+      "TVE": 322.43,
+      "VET": -39.66,
+      "WCP": 233.24
+    },
+    "pullback_top3_share": 0.9,
+    "momentum": {
+      "AQN": 15.56,
+      "BTE": 35.9,
+      "BTO": -224.59,
+      "TVE": 364.07,
+      "VET": -63.22,
+      "WCP": -12.52
+    },
+    "momentum_top3_share": 2.04,
+    "oversold": {
+      "AQN": 151.97,
+      "BTE": 53.15,
+      "BTO": 117.39,
+      "VET": 34.24,
+      "WCP": -2.86
+    },
+    "oversold_top3_share": 0.71
+  }
+}
