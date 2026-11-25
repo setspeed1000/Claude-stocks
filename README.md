@@ -17,7 +17,8 @@ To preview the layout with sample numbers, add `#demo` to the URL.
 | Tab | Used for |
 |---|---|
 | Dashboard feed | Headline numbers: account value, benchmark value, cash, stop rule |
-| Trades | Orders to place (Status "Planned") and the trade log |
+| To-do | The next trading day's steps: buys, sells, stop-losses and take-profits |
+| Trades | The trade log |
 | Holdings | Open positions |
 | Watchlist | Prices, 30-day ranges and 90-day averages |
 | Contributions | Monthly deposits into the account, matched by XEQT on the benchmark side |
