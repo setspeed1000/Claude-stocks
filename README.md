@@ -48,6 +48,6 @@ The header also shows whether the TSX is open (regular hours only; holidays aren
 
 Survivors are ranked by risk-adjusted momentum (blended 3- and 6-month return over 60-day volatility), with penalties for spread cost and 6-month drawdown. Anything below its 50- or 100-day average, or pinned by a takeover bid, scores zero. Each row also has ATR(14), a 2 x ATR stop, and the whole shares a $20 and a $100 account could buy under the 10%-risk rule.
 
-It runs on GitHub Actions (**Actions > TSX screener > Run workflow**) using the TSX company directory and Yahoo Finance, so it uses no Alpha Vantage calls. Results are committed to `data/screener/`: `latest.md` (top 15), `latest.csv` and `latest.json` (everything that passed), and `history/` (one file per run). The screen is a starting list only; every buy still needs a chart-based limit, stop, target and exit date.
+It runs on GitHub Actions every Friday at 2:30 PM ET (3:30 PM in summer), or on demand from **Actions > TSX screener > Run workflow**, using the TSX company directory and Yahoo Finance, so it uses no Alpha Vantage calls. Results are committed to `data/screener/`: `latest.md` (top 15), `latest.csv` and `latest.json` (everything that passed), and `history/` (one file per run). A weekly scheduled task then copies the top 10 into the sheet's Watchlist tab, marked with a "Screener" note. The screen is a starting list only; every buy still needs a chart-based limit, stop, target and exit date.
 
 Test offline with `python screener/test_screen.py`.
